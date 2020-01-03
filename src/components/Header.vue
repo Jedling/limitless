@@ -1,11 +1,11 @@
 <template>
-  <div class="header px-10">
+  <div class="header container-fluid">
     <div class="row justify-content-center mt-4 mb-4">
       <div class="col-md-12 text-center">
         <router-link class="" to="/"
           ><img
             alt="Projekt liv logo"
-            src="/img/header/test.jpg"
+            src="/img/header/test2.png"
         /></router-link>
       </div>
     </div>
@@ -23,5 +23,7 @@ export default class Header extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+.header {
+  background-color: var(--primary);
+}
 </style>

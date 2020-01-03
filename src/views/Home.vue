@@ -1,17 +1,17 @@
 <template>
-  <div class="header px-10">
+  <div class="home">
     <Menu />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import Menu from '@/components/Menu.vue';
+import { Component, Prop, Vue } from "vue-property-decorator";
+import Menu from "@/components/Menu.vue";
 
 @Component({
-    components: {
-      Menu,
-  },
+  components: {
+    Menu
+  }
 })
 export default class Home extends Vue {
   // @Prop() private msg!: string;
@@ -20,5 +20,7 @@ export default class Home extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+.home {
+  flex: 1;
+}
 </style>
