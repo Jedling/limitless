@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <div id="nav">
 
-    </div> -->
+    </div>-->
     <Header />
     <!-- <Menu /> -->
     <router-view />
@@ -10,28 +10,34 @@
   </div>
 </template>
  <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
+import { Vue, Component } from "vue-property-decorator";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 @Component({
   components: {
     Header,
-    Footer,
-  },
+    Footer
+  }
 })
 export default class App extends Vue {}
 </script>
 <style lang="scss">
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid"; // fas
+@import "~@fortawesome/fontawesome-free/scss/regular"; // far
+@import "~@fortawesome/fontawesome-free/scss/brands"; // fab
 #app {
   --primary: #55585f;
   --menuText: #fdfdfd;
+  --hover: #7d8080;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-    display: flex;
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
   margin: 0;

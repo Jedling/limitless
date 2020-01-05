@@ -4,13 +4,13 @@
       <div class="row justify-content-center mx-auto">
         <div class="row mt-3">
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="about-us">
+            <router-link class="glyphicon glyphicon-list" to="om-limitless">
               <button type="button" class="btn background btn-circle btn-xl">OM FÖRENINGEN</button>
             </router-link>
           </div>
           <div class="col-4 col-md-4">
             <router-link class="glyphicon glyphicon-list" to="schema-aktiviteter">
-              <button type="button" class="btn background btn-circle btn-xl">SCHEMAN</button>
+              <button type="button" class="btn background btn-circle btn-xl">SCHEMA</button>
             </router-link>
           </div>
           <div class="col-4 col-md-4">
@@ -64,10 +64,15 @@
             </router-link>
           </div>
           <div class="col-6 col-md-6">
-            <router-link class="glyphicon glyphicon-list" to>
+            <router-link class="glyphicon glyphicon-list" to="">
               <button type="button" class="btn background btn-circle btn-xl">NY<br> DELTAGARE <br> PROVA PÅ</button>
             </router-link>
           </div>
+            <!-- <div class="col-6 col-md-4">
+            <router-link class="glyphicon glyphicon-list" to="">
+              <button type="button" class="btn background btn-circle btn-xl">NY<br> DELTAGARE <br> PROVA PÅ</button>
+            </router-link>
+          </div> -->
         </div>
       </div>
     </div>
