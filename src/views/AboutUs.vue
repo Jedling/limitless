@@ -21,7 +21,7 @@ export default class AboutUs extends Vue {}
   display: block;
   .header {
     background-color: var(--primary);
-    font-size: 3em;
+    font-size: 2em;
     color: var(--menuText);
     line-height: 1.2;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);

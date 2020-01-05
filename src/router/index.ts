@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import AboutUs from "../views/AboutUs.vue";
 import Schedule from "../views/Schedule.vue";
+import FindUs from "../views/FindUs.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/schema",
     name: "schema",
     component: Schedule,
+  },
+  {
+    path: "/hitta-oss",
+    name: "hitta-oss",
+    component: FindUs,
   }
   
   // {

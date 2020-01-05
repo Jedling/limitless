@@ -22,7 +22,7 @@ export default class Schedule extends Vue {}
 </script>
 <style scoped lang="scss">
 .header {
-  font-size: 3em;
+  font-size: 2em;
   color: var(--secondary);
   background-color: var(--primary);
   line-height: 1.2;

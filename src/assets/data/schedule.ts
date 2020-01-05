@@ -1,6 +1,7 @@
 import { ScheduleModel } from '@/types/ScheduleModel';
 
 const scheduleData: ScheduleModel[] = [
+  
   {
     Id: 1,
     Weekday: "Måndag",
