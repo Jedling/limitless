@@ -35,11 +35,7 @@
       <div class="row">
         <div class="col-12 mb-3">
           <figure>
-            <img
-              class="schedule-img"
-              src=""
-              alt="Människor sitter i en ring och utövar Mindfulness"
-            />
+            <img class="schedule-img" src alt="Människor sitter i en ring och utövar Mindfulness" />
           </figure>
         </div>
       </div>
@@ -50,14 +46,14 @@
               <div class="days-wrap flex">
                 <div class="day flex">
                   <!-- Veckodag -->
-                  <h4 class="weekday ">MÅNDAG</h4>
+                  <h4 class="weekday">MÅNDAG</h4>
                   <div class="class-container flex color color--scheme2">
                     <span class="time">06:30 - 07:15</span>
                     <span class="name">WAKE UP LIMITLESS</span>
                     <!-- <span class="level">
                       Malmö, Hylliekrokens Golfcenter alt. FIFH (vid
                       Mobilia)
-                    </span> -->
+                    </span>-->
                   </div>
                   <div class="class-container flex color color--scheme2">
                     <span class="time">17:00 - 18:15</span>
@@ -69,7 +65,7 @@
                     <span class="name">BOXNING</span>
                     <!-- <span class="level">Malmö, Kalendeg. 18, vån 3</span> -->
                   </div>
-                                    <div class="class-container flex color color--scheme2">
+                  <div class="class-container flex color color--scheme2">
                     <span class="time">18:45 - 20:00</span>
                     <span class="name">BRASILIANSK JIU JITSU (VÅN 2)</span>
                     <!-- <span class="level">Malmö, Kalendeg. 18, vån 3</span> -->
@@ -79,18 +75,18 @@
                 <div class="day flex">
                   <h4 class="weekday">TISDAG</h4>
                   <div class="class-container flex color color--scheme3">
-                    <span class="time">10:30-11:30</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">12:00 - 12:45</span>
+                    <span class="name">LIMITLESS HIIT FLOW YOGA</span>
                     <!-- <span class="level">Malmö, KFUM Betaniaplan 4</span> -->
                   </div>
                   <div class="class-container flex color color--scheme4">
-                    <span class="time">13:30–14:30</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">18:00 - 19:15</span>
+                    <span class="name">FITNESS MMA</span>
                     <!-- <span class="level">Ystad, Seniorernas hus, Petrigatan 10</span> -->
                   </div>
                   <div class="class-container flex color color--scheme5">
-                    <span class="time">16:30-17:00</span>
-                    <span class="name">Andnings- och fokusövningar</span>
+                    <span class="time">19:15 - 20:30</span>
+                    <span class="name">BOXNING</span>
                     <!-- <span class="level">Malmö, BK Fox Lundavägen 56</span> -->
                   </div>
                 </div>
@@ -98,8 +94,28 @@
                 <div class="day flex">
                   <h4 class="weekday">ONSDAG</h4>
                   <div class="class-container flex color color--scheme6">
-                    <span class="time">11:00-12:00</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">06:30 - 07:15</span>
+                    <span class="name">WAKE UP LIMITLESS</span>
+                    <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
+                  </div>
+                   <div class="class-container flex color color--scheme6">
+                    <span class="time">17:00 - 18:00</span>
+                    <span class="name">HIKARI DO</span>
+                    <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
+                  </div>
+                   <div class="class-container flex color color--scheme6">
+                    <span class="time">18:00 - 19:15</span>
+                    <span class="name">KICK/THAIBOXNING</span>
+                    <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
+                  </div>
+                   <div class="class-container flex color color--scheme6">
+                    <span class="time">19:15 - 20:30</span>
+                    <span class="name">LIMITLESS HIIT</span>
+                    <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
+                  </div>
+                   <div class="class-container flex color color--scheme6">
+                    <span class="time">19:15 - 20:30</span>
+                    <span class="name">BRASILIANSK JIU JITSU (VÅN 2)</span>
                     <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
                   </div>
                 </div>
@@ -107,18 +123,18 @@
                 <div class="day flex">
                   <h4 class="weekday">TORSDAG</h4>
                   <div class="class-container flex color color--scheme7">
-                    <span class="time">11:00-12:00</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">12:00 - 12:45</span>
+                    <span class="name">LIMITLESS ENERGY</span>
                     <!-- <span class="level">Helsingborg, Kurirgatan 1</span> -->
                   </div>
                   <div class="class-container flex color color--scheme2">
-                    <span class="time">17:00-18:00</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">19:30 - 20:45</span>
+                    <span class="name">BOXNING</span>
                     <!-- <span class="level">Malmö, Kalendegatan 18, vån 3</span> -->
                   </div>
                   <div class="class-container flex color color--scheme2">
-                    <span class="time">17:15-18:15</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">19:30 - 20:45</span>
+                    <span class="name">BRASILIANSK JIU JITSU (VÅN 2)</span>
                     <!-- <span class="level">Lomma, Havsblick Centrumgatan 4</span> -->
                   </div>
                 </div>
@@ -126,25 +142,40 @@
                 <div class="day flex">
                   <h4 class="weekday">FREDAG</h4>
                   <div class="class-container flex color color--scheme3">
-                    <span class="time">10:30-11:30</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">17:00 - 18:15</span>
+                    <span class="name">FITNESS MMA</span>
                     <!-- <span class="level">Malmö, KFUM Betaniaplan 4</span> -->
                   </div>
+                   <div class="class-container flex color color--scheme6">
+                    <span class="time">18:15 - 19:30</span>
+                    <span class="name">BOXNING</span>
+                    <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
+                  </div>
                 </div>
-                               <div class="day flex">
+                <div class="day flex">
                   <h4 class="weekday">LÖRDAG</h4>
                   <div class="class-container flex color color--scheme3">
-                    <span class="time">10:30-11:30</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">10:00 - 11:15</span>
+                    <span class="name">KICK/THAIBOXNING</span>
                     <!-- <span class="level">Malmö, KFUM Betaniaplan 4</span> -->
                   </div>
+                   <div class="class-container flex color color--scheme6">
+                    <span class="time">11:15 - 13:00</span>
+                    <span class="name">OPEN MAT</span>
+                    <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
+                  </div>
                 </div>
-                               <div class="day flex">
+                <div class="day flex">
                   <h4 class="weekday">SÖNDAG</h4>
                   <div class="class-container flex color color--scheme3">
-                    <span class="time">10:30-11:30</span>
-                    <span class="name">Hikari & Mindfulness</span>
+                    <span class="time">11:00 - 12:00</span>
+                    <span class="name">HIKARI DO</span>
                     <!-- <span class="level">Malmö, KFUM Betaniaplan 4</span> -->
+                  </div>
+                   <div class="class-container flex color color--scheme6">
+                    <span class="time">12:15 - 13:30</span>
+                    <span class="name">FITNESS MMA + FYS</span>
+                    <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
                   </div>
                 </div>
               </div>
@@ -157,10 +188,10 @@
 </template>
 
 <script lang='ts'>
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  components: {},
+  components: {}
 })
 export default class ScheduleComponent extends Vue {}
 </script>
@@ -230,12 +261,12 @@ $light--color: var(--primary);
 
 // h1,
 // h2,
-// h3,
-// h4 {
-//   font-family: "Roboto", sans-serif;
-//   font-weight: inherit;
-//   line-height: 1.2;
-// }
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: inherit;
+  line-height: 1.2;
+}
 
 // h1 {
 //   font-size: 3.998em;
@@ -245,9 +276,9 @@ $light--color: var(--primary);
 //   font-size: 2.827em;
 // }
 
-// h3 {
-//   font-size: 1.999em;
-// }
+h3 {
+  font-size: 1.999em;
+}
 
 h4 {
   font-size: 1.414em;
@@ -322,7 +353,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .timetable-container {
     h3 {
       padding-left: 10px;
@@ -348,14 +379,17 @@ h4 {
     padding: 1em 0;
     .time {
       padding-left: 5px;
-      font-size: 14px;
+      font-size: 13px;
       flex: 1 0 0;
     }
     .name {
       flex: 2 0 0;
-      font-size: 14px;
+      font-size: 13px;
       padding-left: 12px;
       text-align: left;
+      @media only screen and (min-width: 768px) {
+        text-align: center;
+      }
       // word-break: break-word;
     }
     // .level {
@@ -367,20 +401,20 @@ h4 {
   }
 }
 
-@media only screen and (min-width: 568px) and (max-width: 767px) {
-  .class-container {
-    .time {
-      flex: 1 0 0;
-    }
-    .name {
-      flex: 2 0 0;
-    }
-    .level {
-      display: flex;
-      flex: 2 0 0;
-    }
-  }
-}
+// @media only screen and (min-width: 568px) and (max-width: 767px) {
+//   .class-container {
+//     .time {
+//       flex: 1 0 0;
+//     }
+//     .name {
+//       flex: 2 0 0;
+//     }
+//     .level {
+//       display: flex;
+//       flex: 2 0 0;
+//     }
+//   }
+// }
 
 @media only screen and (min-width: 768px) {
   // .timetable-wrap {
@@ -417,7 +451,7 @@ h4 {
     }
     .name {
       padding: 0 10px;
-      font-weight: 300
+      font-weight: 300;
     }
     .level {
       padding: 0 10px;
@@ -426,64 +460,5 @@ h4 {
       border-bottom: none;
     }
   }
-  // .color--scheme1 {
-  //   color: $light--color;
-  //   background-color: #009688;
-  //   .time {
-  //     background-color: #00695c;
-  //   }
-  // }
-  // .color--scheme2 {
-  //   color: $dark--color;
-  //   background-color: #a7c6c5;
-  //   .time {
-  //     color: $light--color;
-  //     background-color: #468c8f;
-  //   }
-  // }
-  // .color--scheme3 {
-  //   color: $dark--color;
-  //   background-color: #9e9e9e;
-  //   .time {
-  //     color: $light--color;
-  //     background-color: #424242;
-  //   }
-  // }
-  // .color--scheme4 {
-  //   color: $dark--color;
-  //   background-color: #ffc107;
-  //   .time {
-  //     background-color: #ff8f00;
-  //   }
-  // }
-  // .color--scheme5 {
-  //   color: $light--color;
-  //   background-color: #9c27b0;
-  //   .time {
-  //     background-color: #6a1b9a;
-  //   }
-  // }
-  // .color--scheme6 {
-  //   color: $light--color;
-  //   background-color: #f44336;
-  //   .time {
-  //     background-color: #c62828;
-  //   }
-  // }
-  // .color--scheme7 {
-  //   color: $light--color;
-  //   background-color: #796330;
-  //   .time {
-  //     background-color: #646646;
-  //   }
-  // }
-  // .color--scheme8 {
-  //   color: $dark--color;
-  //   background-color: #03a9f4;
-  //   .time {
-  //     color: $light--color;
-  //     background-color: #0277bd;
-  //   }
-  // }
 }
 </style>
