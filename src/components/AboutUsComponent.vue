@@ -13,19 +13,15 @@
           <div class="card mb-3">
             <div class="card-body text-center">
               <p class="card-text">
-                Projekt LIV – Lugnt inre välmående vänder sig till dig som
-                drabbats av stroke eller Parkinsons sjukdom. I projektet har nya
-                målgruppsanpassade övningar utvecklats som kombinerar mindfulness,
-                hikari, yoga, boxning och dans.
-              </p>
-
-              <p class="card-text">
-                Övningarna syftar till att uppnå
-                ett inre, stressbefriat lugn, att stimulera rörlighet och
-                balanssinne samt att motverka hjärntrötthet.
+                Stadgar
                 <br>
-                  Våra LIV-pass heter Hikari & Mindfulness. Aktiviteterna är
-                kostnadsfria för medlemmar i partnerföreningar.
+                Partners
+                <br>
+                Trivselregler
+                <br>
+                Förhållningssätt
+                <br>
+                Policy
               </p>
             </div>
           </div>

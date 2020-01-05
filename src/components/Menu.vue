@@ -9,7 +9,7 @@
             </router-link>
           </div>
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="schema-aktiviteter">
+            <router-link class="glyphicon glyphicon-list" to="schema">
               <button type="button" class="btn background btn-circle btn-xl">SCHEMA</button>
             </router-link>
           </div>
@@ -84,8 +84,6 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class Menu extends Vue {
-  // @Prop() private msg!: string;
-  // private navTypes: NavTypeModel[] = navTypeData;
 }
 </script>
 

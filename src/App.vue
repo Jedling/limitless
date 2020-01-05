@@ -30,6 +30,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/brands"; // fab
 #app {
   --primary: #55585f;
+  --secondary: #ADD8F9;
   --menuText: #fdfdfd;
   --hover: #7d8080;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
