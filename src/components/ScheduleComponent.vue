@@ -284,27 +284,6 @@ h4 {
   font-size: 1.414em;
 }
 
-// a {
-//   text-decoration: none;
-//   color: rgb(0, 188, 163);
-//   outline: 0;
-//   &:hover,
-//   &:focus {
-//     color: lighten(rgb(0, 188, 163), 20%);
-//   }
-// }
-
-// strong {
-//   font-weight: 700;
-// }
-
-// p {
-//   margin-bottom: 0.618em;
-//   &:last-child {
-//     margin-bottom: 0;
-//   }
-// }
-
 .flex {
   display: flex;
 }
@@ -330,9 +309,6 @@ h4 {
   }
 }
 
-// .days-wrap {
-// }
-
 .day {
   flex-direction: column;
   h4 {
@@ -343,7 +319,7 @@ h4 {
 }
 
 .class-container {
-  background-color: darken(white, 5%);
+  background-color: #f2f2f2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   .time {
     font-weight: bold;
@@ -390,7 +366,6 @@ h4 {
       @media only screen and (min-width: 768px) {
         text-align: center;
       }
-      // word-break: break-word;
     }
     // .level {
     //   // display: none;
