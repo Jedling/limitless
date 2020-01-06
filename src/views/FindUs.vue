@@ -1,17 +1,17 @@
 <template>
   <div class="findus mt-4 container">
     <h2 class="header text-center mb-4">HITTA / KONTAKTA OSS</h2>
-    <HittaOss />
+    <FindUsComponent />
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
-// import FindUsComponent from '@/components/HittaOss.vue';
+import FindUsComponent from '@/components/FindUsComponent.vue';
 
 @Component({
   components: {
-    // HittaOss,
+    FindUsComponent,
   },
 })
 export default class FindUs extends Vue {}

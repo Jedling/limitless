@@ -1,32 +1,39 @@
 <template>
   <footer class="footer container-fluid">
-    <div class="row justify-content-center mt-4 mb-4">
+    <div class="row">
+      <div class="col-12">
+        <figure class="figure">
+          <img
+            src="/img/footer/beyoufooter.png"
+            class="slogan"
+            alt="Människor sittandes i cirkelformation i en föreläsningssal"
+          />
+        </figure>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-4">
       <div class="col-12">
         <p class="text-center footer-contact">
-          © 2019 ProjektLiv - Hosted by
+          © COPYRIGHT 2019 KFUM LIMITLESS - Hosted by
           <a
             target="_blank"
             href="http://benader.com/"
             style="text-decoration:none;color:#fff;"
-            >BeNader.com</a
-          >
+          >BeNader.com</a>
         </p>
         <p class="text-center footer-gdpr" style="color:#fff;margin-top:.8em;">
-          <a onclick="Loadgdpr()">GDPR - Dataskyddsförordningen </a>
+          <a onclick="Loadgdpr()">GDPR - Dataskyddsförordningen</a>
         </p>
         <!-- <div class="col-12"> -->
         <div class="row justify-content-center text-center mb-4">
           <!-- <div class="col-12"> -->
           <div class="col-4 col-sm-3">
-            <a
-              href="https://www.facebook.com/Projekt-LIV-1859178424304560/"
-              target="_blank"
-            >
+            <a href="https://www.facebook.com/Projekt-LIV-1859178424304560/" target="_blank">
               <i class="fab icon fa-facebook-square"></i>
             </a>
           </div>
           <div class="col-4 col-sm-3">
-            <a href="" target="_blank">
+            <a href target="_blank">
               <i class="fab icon fa-instagram"></i>
             </a>
           </div>
@@ -44,7 +51,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class Footer extends Vue {
@@ -63,18 +70,24 @@ export default class Footer extends Vue {
     color: rgb(58, 52, 52);
     margin-top: 0.8em;
   }
+  .slogan {
+    margin-bottom: .5rem;
+    line-height: 1;
+    width: 34%;
+    margin-top: 14px;
+  }
   .footer-gdpr {
     text-decoration: none;
-    color: #fff;
+    color: var(--menuText);
   }
   .fa-facebook-square,
   .fa-instagram,
   .fa-youtube {
     color: white;
-    font-size: 80px;
+    font-size: 40px;
     // padding: 10px;
     @media (max-width: 320px) {
-      font-size: 60px;
+      font-size: 40px;
     }
   }
 }

@@ -4,7 +4,7 @@ import Home from "../views/Home.vue";
 import AboutUs from "../views/AboutUs.vue";
 import Schedule from "../views/Schedule.vue";
 import FindUs from "../views/FindUs.vue";
-
+import Activities from "../views/Activities.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -27,6 +27,11 @@ const routes = [
     path: "/hitta-oss",
     name: "hitta-oss",
     component: FindUs,
+  },
+  {
+    path: "/traningspass",
+    name: "traningspass",
+    component: Activities,
   }
   
   // {

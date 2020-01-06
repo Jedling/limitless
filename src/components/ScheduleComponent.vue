@@ -67,7 +67,7 @@
                   </div>
                   <div class="class-container flex color color--scheme2">
                     <span class="time">18:45 - 20:00</span>
-                    <span class="name">BRASILIANSK JIU JITSU (VÅN 2)</span>
+                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING(VÅN 2)</span>
                     <!-- <span class="level">Malmö, Kalendeg. 18, vån 3</span> -->
                   </div>
                 </div>
@@ -115,7 +115,7 @@
                   </div>
                    <div class="class-container flex color color--scheme6">
                     <span class="time">19:15 - 20:30</span>
-                    <span class="name">BRASILIANSK JIU JITSU (VÅN 2)</span>
+                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING(VÅN 2)</span>
                     <!-- <span class="level">Lund, Annegården Skansv. 5</span> -->
                   </div>
                 </div>
@@ -134,7 +134,7 @@
                   </div>
                   <div class="class-container flex color color--scheme2">
                     <span class="time">19:30 - 20:45</span>
-                    <span class="name">BRASILIANSK JIU JITSU (VÅN 2)</span>
+                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING(VÅN 2)</span>
                     <!-- <span class="level">Lomma, Havsblick Centrumgatan 4</span> -->
                   </div>
                 </div>

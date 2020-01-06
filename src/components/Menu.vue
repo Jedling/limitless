@@ -22,7 +22,7 @@
         </div>
         <div class="row mt-3">
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="e-boken">
+            <router-link class="glyphicon glyphicon-list" to="traningspass">
               <button type="button" class="btn background btn-circle btn-xl">
                 <!-- <router-link class="glyphicon glyphicon-list" to="Partners" -->
                 TRÄNINGSPASS
