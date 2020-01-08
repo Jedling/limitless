@@ -10,7 +10,7 @@
           </router-link>
         </div>
         <div class="col-md-8 col-12 mb-4 mx-auto">
-          <p class="card-text mt-4">Träningspass</p>
+          <p class="intro-text mt-4">Träningspass</p>
         </div>
       </div>
       <div class="row">
