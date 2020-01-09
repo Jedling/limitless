@@ -1,9 +1,7 @@
 <template>
-  <div class="schedule mt-4">
-    <div class="container">
+  <div class="schedule mt-4 container">
       <h2 class="header text-center mb-4">SCHEMA</h2>
 
-    </div>
     <ScheduleComponent />
   </div>
 </template>

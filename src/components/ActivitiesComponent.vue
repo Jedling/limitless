@@ -14,8 +14,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 event-comp">
- 
+        <div v-for="act in activities" :key="act.id" class="col-12 col-lg-6">
+          <div class="card-block">
+            <h5 class="card-title">
+              {{act.Name}}
+            </h5>
+            <p class="content">
+              {{act.Description}}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +54,9 @@ export default class ActivitiesComponent extends Vue {
   }
   .home-btn:hover {
     color: var(--hover);
+  }
+  .card-block {
+    padding: 0 15px;
   }
 }
 </style>

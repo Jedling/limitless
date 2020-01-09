@@ -5,7 +5,9 @@
     </div>-->
     <Header />
     <!-- <Menu /> -->
+    <!-- <transition name="fade"> -->
     <router-view />
+    <!-- </transition> -->
     <Footer />
   </div>
 </template>
@@ -43,7 +45,12 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   flex-direction: column;
   margin: 0;
 }
-
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .1s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 // #nav {
 //   padding: 30px;
 

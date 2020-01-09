@@ -1,5 +1,8 @@
 <template>
   <section class="about-us-comp">
+  <div class="container">
+
+  
     <div class="row mt-4">
       <div class="col-1">
         <router-link to="/">
@@ -27,6 +30,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 </template>
