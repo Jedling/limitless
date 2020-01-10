@@ -4,10 +4,11 @@
 
     </div>-->
     <Header />
+    <Main>
     <!-- <Menu /> -->
-    <!-- <transition name="fade"> -->
+ 
     <router-view />
-    <!-- </transition> -->
+    </Main>
     <Footer />
   </div>
 </template>
@@ -30,6 +31,10 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/solid"; // fas
 @import "~@fortawesome/fontawesome-free/scss/regular"; // far
 @import "~@fortawesome/fontawesome-free/scss/brands"; // fab
+
+main {
+  flex: 1;
+}
 #app {
   --primary: #55585f;
   --secondary: #ADD8F9;
@@ -45,12 +50,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   flex-direction: column;
   margin: 0;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .1s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
+
 // #nav {
 //   padding: 30px;
 

@@ -1,9 +1,11 @@
 <template>
   <div class="main mb-3">
     <div class="container-fluid">
+               <!-- <transition name="fade"> -->
       <div class="row justify-content-center mx-auto">
         <div class="row mt-3">
           <div class="col-4 col-md-4">
+   
             <router-link class="glyphicon glyphicon-list" to="om-limitless">
               <button type="button" class="btn background btn-circle btn-xl">OM FÖRENINGEN</button>
             </router-link>
@@ -75,6 +77,7 @@
           </div> -->
         </div>
       </div>
+           <!-- </transition> -->
     </div>
   </div>
 </template>
@@ -141,29 +144,12 @@ export default class Menu extends Vue {
     line-height: 1.33;
     border-radius: 100%;
   }
-  //   [type="radio"] {
-  //   position: absolute;
-  //   opacity: 0;
-  //   width: 0;
-  //   height: 0;
-  // }
+//   .fade-enter-active, .fade-leave-active {
+//   transition: opacity .5s;
+// }
+// .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+//   opacity: 0;
+// }
 
-  // /* IMAGE STYLES */
-  // [type="radio"] + .btn-circle {
-  //   cursor: pointer;
-  //   width: 100%;
-  //   &:hover {
-  //     background-color: #cec9c0;
-  //     transition: 0.5s ease;
-  //     color: white;
-  //   }
-  // }
-
-  // /* CHECKED STYLES */
-  // [type="radio"]:checked + .btn-circle {
-  //   background-color: red;
-  //   color: white;
-  //   border-radius: 15px;
-  // }
 }
 </style>

@@ -9,40 +9,113 @@
             </div>
           </router-link>
         </div>
-        <div class="col-md-8 col-12 mb-4 mx-auto">
+        <div class="col-md-10 col-12 mb-4 justify-content-center">
           <p class="intro-text mt-4">Träningspass</p>
         </div>
-      </div>
-      <div class="row">
-        <div v-for="act in activities" :key="act.id" class="col-12 col-lg-6">
-          <div class="card-block">
-            <h5 class="card-title">
-              {{act.Name}}
-            </h5>
-            <p class="content">
-              {{act.Description}}
-            </p>
-          </div>
+        <div v-for="item in activities" :key="item.id">
+          <!-- <a :href="`#${item.Url}`">{{ item.Name }}</a> -->
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a
+                class="nav-item nav-link active"
+                id="nav"
+                data-toggle="tab"
+                :href="`#${item.Url}`"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >{{ item.Name }}</a>
+            </div>
+          </nav>
         </div>
       </div>
+      <button v-show="showScrollButton" @click="scrollToTop" class="scroll-button">Up</button>
+      <!--Cards -->
+      <section class="row">
+        <div
+          v-for="act in activities"
+          :key="act.id"
+          class="col-12 col-lg-6 card-block"
+          :id="act.Url"
+        >
+          <!-- <div class="card-block"> -->
+          <h5 class="card-title">{{ act.Name }}</h5>
+          <hr class="hr-style" />
+          <p class="content">{{ act.Description }}</p>
+          <div class="mt-3 mb-3">
+            <div class="row">
+              <div
+                v-for="trainer of act.Trainers"
+                :key="trainer.id"
+                :class="act.Trainers.length < 2 ? 'col-6 mx-auto' : 'col-6'"
+              >
+                <figure>
+                  <img v-bind:src="trainer.Img" class="card-img" />
+                </figure>
+                <h5 class="name">{{ trainer.Name }}</h5>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
     </div>
   </div>
 </template>
 
 <script lang='ts'>
-import { Component, Vue } from 'vue-property-decorator';
-import activityData from '@/assets/data/ActivitiesEntity';
-import { ActivitiesModel } from '../types/ActivitiesModel';
+import { Component, Vue } from "vue-property-decorator";
+import activityData from "@/assets/data/ActivitiesEntity";
+import { ActivitiesModel } from "../types/ActivitiesModel";
 
 @Component({
-  components: {},
+  components: {}
 })
 export default class ActivitiesComponent extends Vue {
   private activities: ActivitiesModel[] = activityData;
+  private showScrollButton: boolean = false;
+  private scroll: number = 0;
+  private hej: boolean = true;
+
+  private onScroll() {
+    this.scroll = window.scrollY;
+    if (this.scroll > 400) {
+      this.showScrollButton = true;
+    }
+    else if (this.scroll) {
+      this.showScrollButton = false;
+    }
+  }
+  private scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    this.showScrollButton = false;
+  }
+  private beforeMount() {
+    window.addEventListener("scroll", this.onScroll);
+  }
+  private beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+  }
 }
 </script>
 <style scoped lang="scss">
 .activity {
+  .scroll-button {
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--menuText);
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    display: block;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid var(--secondary);
+    outline: none;
+    // opacity: 0;
+    z-index: 2;
+  }
   .mt-5 {
     @media only screen and (max-width: 568px) {
       margin-top: 1rem !important;
@@ -57,6 +130,40 @@ export default class ActivitiesComponent extends Vue {
   }
   .card-block {
     padding: 0 15px;
+    height: 37rem;
+    transition: 0.2s;
+    @media only screen and (max-width: 568px) {
+      height: 30rem;
+    }
+    .hr-style {
+      background-color: var(--secondary);
+    }
+    .card-title {
+      padding: 10px 0;
+    }
+    .name {
+      color: var(--primary);
+    }
+    .content {
+      @media only screen and (max-width: 568px) {
+        font-size: 13px;
+        // margin-bottom: 10px;
+      }
+    }
+    .test {
+      vertical-align: bottom;
+      display: table-cell;
+    }
+  }
+  .card-block:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 1s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
   }
 }
 </style>

@@ -3,7 +3,7 @@ interface IActivitiesModel{
   Description: string;
   Url: string;
   Name: string;
-  Trainer: any[];
+  Trainers: any[];
 }
 
 export class ActivitiesModel implements IActivitiesModel {
@@ -11,7 +11,7 @@ export class ActivitiesModel implements IActivitiesModel {
   public Description: string;
   public Url: string;
   public Name: string;
-  public Trainer: any[];
+  public Trainers: any[];
   /**
    *
    */
@@ -20,12 +20,12 @@ export class ActivitiesModel implements IActivitiesModel {
     description: string = '',
     url: string = '',
     name: string = '',
-    trainer: any = [],
+    Trainers: any = [],
   ) {
     this.Id = id;
     this.Description = description;
     this.Url = url;
     this.Name = name;
-    this.Trainer = trainer;
+    this.Trainers = Trainers;
   }
 }

@@ -1,45 +1,40 @@
 <template>
   <section class="about-us-comp">
-  <div class="container">
-
-  
-    <div class="row mt-4">
-      <div class="col-1">
-        <router-link to="/">
-          <div class="home-btn">
-            <i class="fas fa-arrow-circle-left"></i>
-          </div>
-        </router-link>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <div class="card mb-3">
-            <div class="card-body text-center">
-              <p class="card-text">
-                Stadgar
-                <br>
-                Partners
-                <br>
-                Trivselregler
-                <br>
-                Förhållningssätt
-                <br>
-                Policy
-              </p>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-1">
+          <router-link to="/">
+            <div class="home-btn">
+              <i class="fas fa-arrow-circle-left"></i>
+            </div>
+          </router-link>
+        </div>
+         </div>
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="card mb-3">
+              <div class="card-body text-center">
+                <p class="card-text">
+                  Stadgar
+                  <br />Partners
+                  <br />Trivselregler
+                  <br />Förhållningssätt
+                  <br />Policy
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+     
     </div>
   </section>
 </template>
 
 <script lang='ts'>
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  components: {},
+  components: {}
 })
 export default class AboutUsComponent extends Vue {}
 </script>
