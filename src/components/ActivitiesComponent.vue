@@ -13,7 +13,6 @@
           <p class="intro-text mt-4">Träningspass</p>
         </div>
         <div v-for="item in activities" :key="item.id">
-          <!-- <a :href="`#${item.Url}`">{{ item.Name }}</a> -->
           <nav>
             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
               <a
@@ -29,7 +28,8 @@
           </nav>
         </div>
       </div>
-      <button v-show="showScrollButton" @click="scrollToTop" class="scroll-button">Up</button>
+      <!-- <button v-show="showScrollButton" @click="scrollToTop" class="scroll-button">Up</button> -->
+      <ScrollButton/>
       <!--Cards -->
       <section class="row">
         <div
@@ -67,55 +67,57 @@
 import { Component, Vue } from "vue-property-decorator";
 import activityData from "@/assets/data/ActivitiesEntity";
 import { ActivitiesModel } from "../types/ActivitiesModel";
+import ScrollButton from '../components/ScrollButton.vue';
 
 @Component({
-  components: {}
+  components: {
+    ScrollButton,
+  }
 })
 export default class ActivitiesComponent extends Vue {
   private activities: ActivitiesModel[] = activityData;
-  private showScrollButton: boolean = false;
-  private scroll: number = 0;
-  private hej: boolean = true;
+  // private showScrollButton: boolean = false;
+  // private scroll: number = 0;
 
-  private onScroll() {
-    this.scroll = window.scrollY;
-    if (this.scroll > 400) {
-      this.showScrollButton = true;
-    }
-    else if (this.scroll) {
-      this.showScrollButton = false;
-    }
-  }
-  private scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    this.showScrollButton = false;
-  }
-  private beforeMount() {
-    window.addEventListener("scroll", this.onScroll);
-  }
-  private beforeDestroy() {
-    window.removeEventListener("scroll", this.onScroll);
-  }
+  // private onScroll() {
+  //   this.scroll = window.scrollY;
+  //   if (this.scroll > 400) {
+  //     this.showScrollButton = true;
+  //   }
+  //   else if (this.scroll) {
+  //     this.showScrollButton = false;
+  //   }
+  // }
+  // private scrollToTop() {
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  //   this.showScrollButton = false;
+  // }
+  // private beforeMount() {
+  //   window.addEventListener("scroll", this.onScroll);
+  // }
+  // private beforeDestroy() {
+  //   window.removeEventListener("scroll", this.onScroll);
+  // }
 }
 </script>
 <style scoped lang="scss">
 .activity {
-  .scroll-button {
-    border-radius: 5px;
-    background-color: var(--primary);
-    color: var(--menuText);
-    position: fixed;
-    width: 45px;
-    height: 45px;
-    display: block;
-    right: 15px;
-    bottom: 15px;
-    border: 1px solid var(--secondary);
-    outline: none;
-    // opacity: 0;
-    z-index: 2;
-  }
+  // .scroll-button {
+  //   border-radius: 5px;
+  //   background-color: var(--primary);
+  //   color: var(--menuText);
+  //   position: fixed;
+  //   width: 45px;
+  //   height: 45px;
+  //   display: block;
+  //   right: 15px;
+  //   bottom: 15px;
+  //   border: 1px solid var(--secondary);
+  //   outline: none;
+  //   // opacity: 0;
+  //   z-index: 2;
+  // }
   .mt-5 {
     @media only screen and (max-width: 568px) {
       margin-top: 1rem !important;
