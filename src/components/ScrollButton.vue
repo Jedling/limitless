@@ -1,22 +1,26 @@
 <template>
   <div>
-  <button v-show="showScrollButton" @click="scrollToTop" class="scroll-button">Up</button>
+    <transition name="fade">
+      <button v-show="showScrollButton" @click="scrollToTop" class="scroll-button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </transition>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class ScrollButton extends Vue {
   private showScrollButton: boolean = false;
   private scroll: number = 0;
-   private onScroll() {
+
+  private onScroll() {
     this.scroll = window.scrollY;
     if (this.scroll > 400) {
       this.showScrollButton = true;
-    }
-    else if (this.scroll) {
+    } else if (this.scroll) {
       this.showScrollButton = false;
     }
   }
@@ -36,19 +40,26 @@ export default class ScrollButton extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
- .scroll-button {
-    border-radius: 5px;
-    background-color: var(--primary);
-    color: var(--menuText);
-    position: fixed;
-    width: 45px;
-    height: 45px;
-    display: block;
-    right: 15px;
-    bottom: 15px;
-    border: 1px solid var(--secondary);
-    outline: none;
-    // opacity: 0;
-    z-index: 2;
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.scroll-button {
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--menuText);
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  display: block;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid var(--secondary);
+  outline: none;
+  // opacity: 0;
+  z-index: 2;
+}
 </style>

@@ -16,7 +16,7 @@
           <nav>
             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
               <a
-                class="nav-item nav-link active"
+                class="nav-item nav-link active goto-act"
                 id="nav"
                 data-toggle="tab"
                 :href="`#${item.Url}`"
@@ -28,7 +28,7 @@
           </nav>
         </div>
       </div>
-      <!-- <button v-show="showScrollButton" @click="scrollToTop" class="scroll-button">Up</button> -->
+      
       <ScrollButton/>
       <!--Cards -->
       <section class="row">
@@ -76,48 +76,11 @@ import ScrollButton from '../components/ScrollButton.vue';
 })
 export default class ActivitiesComponent extends Vue {
   private activities: ActivitiesModel[] = activityData;
-  // private showScrollButton: boolean = false;
-  // private scroll: number = 0;
 
-  // private onScroll() {
-  //   this.scroll = window.scrollY;
-  //   if (this.scroll > 400) {
-  //     this.showScrollButton = true;
-  //   }
-  //   else if (this.scroll) {
-  //     this.showScrollButton = false;
-  //   }
-  // }
-  // private scrollToTop() {
-  //   document.body.scrollTop = 0;
-  //   document.documentElement.scrollTop = 0;
-  //   this.showScrollButton = false;
-  // }
-  // private beforeMount() {
-  //   window.addEventListener("scroll", this.onScroll);
-  // }
-  // private beforeDestroy() {
-  //   window.removeEventListener("scroll", this.onScroll);
-  // }
 }
 </script>
 <style scoped lang="scss">
 .activity {
-  // .scroll-button {
-  //   border-radius: 5px;
-  //   background-color: var(--primary);
-  //   color: var(--menuText);
-  //   position: fixed;
-  //   width: 45px;
-  //   height: 45px;
-  //   display: block;
-  //   right: 15px;
-  //   bottom: 15px;
-  //   border: 1px solid var(--secondary);
-  //   outline: none;
-  //   // opacity: 0;
-  //   z-index: 2;
-  // }
   .mt-5 {
     @media only screen and (max-width: 568px) {
       margin-top: 1rem !important;
@@ -132,10 +95,10 @@ export default class ActivitiesComponent extends Vue {
   }
   .card-block {
     padding: 0 15px;
-    height: 37rem;
+    max-height: 37rem;
     transition: 0.2s;
     @media only screen and (max-width: 568px) {
-      height: 30rem;
+      // height: 30rem;
     }
     .hr-style {
       background-color: var(--secondary);
@@ -152,10 +115,11 @@ export default class ActivitiesComponent extends Vue {
         // margin-bottom: 10px;
       }
     }
-    .test {
-      vertical-align: bottom;
-      display: table-cell;
-    }
+  }
+  .goto-act {
+    font-size: 12px;
+    background-color: var(--secondary);
+    width: 50%;
   }
   .card-block:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
