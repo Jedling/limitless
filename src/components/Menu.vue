@@ -126,14 +126,14 @@ export default class Menu extends Vue {
       font-weight: 700;
       width: 80px;
       height: 80px;
-      font-size: 0.6em;
+      font-size: 0.5em;
       padding: 0px;
       margin: 5px;
     }
     @media only screen and (max-width: 320px) {
       // width: 70px;
       // height: 70px;
-      font-size: 0.6em;
+      font-size: 0.5em;
       padding: 10px !important;
       margin: 5px;
       // word-break: break-word;
