@@ -9,27 +9,35 @@
             </div>
           </router-link>
         </div>
-        <div class="col-md-10 col-12 mb-4 justify-content-center">
-          <p class="intro-text mt-4">Träningspass</p>
-        </div>
-        <div v-for="item in activities" :key="item.id">
-          <nav>
-            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-              <a
-                class="nav-item nav-link active goto-act"
-                id="nav"
-                data-toggle="tab"
-                :href="`#${item.Url}`"
-                role="tab"
-                aria-controls="nav-home"
-                aria-selected="true"
-              >{{ item.Name }}</a>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-10 mb-4 justify-content-center">
+          <div class="dropdown">
+            <span>
+              <h4>Snabbvalsmeny</h4>
+              <i class="fas fa-angle-down"></i>
+            </span>
+            <div class="dropdown-content">
+              <div v-for="item in activities" :key="item.id">
+                <ul class="scrollable-menu" role="menu">
+                  <li class="list-object">
+                    <a
+                      class="goto-act"
+                      id="nav"
+                      data-toggle
+                      :href="`#${item.Url}`"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >{{ item.Name }}</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
-      
-      <ScrollButton/>
+
+      <ScrollButton />
       <!--Cards -->
       <section class="row">
         <div
@@ -41,7 +49,7 @@
           <!-- <div class="card-block"> -->
           <h5 class="card-title">{{ act.Name }}</h5>
           <hr class="hr-style" />
-          <p class="content">{{ act.Description }}</p>
+          <p class="content ">{{ act.Description }}</p>
           <div class="mt-3 mb-3">
             <div class="row">
               <div
@@ -67,11 +75,11 @@
 import { Component, Vue } from "vue-property-decorator";
 import activityData from "@/assets/data/ActivitiesEntity";
 import { ActivitiesModel } from "../types/ActivitiesModel";
-import ScrollButton from '../components/ScrollButton.vue';
+import ScrollButton from "../components/ScrollButton.vue";
 
 @Component({
   components: {
-    ScrollButton,
+    ScrollButton
   }
 })
 export default class ActivitiesComponent extends Vue {
@@ -85,6 +93,56 @@ export default class ActivitiesComponent extends Vue {
     @media only screen and (max-width: 568px) {
       margin-top: 1rem !important;
     }
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    height: auto;
+    text-align: left;
+    max-height: 200px;
+    list-style-type: none;
+    overflow-x: hidden;
+    a {
+      display: block;
+      color: var(--primary);
+      list-style-type: none;
+      padding: 12px 16px;
+      width: 100%;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    // .list-object {
+    //   .goto {
+    //     color: var(--primary);
+    //   }
+    // &:hover {
+    //   background-color: green;
+    //   width: 100%;
+    // }
+    // }
+    .scrollable-menu {
+      // display: block;
+      padding: 0;
+      &:hover {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
   .home-btn {
     color: var(--primary);
@@ -116,11 +174,7 @@ export default class ActivitiesComponent extends Vue {
       }
     }
   }
-  .goto-act {
-    font-size: 12px;
-    background-color: var(--secondary);
-    width: 50%;
-  }
+
   .card-block:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
   }

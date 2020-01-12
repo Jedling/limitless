@@ -18,16 +18,15 @@ export default class ScrollButton extends Vue {
 
   private onScroll() {
     this.scroll = window.scrollY;
-    if (this.scroll > 400) {
+    if (this.scroll > 300) {
       this.showScrollButton = true;
-    } else if (this.scroll) {
+    } else {
       this.showScrollButton = false;
     }
   }
   private scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    this.showScrollButton = false;
   }
   private beforeMount() {
     window.addEventListener("scroll", this.onScroll);
@@ -48,18 +47,17 @@ export default class ScrollButton extends Vue {
   opacity: 0;
 }
 .scroll-button {
+  display: block;
   border-radius: 5px;
   background-color: var(--primary);
   color: var(--menuText);
   position: fixed;
   width: 45px;
   height: 45px;
-  display: block;
   right: 15px;
   bottom: 15px;
   border: 1px solid var(--secondary);
   outline: none;
-  // opacity: 0;
   z-index: 2;
 }
 </style>

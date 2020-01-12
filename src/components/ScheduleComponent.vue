@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-12 mb-3">
           <figure>
-            <img class="schedule-img" src alt="Människor sitter i en ring och utövar Mindfulness" />
+            <!-- <img class="schedule-img" src alt="Människor sitter i en ring och utövar Mindfulness" /> -->
           </figure>
         </div>
       </div>
