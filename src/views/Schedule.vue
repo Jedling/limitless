@@ -9,6 +9,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import ScheduleComponent from '@/components/ScheduleComponent.vue';
 
+
 @Component({
   components: {
     ScheduleComponent,

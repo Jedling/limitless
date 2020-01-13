@@ -61,7 +61,7 @@
         </div>
         <div class="row mt-3">
           <div class="col-6 col-md-6">
-            <router-link class="glyphicon glyphicon-list" to="partners">
+            <router-link class="glyphicon glyphicon-list" to="inloggning">
               <button type="button" class="btn background btn-circle btn-xl">LOGGA IN</button>
             </router-link>
           </div>

@@ -26,6 +26,7 @@
         </div>
       </div>
       -->
+      <ScrollButton />
       <div class="row mb-5">
         <div class="col-12">
           <section class="timetable-wrap">
@@ -152,9 +153,12 @@
 
 <script lang='ts'>
 import { Component, Vue } from "vue-property-decorator";
+import ScrollButton from '@/components/ScrollButton.vue';
 
 @Component({
-  components: {}
+  components: {
+    ScrollButton,
+  }
 })
 export default class ScheduleComponent extends Vue {}
 </script>

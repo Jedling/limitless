@@ -5,6 +5,7 @@ import AboutUs from "../views/AboutUs.vue";
 import Schedule from "../views/Schedule.vue";
 import FindUs from "../views/FindUs.vue";
 import Activities from "../views/Activities.vue";
+import Login from "../views/Login.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
     path: "/traningspass",
     name: "traningspass",
     component: Activities,
+  },
+  {
+    path: "/inloggning",
+    name: "inloggning",
+    component: Login,
   }
   
   // {

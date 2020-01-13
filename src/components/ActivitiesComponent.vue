@@ -144,7 +144,7 @@ export default class ActivitiesComponent extends Vue {
   }
   .card-block {
     padding: 0 15px;
-    max-height: 37rem;
+    // height: 37rem;
     transition: 0.2s;
     @media only screen and (max-width: 568px) {
     }
