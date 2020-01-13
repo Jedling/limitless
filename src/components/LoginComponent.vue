@@ -10,6 +10,10 @@
           </router-link>
         </div>
       </div>
+      <div v-if="loggedIn">
+        <MyAccount />
+      </div>
+      <div v-else>
       <div class="row justify-content-center mb-5">
         <div class="col-md-4 col-12">
           <form @submit="submit" class="form-wrapper">
@@ -33,15 +37,19 @@
           </form>
         </div>
       </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from "vue-property-decorator";
+import MyAccount from '@/components/MyAccount.vue';
 
 @Component({
-  components: {}
+  components: {
+    MyAccount,
+  }
 })
 export default class LoginComponent extends Vue {
   private email: string = "";

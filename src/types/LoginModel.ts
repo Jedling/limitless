@@ -12,7 +12,6 @@ export class ScheduleModel implements IScheduleModel {
   public LastName: string;
   public Age: number;
   public Date: string;
-
   /**
    *
    */

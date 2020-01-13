@@ -4,7 +4,7 @@
       <div class="col-md-12 text-center">
         <router-link class="" to="/"
           ><img
-            alt="Projekt liv logo"
+            alt="Limitles Malmö logo"
             src="/img/header/test2.png"
         /></router-link>
       </div>
