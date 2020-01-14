@@ -49,7 +49,7 @@
             </router-link>
           </div>
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to>
+            <router-link class="glyphicon glyphicon-list" to="priser">
               <button type="button" class="btn background btn-circle btn-xl">PRISER</button>
             </router-link>
           </div>

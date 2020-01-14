@@ -6,6 +6,7 @@ import Schedule from "../views/Schedule.vue";
 import FindUs from "../views/FindUs.vue";
 import Activities from "../views/Activities.vue";
 import Login from "../views/Login.vue";
+import Prices from "../views/Prices.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -38,6 +39,11 @@ const routes = [
     path: "/inloggning",
     name: "inloggning",
     component: Login,
+  },
+  {
+    path: "/priser",
+    name: "priser",
+    component: Prices,
   }
   
   // {

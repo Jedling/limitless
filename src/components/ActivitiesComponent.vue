@@ -39,7 +39,7 @@
       <!-- Scroll componenten added -->
       <ScrollButton />
       <!--Iterates through list of activities -->
-      <section class="row">
+      <section class="row justify-content-center">
         <div
           v-for="act in activities"
           :key="act.id"
@@ -51,9 +51,6 @@
           <p class="content ">{{ act.Description }}</p>
           <div class="mt-3 mb-3">
             <div class="row">
-              <!-- Iteration through array of Trainer
-                  and a ternary to set image of trainer 
-                  in center if only one trainer in array -->
               <div
                 v-for="trainer in act.Trainers"
                 :key="trainer.id"
@@ -143,9 +140,12 @@ export default class ActivitiesComponent extends Vue {
     color: var(--hover);
   }
   .card-block {
-    padding: 0 15px;
-    // height: 37rem;
+    padding: 0px 13px;
+    -webkit-transition: 0.2s;
+    margin: 13px;
+    max-width: 520px;
     transition: 0.2s;
+    background-color: #f2f2f2;
     @media only screen and (max-width: 568px) {
     }
     .hr-style {
@@ -165,7 +165,7 @@ export default class ActivitiesComponent extends Vue {
   }
 
   .card-block:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
   }
   .fade-enter-active,
   .fade-leave-active {

@@ -13,6 +13,27 @@
     </div>
     <div class="row justify-content-center mb-4">
       <div class="col-12">
+
+        <!-- <div class="col-12"> -->
+        <div class="row justify-content-center text-center mb-4">
+          <!-- <div class="col-12"> -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/LimitlessMalmo/" target="_blank">
+              <i class="fab icon fa-facebook-square"></i>
+            </a>
+          </div>
+          <div class="social-media">
+            <a href="https://www.instagram.com/limitlessmalmo/?hl=sv" target="_blank">
+              <i class="fab icon fa-instagram"></i>
+            </a>
+          </div>
+          <div class="social-media">
+            <a href="" target="_blank">
+              <i class="fab icon fa-youtube"></i>
+            </a>
+          </div>
+          <!-- </div> -->
+        </div>
         <p class="text-center footer-contact">
           © COPYRIGHT 2019 KFUM LIMITLESS - Hosted by
           <a
@@ -24,26 +45,6 @@
         <p class="text-center footer-gdpr" style="color:#fff;margin-top:.8em;">
           <a onclick="Loadgdpr()">GDPR - Dataskyddsförordningen</a>
         </p>
-        <!-- <div class="col-12"> -->
-        <div class="row justify-content-center text-center mb-4">
-          <!-- <div class="col-12"> -->
-          <div class="col-4 col-sm-3">
-            <a href="https://www.facebook.com/Projekt-LIV-1859178424304560/" target="_blank">
-              <i class="fab icon fa-facebook-square"></i>
-            </a>
-          </div>
-          <div class="col-4 col-sm-3">
-            <a href target="_blank">
-              <i class="fab icon fa-instagram"></i>
-            </a>
-          </div>
-          <div class="col-4 col-sm-3">
-            <a href="https://www.youtube.com/channel/UCZO648Bd6F4_FZt0Jjq9thQ" target="_blank">
-              <i class="fab icon fa-youtube"></i>
-            </a>
-          </div>
-          <!-- </div> -->
-        </div>
         <!-- </div> -->
       </div>
     </div>
@@ -55,7 +56,6 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class Footer extends Vue {
-  // @Prop() private msg!: string;
 }
 </script>
 
@@ -84,10 +84,13 @@ export default class Footer extends Vue {
   .fa-instagram,
   .fa-youtube {
     color: white;
-    font-size: 40px;
-    // padding: 10px;
+    font-size: 20px;
+    padding: 10px;
     @media (max-width: 320px) {
-      font-size: 40px;
+      font-size: 20px;
+    }
+    &:hover {
+      color: var(--secondary);
     }
   }
 }
