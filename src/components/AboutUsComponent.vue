@@ -9,23 +9,22 @@
             </div>
           </router-link>
         </div>
-         </div>
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <div class="card mb-3">
-              <div class="card-body text-center">
-                <p class="card-text">
-                  Stadgar
-                  <br />Partners
-                  <br />Trivselregler
-                  <br />Förhållningssätt
-                  <br />Policy
-                </p>
-              </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="card mb-3">
+            <div class="card-body text-center">
+              <p class="card-text">
+                Stadgar
+                <br />Partners
+                <br />Trivselregler
+                <br />Förhållningssätt
+                <br />Policy
+              </p>
             </div>
           </div>
         </div>
-     
+      </div>
     </div>
   </section>
 </template>

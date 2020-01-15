@@ -1,24 +1,38 @@
-const express = require("express"),
-  path = require("path"),
-  bodyParser = require("body-parser"),
-  cors = require("cors"),
-  mongoose = require("mongoose");
-
-mongoose.connect("mongodb://localhost:27017/vuenodedb").then(
-  () => {
-    console.log("Database connection is successful");
-  },
-  err => {
-    console.log("Error when connecting to the database" + err);
-  }
-);
+const express = require("express");
+const serveStatic = require("serve-static");
+const path = require("path");
+const bodyParser = require("body-parser");
+// DB
+const session = require("express-session");
+const MongoStore = require("connect-mongo")(session);
+const settings = require("./server/config/settings.json");
+const connectToDb = require("./server/config/db");
+// Routes
+const loginRoutes = require("./server/api/loginRoutes");
+const userRoutes = require("./server/api/userRoutes");
+const articleRoutes = require("./server/api/articleRoutes");
+connectToDb();
 const app = express();
-app.use(express.static("public"));
 app.use(bodyParser.json());
-app.use(cors());
-
-var port = process.env.PORT || 4000;
-
-app.listen(() => {
-  console.log("Listening on port " + port);
+global.salt = settings.salt;
+app.use(
+  session({
+    secret: settings.cookieSecret,
+    resave: true,
+    saveUninitialized: true,
+    cookie: { secure: false },
+    store: new MongoStore({
+      mongooseConnection: global.db
+    })
+  })
+);
+app.use(loginRoutes, userRoutes, articleRoutes);
+//here we are configuring dist to serve app files
+app.use("/", serveStatic(path.join(__dirname, "/dist")));
+// this * route is to serve project on different page routes except root `/`
+app.get(/.*/, function(req, res) {
+  res.sendFile(path.join(__dirname, "/dist/index.html"));
 });
+const port = process.env.PORT || 9000;
+app.listen(port);
+console.log(`LIMITLESS is listening on port: ${port}`);
