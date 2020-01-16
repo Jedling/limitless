@@ -10,11 +10,11 @@ router.post("/api/login", async (req, res) => {
   let user = await User.findOne({ username, password })
     .select("username firstName role lastName email phone active")
     .exec();
-  if (user && user.active) {
+  if (user) {
     req.session.user = user;
-    res.json(user);
-  } else if (user && !user.active) {
-    res.json({ error: "not active", email: user.email });
+    res.json({ success: "logged in", user });
+  } else {
+    res.json({ error: "not found" });
   }
 });
 

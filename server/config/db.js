@@ -3,13 +3,8 @@ const { connectionString } = require("./connectionString.js");
 
 const connectToDb = () => {
   // connect to db for testing
-  mongoose.connect(connectionString, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
-  });
   mongoose
-    .connect(connectionString, {
+    .connect(process.env.DB_API || connectionString, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     })

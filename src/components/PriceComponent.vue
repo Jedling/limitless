@@ -11,16 +11,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-10 col-12 mb-4 mx-auto wrapper">
-          <h5 class="title mt-4">TRÄNINGSAVGIFTER OCH MEDLEMSAVGIFT:</h5>
+        <div v-for="item in content" :key="item.id" class="col-md-10 col-12 mb-4 mx-auto wrapper">
+          <h5 class="title mt-4">{{ item.title }}</h5>
           <hr class="hr-style" />
-          <p class="card-text">INBETALNINGSUPPGIFTER</p>
-          <p class="card-text">BANKGIRO:</p>
+          <p class="card-text">{{ item.itenary }}</p>
+          <p class="card-text">{{ item.bankinfo }}</p>
           <div class="dropdown">
-            <i class="fas fa-info-circle info">
-            </i>
-              <span class="swish">SWISH: 123 165 6446</span>
-            
+            <i class="fas fa-info-circle info"></i>
+            <span class="swish">SWISH: 123 165 6446</span>
+
             <div class="dropdown-content">
               <p
                 class="swish-hover"
@@ -46,7 +45,14 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
-export default class PriceComponent extends Vue {}
+export default class PriceComponent extends Vue {
+  private content: any = [{
+    id: 1,
+    title: 'TRÄNINGSAVGIFTER OCH MEDLEMSAVGIFT:',
+    itenary: 'INBETALNINGSUPPGIFTER',
+    bankinfo: 'BANKGIRO:',
+  }];
+}
 </script>
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
@@ -68,9 +74,13 @@ export default class PriceComponent extends Vue {}
     .title {
       // margin-top: 0.5rem;
     }
+    .dropdown {
+      margin-bottom: 1rem;
     .swish {
       cursor: pointer;
       text-decoration: underline;
+    }
+
     }
     .info {
       margin-right: 5px;

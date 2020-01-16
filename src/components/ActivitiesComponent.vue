@@ -48,7 +48,7 @@
         >
           <h5 class="card-title mt-4">{{ act.Name }}</h5>
           <hr class="hr-style" />
-          <p class="content ">{{ act.Description }}</p>
+          <p class="content">{{ act.Description }}</p>
           <div class="mt-3 mb-3">
             <div class="row">
               <div
@@ -82,7 +82,6 @@ import ScrollButton from "../components/ScrollButton.vue";
 })
 export default class ActivitiesComponent extends Vue {
   private activities: ActivitiesModel[] = activityData;
-
 }
 </script>
 <style scoped lang="scss">
@@ -101,7 +100,9 @@ export default class ActivitiesComponent extends Vue {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    left: 50%;
+    margin-left: -140px !important;
+    // min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     height: auto;
@@ -114,7 +115,8 @@ export default class ActivitiesComponent extends Vue {
       color: var(--primary);
       list-style-type: none;
       padding: 12px 16px;
-      width: 100%;
+      // width: 100%;
+      width: 280px;
       &:hover {
         color: white;
         text-decoration: none;
@@ -171,7 +173,8 @@ export default class ActivitiesComponent extends Vue {
   .fade-leave-active {
     transition: opacity 1s;
   }
-  .fade-enter, .fade-leave-to{
+  .fade-enter,
+  .fade-leave-to {
     opacity: 0;
   }
 }
