@@ -31,7 +31,7 @@
        <!-- </div> -->
       <div class="row mb-5 card-frame justify-content-center">
         <div class="col-sm-6">
-          <div class="card mt-2 mb-2">
+          <div class="card mt-4 mb-2">
             <div class="text-center">
               <h5 class="card-title">KFUM LIMITLESS</h5>
               <hr class="hr-style" />
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card mt-2 mb-2">
+          <div class="card mt-4 mb-2">
             <div class="google-maps">
               <iframe
                 width="600"

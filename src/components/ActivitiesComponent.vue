@@ -46,7 +46,7 @@
           class="col-12 col-lg-6 card-block"
           :id="act.Url"
         >
-          <h5 class="card-title">{{ act.Name }}</h5>
+          <h5 class="card-title mt-4">{{ act.Name }}</h5>
           <hr class="hr-style" />
           <p class="content ">{{ act.Description }}</p>
           <div class="mt-3 mb-3">
@@ -152,7 +152,7 @@ export default class ActivitiesComponent extends Vue {
       background-color: var(--secondary);
     }
     .card-title {
-      padding: 10px 0;
+      // padding: 10px 0;
     }
     .name {
       color: var(--primary);
