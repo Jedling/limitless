@@ -1,15 +1,11 @@
 const express = require("express");
 const encryptPassword = require("../config/encryptPassword");
-const User = require("../schemas/User");
-
+const User = require("../schema/User");
 const router = express.Router();
-
 router.post("/api/login", async (req, res) => {
-  let { username, password } = req.body;
+  let { email, password } = req.body;
   password = encryptPassword(password);
-  let user = await User.findOne({ username, password })
-    .select("username firstName role lastName email phone active")
-    .exec();
+  let user = await User.findOne({ email, password });
   if (user) {
     req.session.user = user;
     res.json({ success: "logged in", user });
@@ -17,15 +13,11 @@ router.post("/api/login", async (req, res) => {
     res.json({ error: "not found" });
   }
 });
-
-// check if/which user is logged in
 router.get("/api/login", (req, res) => {
   res.json(req.session.user ? req.session.user : { status: "not logged in" });
 });
-
 router.delete("/api/login", (req, res) => {
   delete req.session.user;
   res.json({ status: "logged out" });
 });
-
 module.exports = router;
