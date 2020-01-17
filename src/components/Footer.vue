@@ -38,9 +38,9 @@
           © COPYRIGHT 2019 KFUM LIMITLESS - Hosted by
           <a
             target="_blank"
-            href="http://benader.com/"
+            href=""
             style="text-decoration:none;color:#fff;"
-          >BeNader.com</a>
+          >NeJo</a>
         </p>
         <p class="text-center footer-gdpr" style="color:#fff;margin-top:.8em;">
           <a onclick="Loadgdpr()">GDPR - Dataskyddsförordningen</a>

@@ -10,12 +10,12 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Bobby Andersson',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 1,
       },
       {
         Name: 'Tomasz Rajca',
-        Img: './img/Trainers/person2.jpg',
+        Img: './img/trainers/person2.jpg',
         Id: 2,
       }
     ],
@@ -28,12 +28,12 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Bobby Andersson',
-        Img: './img/Trainers/person2.jpg',
+        Img: './img/trainers/person2.jpg',
         Id: 1,
       },
       {
         Name: 'Tomasz Rajca',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 2,
       }
     ],
@@ -46,7 +46,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Erik Svensson',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 1,
       },
     ],
@@ -59,12 +59,12 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Eric Svensson',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 1,
       },
       {
         Name: 'Calle Larsson',
-        Img: './img/Trainers/person2.jpg',
+        Img: './img/trainers/person2.jpg',
         Id: 2,
       }
     ],
@@ -77,7 +77,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Ismael Mehdawe',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 1,
       },
     ],
@@ -90,7 +90,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Eric Svensson',
-        Img: './img/Trainers/person2.jpg',
+        Img: './img/trainers/person2.jpg',
         Id: 1,
       },
     ],
@@ -103,7 +103,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Eric Svensson',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 1,
       },
     ],
@@ -116,7 +116,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Ros-Marie Molin',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 1,
       },
     ],
@@ -129,12 +129,12 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Ulf Littorin',
-        Img: './img/Trainers/person2.jpg',
+        Img: './img/trainers/person2.jpg',
         Id: 1,
       },
       {
         Name: 'Nina Tran',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 2,
       }
     ],
@@ -147,12 +147,12 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Ulf Littorin',
-        Img: './img/Trainers/person2.jpg',
+        Img: './img/trainers/person2.jpg',
         Id: 1,
       },
       {
         Name: 'Nina Tran',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 2,
       }
     ],
@@ -165,7 +165,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: 'Eric Svensson',
-        Img: './img/Trainers/person.jpg',
+        Img: './img/trainers/person.jpg',
         Id: 1,
       },
     ],

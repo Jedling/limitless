@@ -58,7 +58,6 @@ export default class LoginComponent extends Vue {
   private loggedIn: boolean = false;
 
   private updated() {
-    console.log(this.email);
   }
   private submit(e: any) {
     e.preventDefault();
