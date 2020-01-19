@@ -40,7 +40,6 @@ main {
   --secondary: #ADD8F9;
   --menuText: #fdfdfd;
   --hover: #7d8080;
-  --menuFont: "Catalysmo";
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

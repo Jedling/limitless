@@ -2,6 +2,7 @@ const express = require("express");
 const User = require("../schema/User");
 const encryptPassword = require("../config/encryptPassword");
 const router = express.Router();
+
 router.get("/api/users", async (req, res) => {
   console.log("running");
   let allUsers = await User.find();
@@ -13,6 +14,8 @@ router.post("/api/users", async (req, res) => {
     ...req.body,
     password: encryptPassword(req.body.password)
   });
+  console.log(user);
+  
   await user.save();
   res.json(user);
 });

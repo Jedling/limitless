@@ -54,12 +54,12 @@ export default class ScrollButton extends Vue {
   border-radius: 5px;
   background-color: var(--primary);
   color: var(--menuText);
+  border: 1px solid var(--secondary);
   position: fixed;
   width: 45px;
   height: 45px;
   right: 15px;
   bottom: 15px;
-  border: 1px solid var(--secondary);
   outline: none;
   z-index: 2;
 }

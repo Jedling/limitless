@@ -2,6 +2,7 @@ const express = require("express");
 const encryptPassword = require("../config/encryptPassword");
 const User = require("../schema/User");
 const router = express.Router();
+
 router.post("/api/login", async (req, res) => {
   let { email, password } = req.body;
   password = encryptPassword(password);
@@ -13,6 +14,7 @@ router.post("/api/login", async (req, res) => {
     res.json({ error: "not found" });
   }
 });
+
 router.get("/api/login", (req, res) => {
   res.json(req.session.user ? req.session.user : { status: "not logged in" });
 });

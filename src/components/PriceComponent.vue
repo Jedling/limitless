@@ -30,10 +30,17 @@
           <p class="card-text">HALVÅRSKORT: 2 800 kr</p>
           <p class="card-text">10-KORT: 900 kr</p>
           <p class="card-text">
-            På samtliga priser ovan tillkommer en obligatorisk medlemsavgift på 100 kr som avser medlemskap i föreningen KFUM Limitless Malmö. Den gäller per kalenderår oavsett datum för inbetalning.
-            Vid inbetalning via bankgiro ange för- och efternamn för den inbetalningen avser samt fullständiga personnr (2000-06-12-XXXX) samt för vad inbetalningen avser t ex Träningsavgift.
+            På samtliga priser ovan tillkommer en <strong>obligatorisk medlemsavgift på 100 kr</strong> 
+            som avser medlemskap i föreningen KFUM Limitless Malmö. Den gäller per kalenderår oavsett datum för inbetalning.
+            Vid inbetalning via bankgiro ange för- och efternamn för den inbetalningen avser samt fullständiga
+             personnr (2000-06-12-XXXX) samt för vad inbetalningen avser t ex Träningsavgift.
+          </p>
+            <hr class="hr-style">
+            <p>
             Vid SWISH-betalning ange fullständiga personnr (2000-06-12-XXXX) samt för vad inbetalningen avser t ex Medlemsavgift.
-            Medlemsavgiften skall betalas in separat vid samtliga inbetalningar med fullständigt personnr (2000-06-12-XXXX) för den medlemsavgiften avser samt ange ”Medlemsavgift 20XX” i meddelande tillsammans med fullständiga personnr.
+            Medlemsavgiften skall betalas in separat vid samtliga inbetalningar med fullständigt 
+            personnr (2000-06-12-XXXX) för den medlemsavgiften avser samt ange ”Medlemsavgift 20XX” 
+            i meddelande tillsammans med fullständiga personnr.
           </p>
         </div>
       </div>
@@ -71,9 +78,9 @@ export default class PriceComponent extends Vue {
     .hr-style {
       background-color: var(--secondary);
     }
-    .title {
-      // margin-top: 0.5rem;
-    }
+    // .title {
+    //   // margin-top: 0.5rem;
+    // }
     .dropdown {
       margin-bottom: 1rem;
     .swish {

@@ -49,7 +49,7 @@
                   </div>
                   <div class="class-container flex">
                     <span class="time">18:45 - 20:00</span>
-                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING(VÅN 2)</span>
+                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING (VÅN 2)</span>
                   </div>
                 </div>
                 <!-- Veckodag -->
@@ -89,7 +89,7 @@
                   </div>
                    <div class="class-container flex">
                     <span class="time">19:15 - 20:30</span>
-                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING(VÅN 2)</span>
+                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING (VÅN 2)</span>
                   </div>
                 </div>
                 <!-- Veckodag -->
@@ -105,7 +105,7 @@
                   </div>
                   <div class="class-container flex">
                     <span class="time">19:30 - 20:45</span>
-                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING(VÅN 2)</span>
+                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING (VÅN 2)</span>
                   </div>
                 </div>
                 <!-- Veckodag -->

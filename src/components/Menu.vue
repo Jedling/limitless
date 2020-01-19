@@ -2,80 +2,17 @@
   <div class="main mb-3">
     <div class="container-fluid">
                <!-- <transition name="fade"> -->
-      <div class="row justify-content-center mx-auto">
-        <div class="row mt-3">
-          <div class="col-4 col-md-4">
-   
-            <router-link class="glyphicon glyphicon-list" to="om-limitless">
-              <button type="button" class="btn background btn-circle btn-xl">OM FÖRENINGEN</button>
+      <div class="row justify-content-center mx-auto" style="max-width: 900px;">
+          <div v-for="menu in MenuContent" :key="menu.Id" class="col-4 p-0 col-md-4 mt-2">
+            <nav>
+                
+            <router-link class="glyphicon glyphicon-list" :to="menu.Path">
+              <!-- <div v-if="loggedIn"> -->
+              <button type="button" class="btn background btn-circle btn-xl">{{ menu.Name }}</button>
+              <!-- </div> -->
             </router-link>
+            </nav>
           </div>
-          <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="schema">
-              <button type="button" class="btn background btn-circle btn-xl">SCHEMA</button>
-            </router-link>
-          </div>
-          <div class="col-4 col-md-4">
-            <!-- <i class="glyphicon glyphicon-ok">Schema</i> -->
-            <router-link class="glyphicon glyphicon-list" to="hitta-oss">
-              <button type="button" class="btn background btn-circle btn-xl">HITTA -OCH KONTAKTA OSS</button>
-            </router-link>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="traningspass">
-              <button type="button" class="btn background btn-circle btn-xl">
-                <!-- <router-link class="glyphicon glyphicon-list" to="Partners" -->
-                TRÄNINGSPASS
-              </button>
-            </router-link>
-          </div>
-          <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="övningar">
-              <button type="button" class="btn background btn-circle btn-xl">HIKARI DO</button>
-            </router-link>
-          </div>
-          <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="appen">
-              <button type="button" class="btn background btn-circle btn-xl">PROJEKT</button>
-            </router-link>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="partners">
-              <button type="button" class="btn background btn-circle btn-xl">IT-POLICY / GDPR</button>
-            </router-link>
-          </div>
-          <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="priser">
-              <button type="button" class="btn background btn-circle btn-xl">PRISER</button>
-            </router-link>
-          </div>
-          <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to>
-              <button type="button" class="btn background btn-circle btn-xl">PARTNERS</button>
-            </router-link>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-6 col-md-6">
-            <router-link class="glyphicon glyphicon-list" to="inloggning">
-              <button type="button" class="btn background btn-circle btn-xl">LOGGA IN</button>
-            </router-link>
-          </div>
-          <div class="col-6 col-md-6">
-            <router-link class="glyphicon glyphicon-list" to="">
-              <button type="button" class="btn background btn-circle btn-xl">NY<br> DELTAGARE <br> PROVA PÅ</button>
-            </router-link>
-          </div>
-            <!-- <div class="col-6 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="">
-              <button type="button" class="btn background btn-circle btn-xl">NY<br> DELTAGARE <br> PROVA PÅ</button>
-            </router-link>
-          </div> -->
-        </div>
       </div>
            <!-- </transition> -->
     </div>
@@ -84,9 +21,28 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { MenuModel } from '../types/MenuModel';
+import menuData from '../assets/data/MenuEntity';
 
 @Component({})
 export default class Menu extends Vue {
+  private MenuContent: MenuModel[] = menuData;
+  private loggOut: string = 'Logga ut';
+  private logged: string = '';
+
+  private changeMenu(id: number) {
+    let temp = this.MenuContent;
+    let change = temp.find(name => {
+      name.Id === id;
+    })!.Name
+    if(this.loggedIn) {
+      return this.loggOut;
+    }
+    
+  }
+   get loggedIn() {
+    return this.$store.state.loggedIn;
+  }
 }
 </script>
 
@@ -94,7 +50,6 @@ export default class Menu extends Vue {
 <style scoped lang="scss">
 .main {
   background-color: white;
-  // max-width: 1200px;
   a {
     color: var(--menuText);
   }
@@ -108,11 +63,11 @@ export default class Menu extends Vue {
     transform: scale(0.9);
   }
   .btn-circle {
-    width: 30px;
-    height: 30px;
+    // width: 30px;
+    // height: 30px;
     text-align: center;
     padding: 6px 0;
-    font-size: 0.8em;
+    // font-size: 0.6em;
     line-height: 1.428571429;
     font-weight: 700;
     border-radius: 15px;
@@ -140,7 +95,7 @@ export default class Menu extends Vue {
     }
     padding: 10px 16px;
     margin: 10px;
-    font-size: 24px;
+    font-size: 1.2rem;
     line-height: 1.33;
     border-radius: 100%;
   }

@@ -13,10 +13,7 @@
     </div>
     <div class="row justify-content-center mb-4">
       <div class="col-12">
-
-        <!-- <div class="col-12"> -->
         <div class="row justify-content-center text-center mb-4">
-          <!-- <div class="col-12"> -->
           <div class="social-media">
             <a href="https://www.facebook.com/LimitlessMalmo/" target="_blank">
               <i class="fab icon fa-facebook-square"></i>
@@ -32,7 +29,6 @@
               <i class="fab icon fa-youtube"></i>
             </a>
           </div>
-          <!-- </div> -->
         </div>
         <p class="text-center footer-contact">
           © COPYRIGHT 2019 KFUM LIMITLESS - Hosted by
@@ -45,7 +41,6 @@
         <p class="text-center footer-gdpr" style="color:#fff;margin-top:.8em;">
           <a onclick="Loadgdpr()">GDPR - Dataskyddsförordningen</a>
         </p>
-        <!-- </div> -->
       </div>
     </div>
   </footer>

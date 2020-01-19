@@ -57,7 +57,7 @@
                 :class="act.Trainers.length < 2 ? 'col-6 mx-auto' : 'col-6'"
               >
                 <figure>
-                  <img v-bind:src="trainer.Img" class="card-img" />
+                  <img v-bind:src="trainer.Img" class="card-img" :alt="trainer.Alt" />
                 </figure>
                 <h5 class="name">{{ trainer.Name }}</h5>
               </div>
@@ -153,9 +153,7 @@ export default class ActivitiesComponent extends Vue {
     .hr-style {
       background-color: var(--secondary);
     }
-    .card-title {
-      // padding: 10px 0;
-    }
+
     .name {
       color: var(--primary);
     }
