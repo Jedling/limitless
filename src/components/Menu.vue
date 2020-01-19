@@ -35,10 +35,8 @@ export default class Menu extends Vue {
     let change = temp.find(name => {
       name.Id === id;
     })!.Name
-    if(this.loggedIn) {
-      return this.loggOut;
-    }
-    
+  console.log(change)
+
   }
    get loggedIn() {
     return this.$store.state.loggedIn;
