@@ -1,55 +1,52 @@
 <template>
   <section class="login">
-    <div class="container">
-      <div class="row mt-4">
-        <div class="col-1">
-          <router-link to="/">
-            <div class="home-btn">
-              <i class="fas fa-arrow-circle-left"></i>
-            </div>
-          </router-link>
+    <!-- <div class="container"> -->
+    <div class="row mt-4">
+      <div class="col-1">
+        <router-link to="/">
+          <div class="home-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+          </div>
+        </router-link>
+      </div>
+    </div>
+
+    <!-- Show when logged in -->
+    <section v-if="loggedIn">
+      <div class="row">
+        <div class="col">
+          <MyAccount />
         </div>
       </div>
+    </section>
 
-      <!-- Show when logged in -->
-      <div v-if="loggedIn">
-        <MyAccount />
-       
-      </div>
+    <!-- Else this -->
+    <div v-else>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-4 col-12">
+          <form @submit="submit" class="form-wrapper">
+            <div class="form-group text-left">
+              <label for="email">E-post</label>
+              <input v-model="email" type="email" class="form-control input" placeholder id="email" />
 
-      <!-- Else this -->
-      <div v-else>
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-4 col-12">
-            <form @submit="submit" class="form-wrapper">
-              <div class="form-group text-left">
-                <label for="email">E-post</label>
-                <input
-                  v-model="email"
-                  type="email"
-                  class="form-control input"
-                  placeholder
-                  id="email"
-                />
-
-                <label for="password">Lösenord</label>
-                <input
-                  v-model="password"
-                  type="password"
-                  class="form-control input"
-                  placeholder
-                  id="pwd"
-                />
-              </div>
-              <button type="submit" class="btn btn-primary login-btn">
-                <div v-if="this.loading" class="spinner-border spinner-border-sm" />
-                <span v-else>Logga in</span>
-              </button>
-            </form>
-          </div>
+              <label for="password">Lösenord</label>
+              <input
+                v-model="password"
+                type="password"
+                class="form-control input"
+                placeholder
+                id="pwd"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary login-btn">
+              <div v-if="this.loading" class="spinner-border spinner-border-sm" />
+              <span v-else>Logga in</span>
+            </button>
+          </form>
         </div>
       </div>
     </div>
+    <!-- </div> -->
   </section>
 </template>
 
@@ -72,6 +69,7 @@ export default class LoginComponent extends Vue {
   private updated() {
     console.log("logged in: ", this.$store.state.loggedIn);
   }
+
   get loggedIn() {
     return this.$store.state.loggedIn;
   }
@@ -92,7 +90,6 @@ export default class LoginComponent extends Vue {
 
     console.log("you just logged in, state says: ", this.$store.state.loggedIn);
   }
-
 }
 </script>
 <style scoped lang="scss">
@@ -101,7 +98,7 @@ export default class LoginComponent extends Vue {
     color: var(--primary);
     font-size: 50px;
   }
- 
+
   .home-btn:hover {
     color: var(--hover);
   }
