@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <div v-for="info in accountData" :key="info.Id">
+
+    
     <div class="card-wrapper">
       <div class="date">
         <span class="day">{{ date }}</span>
@@ -10,44 +13,51 @@
         <img src="/img/trainers/person.jpg" alt style="width: 200px; margin-top: 20px;" />
         </figure>
       </div>
-      <div class="card-info">Info</div>
-      <div class="card-name">Namn</div>
+      <div class="card-info"> {{ welcome }} </div>
+      <div class="card-name">{{ info.Name }} {{ info.LastName }} </div>
       <div
         class="card-description"
-      >Hej "namnet" du har varit och besökt oss "antalet gånger" och ditt favoritpass just nu är "favvopass"</div>
+      >Hej {{ info.Name }} du har varit och besökt oss {{ info.TrainingDays }} och ditt favoritpass just nu är </div>
 
       <div class="card-stats clearfix">
         <div class="one-third">
+          <div class="stat-value">Antal pass i år</div>
           <div class="stat">
-            20
+            {{ info.TrainingDays }}st
             <!-- <sup>S</sup> -->
           </div>
-          <div class="stat-value">Antal pass i år</div>
         </div>
+  <div v-for="favorite in info.Favorites" :key="favorite.Id">
 
         <div class="one-third">
-          <div class="stat">16</div>
           <div class="stat-value">Ditt favoritpass</div>
+          <div class="stat"> {{ favorite.Name }} </div>
         </div>
+  </div>
 
         <div class="one-third no-border">
-          <div class="stat">150</div>
           <div class="stat-value">Dagar kvar på kortet</div>
+          <div class="stat">150</div>
         </div>
       </div>
     </div>
     <button @click="logout" class="btn mt-4 mb-4 logout-btn">Logga ut</button>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { AccountModel } from '@/types/AccountModel';
+import accountTypeData from '../assets/data/AccountEntity';
 import axios from "axios";
 
 @Component({})
 export default class MyAccount extends Vue {
+  private accountData: AccountModel[] = accountTypeData;
   private date: string = '';
   private month: number = 0;
+  private welcome: string = 'Välkommen!'
 
   private getDate() {
     let date = new Date().toLocaleString('sv-SE', { day: "numeric", month: "short" })
