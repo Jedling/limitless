@@ -72,10 +72,10 @@ export default class MyAccount extends Vue {
       url: "/api/login"
     });
     await this.$store.dispatch("checkIfLoggedIn");
-    console.log(
-      "you just logged out, state says: ",
-      this.$store.state.loggedIn
-    );
+    // console.log(
+    //   "you just logged out, state says: ",
+    //   this.$store.state.loggedIn
+    // );
     // Go top of page when logging out
     window.scrollTo(0, 0);
   }
