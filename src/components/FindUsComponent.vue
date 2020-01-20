@@ -36,12 +36,13 @@
               <h5 class="card-title">KFUM LIMITLESS</h5>
               <hr class="hr-style" />
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <span class="fas fa-mobile-alt">+46707 28 56 62</span>
+                <li class="list-group-item ">
+                  <i class="fas fa-phone-square mr-2"></i>
+                  <a href="tel: +46737616916" class="">+46 737 61 69 16</a>
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-envelope"></i>
-                  <a class="mail" href="mailto: info@meraliv.nu">Info@meraliv.nu</a>
+                  <i class="fas fa-envelope mr-2"></i>
+                  <a class="mail" href="mailto: info@meraliv.nu">limitlessmalmo@hotmail.com</a>
                 </li>
               </ul>
             </div>
@@ -76,13 +77,9 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-// import { FindUsTypeModel } from '@/types/FindUsTypeModel';
-// import findUsTypeData from '@/assets/data/FindUsEntity';
 
 @Component({})
 export default class FindUsComponent extends Vue {
-  // @Prop() private msg!: string;
-  // private findUsType: FindUsTypeModel[] = findUsTypeData;
 }
 </script>
 
@@ -109,10 +106,6 @@ export default class FindUsComponent extends Vue {
       border: none;
       .card-title {
         padding: 0 13px;
-        @media only screen and (max-width: 768px) {
-          // font-size: 1.2rem;
-          // font-weight: 700;
-        }
       }
       .hr-style {
         background-color: var(--secondary);
