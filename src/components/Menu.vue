@@ -1,44 +1,38 @@
 <template>
   <div class="main mb-3">
     <div class="container-fluid">
-               <!-- <transition name="fade"> -->
+      <!-- <transition name="fade"> -->
       <div class="row justify-content-center mx-auto" style="max-width: 900px;">
-          <div v-for="menu in MenuContent" :key="menu.Id" class="col-4 p-0 col-md-4 mt-2">
-            <nav>
-                
+        <div v-for="menu in MenuContent" :key="menu.Id" class="col-4 p-0 col-md-4 mt-2">
+          <nav>
             <router-link class="glyphicon glyphicon-list" :to="menu.Path">
               <!-- <div v-if="loggedIn"> -->
-              <button type="button" class="btn background btn-circle btn-xl">{{ menu.Name }}</button>
+              <button type="button" class="btn background btn-circle btn-xl">{{ loggedIn ? menu.LoggedInName : menu.Name }}</button>
               <!-- </div> -->
             </router-link>
-            </nav>
-          </div>
+          </nav>
+        </div>
       </div>
-           <!-- </transition> -->
+      <!-- </transition> -->
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { MenuModel } from '../types/MenuModel';
-import menuData from '../assets/data/MenuEntity';
+import { MenuModel } from "../types/MenuModel";
+import menuData from "../assets/data/MenuEntity";
 
 @Component({})
 export default class Menu extends Vue {
   private MenuContent: MenuModel[] = menuData;
-  private loggOut: string = 'Logga ut';
-  private logged: string = '';
-
-  private changeMenu(id: number) {
-    let temp = this.MenuContent;
-    let change = temp.find(name => {
-      name.Id === id;
-    })!.Name
-  console.log(change)
-
+  private loggOut: string = "Logga ut";
+  private logged: string = "";
+  
+  async beforeMount() {
+    await this.$store.dispatch("checkIfLoggedIn");
   }
-   get loggedIn() {
+  get loggedIn() {
     return this.$store.state.loggedIn;
   }
 }
@@ -97,12 +91,11 @@ export default class Menu extends Vue {
     line-height: 1.33;
     border-radius: 100%;
   }
-//   .fade-enter-active, .fade-leave-active {
-//   transition: opacity .5s;
-// }
-// .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-//   opacity: 0;
-// }
-
+  //   .fade-enter-active, .fade-leave-active {
+  //   transition: opacity .5s;
+  // }
+  // .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  //   opacity: 0;
+  // }
 }
 </style>
