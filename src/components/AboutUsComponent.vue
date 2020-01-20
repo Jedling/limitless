@@ -1,6 +1,6 @@
 <template>
   <section class="about-us-comp">
-    <div class="container">
+    <!-- <div class="container"> -->
       <div class="row mt-4">
         <div class="col-1">
           <router-link to="/">
@@ -10,6 +10,10 @@
           </router-link>
         </div>
       </div>
+      <figure>
+        <img class="img-style" src="/img/aboutUs/regler.jpg" alt="">
+      </figure>
+      <div class="container">
       <section class="row justify-content-center">
         <div class="col-12 col-lg-6 card-block">
           <h5 class="card-title mt-4"></h5>
@@ -36,8 +40,39 @@
         </div>
         <!-- </div> -->
       </section>
-      <iframe src="https://drive.google.com/file/d/1_NlFaHsDYrtJWmL0QyBbezCNbtG7f35w/preview" width="320" height="480"></iframe>
-    </div>
+      </div>
+      <iframe
+        src="https://drive.google.com/file/d/1_NlFaHsDYrtJWmL0QyBbezCNbtG7f35w/preview?usp=sharing"
+        width="310"
+        height="480"
+      ></iframe>
+    <!-- </div> -->
+       <!-- <transition name="fade">
+      <div v-show="modal" class="modal-filter">
+        <div class tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-full" ref="modal" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  @click="closeModal()"
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body mx-auto">
+                <div v-for="(img, index) in this.modalContent" :key="index">
+                  <img class="modal-img" :src="`${ img }`" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition> -->
   </section>
 </template>
 
@@ -47,7 +82,9 @@ import { Component, Vue } from "vue-property-decorator";
 @Component({
   components: {}
 })
-export default class AboutUsComponent extends Vue {}
+export default class AboutUsComponent extends Vue {
+  private img: string = '/img/aboutUs/regler.jpg';
+}
 </script>
 <style scoped lang="scss">
 .about-us-comp {
@@ -57,6 +94,23 @@ export default class AboutUsComponent extends Vue {}
   }
   .home-btn:hover {
     color: var(--hover);
+  }
+  // .fullwidth {
+  //   margin-left: calc(50%-50vw) !important;
+  //   margin-right: calc(50%-50vw) !important;
+  // }
+  .img-style {
+    width: 100%;
+    height: 40vh;
+    opacity: 0.65;
+    -o-object-fit: cover;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(34,25,25,.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34,25,25,.4);
+    @media only screen and (min-width: 1024px) {
+      height: 50vh;
+    }
   }
 
   .card-block {
