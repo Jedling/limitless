@@ -1,6 +1,5 @@
 <template>
   <section class="login">
-    <!-- <div class="container"> -->
     <div class="row mt-4">
       <div class="col-1">
         <router-link to="/">
@@ -46,7 +45,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
   </section>
 </template>
 
@@ -64,7 +62,6 @@ export default class LoginComponent extends Vue {
   private email: string = "";
   private password: string = "";
   private loading: boolean = false;
-  // private loggedIn: boolean = false;
 
   beforeMount() {
     this.$store.dispatch('checkIfLoggedIn');
