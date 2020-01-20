@@ -1,19 +1,15 @@
 <template>
   <div class="main mb-3">
     <div class="container-fluid">
-      <!-- <transition name="fade"> -->
       <div class="row justify-content-center mx-auto" style="max-width: 900px;">
         <div v-for="menu in MenuContent" :key="menu.Id" class="col-4 p-0 col-md-4 mt-2">
           <nav>
             <router-link class="glyphicon glyphicon-list" :to="menu.Path">
-              <!-- <div v-if="loggedIn"> -->
               <button type="button" class="btn background btn-circle btn-xl">{{ loggedIn ? menu.LoggedInName : menu.Name }}</button>
-              <!-- </div> -->
             </router-link>
           </nav>
         </div>
       </div>
-      <!-- </transition> -->
     </div>
   </div>
 </template>
