@@ -66,10 +66,9 @@ export default class LoginComponent extends Vue {
   private loading: boolean = false;
   // private loggedIn: boolean = false;
 
-  private updated() {
-    console.log("logged in: ", this.$store.state.loggedIn);
+  beforeMount() {
+    this.$store.dispatch('checkIfLoggedIn');
   }
-
   get loggedIn() {
     return this.$store.state.loggedIn;
   }
@@ -86,9 +85,7 @@ export default class LoginComponent extends Vue {
     });
     this.loading = false;
 
-    await this.$store.dispatch("checkIfLoggedIn");
-
-    console.log("you just logged in, state says: ", this.$store.state.loggedIn);
+    this.$store.dispatch("checkIfLoggedIn");
   }
 }
 </script>
