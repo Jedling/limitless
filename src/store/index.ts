@@ -15,7 +15,7 @@ export default new Vuex.Store({
   },
   actions: {
     //action kallar mutations genom d
-    async checkIfLoggedIn(context) {
+    async checkIfLoggedIn(context) {      
       let loggedIn = await axios({
         method: 'get',
         url: '/api/login'
@@ -24,7 +24,7 @@ export default new Vuex.Store({
         context.commit('toggleLogin', true)
       } else {
         context.commit('toggleLogin', false)
-      }
+      }      
     }
   },
   modules: {}
