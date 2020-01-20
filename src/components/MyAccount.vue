@@ -1,71 +1,69 @@
 <template>
   <div class="container">
     <div v-for="info in accountData" :key="info.Id">
-
-    
-    <div class="card-wrapper">
-      <div class="date">
-        <span class="day">{{ date }}</span>
-        <!-- <span class="month">{{ month }}</span> -->
-      </div>
-      <div class="card-image">
-        <figure>
-        <img src="/img/trainers/person.jpg" alt style="width: 200px; margin-top: 20px;" />
-        </figure>
-      </div>
-      <div class="card-info"> {{ welcome }} </div>
-      <div class="card-name">{{ info.Name }} {{ info.LastName }} </div>
-      <div
-        class="card-description"
-      >Hej {{ info.Name }} du har varit och besökt oss {{ info.TrainingDays }} och ditt favoritpass just nu är </div>
-
-      <div class="card-stats clearfix">
-        <div class="one-third">
-          <div class="stat-value">Antal pass i år</div>
-          <div class="stat">
-            {{ info.TrainingDays }}st
-            <!-- <sup>S</sup> -->
+      <div class="card-wrapper">
+        <div class="date">
+          <span class="day">{{ date }}</span>
+          <!-- <span class="month">{{ month }}</span> -->
+        </div>
+        <div class="card-image">
+          <figure>
+            <img src="/img/trainers/person.jpg" alt style="width: 200px; margin-top: 40px;" />
+          </figure>
+        </div>
+        <div class="card-info">{{ welcome }}</div>
+        <div class="card-name">{{ info.Name }} {{ info.LastName }}</div>
+        <div
+          class="card-description"
+        >Hej {{ info.Name }} du har varit och besökt oss {{ info.TrainingDays }} gånger och ditt favoritpass just nu är </div>
+        <div class="card-stats clearfix">
+          <div class="one-third">
+            <div class="stat-value">Antal pass i år</div>
+            <div class="stat">
+              {{ info.TrainingDays }}st
+              <!-- <sup>S</sup> -->
+            </div>
+          </div>
+          <div v-for="favorite in info.Favorites" :key="favorite.Id">
+            <div class="one-third">
+              <div class="stat-value">Ditt favoritpass</div>
+              <div class="stat">{{ favorite.Name }}</div>
+            </div>
+          </div>
+          <div class="one-third no-border">
+            <div class="stat-value">Förnya kortet om</div>
+            <div class="stat">150 dagar</div>
           </div>
         </div>
-  <div v-for="favorite in info.Favorites" :key="favorite.Id">
-
-        <div class="one-third">
-          <div class="stat-value">Ditt favoritpass</div>
-          <div class="stat"> {{ favorite.Name }} </div>
-        </div>
-  </div>
-
-        <div class="one-third no-border">
-          <div class="stat-value">Dagar kvar på kortet</div>
-          <div class="stat">150</div>
-        </div>
       </div>
-    </div>
-    <button @click="logout" class="btn mt-4 mb-4 logout-btn">Logga ut</button>
+      <button @click="logout" class="btn mt-4 mb-4 logout-btn">Logga ut</button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { AccountModel } from '@/types/AccountModel';
-import accountTypeData from '../assets/data/AccountEntity';
+import { AccountModel } from "@/types/AccountModel";
+import accountTypeData from "../assets/data/AccountEntity";
 import axios from "axios";
 
 @Component({})
 export default class MyAccount extends Vue {
   private accountData: AccountModel[] = accountTypeData;
-  private date: string = '';
+  private date: string = "";
   private month: number = 0;
-  private welcome: string = 'Välkommen!'
+  private welcome: string = "Välkommen!";
 
   private getDate() {
-    let date = new Date().toLocaleString('sv-SE', { day: "numeric", month: "short" })
+    let date = new Date().toLocaleString("sv-SE", {
+      day: "numeric",
+      month: "short"
+    });
     this.date = date.substring(0, date.length - 1);
   }
-  mounted () {
-      this.getDate();
-    }
+  mounted() {
+    this.getDate();
+  }
 
   private async logout(e: any) {
     e.preventDefault();
@@ -78,6 +76,7 @@ export default class MyAccount extends Vue {
       "you just logged out, state says: ",
       this.$store.state.loggedIn
     );
+    // Go top of page when logging out
     window.scrollTo(0, 0);
   }
 }
@@ -85,14 +84,13 @@ export default class MyAccount extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 .logout-btn {
   width: 100%;
   outline: none;
   border: 1px solid var(--secondary);
   color: var(--menuText);
   background-color: var(--primary);
-  max-width: 600px;
+  max-width: 580px;
 }
 .date {
   border-radius: 5px;
@@ -150,8 +148,6 @@ export default class MyAccount extends Vue {
   color: var(--primary);
 }
 
-
-
 .card-name {
   font-size: 26px;
   color: black;
@@ -164,9 +160,9 @@ export default class MyAccount extends Vue {
   margin-bottom: 10px;
 }
 
-.card-stats{
+.card-stats {
   background: var(--primary);
-    color: white;
+  color: white;
   font-weight: 700;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -174,7 +170,7 @@ export default class MyAccount extends Vue {
   .one-third {
     border-right: 1px solid var(--menuText);
     font-size: 7px;
-     width: 33%;
+    width: 33%;
     float: left;
     padding: 20px 15px;
   }
@@ -188,18 +184,19 @@ export default class MyAccount extends Vue {
 
   .stat {
     position: relative;
-    font-size: 24px;
+    font-size: 11px;
     margin-bottom: 10px;
   }
 
   .stat-value {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 9px;
+    margin-bottom: 10px;
   }
 
   .no-border {
     border-right: none;
   }
-  }
+}
 </style>
