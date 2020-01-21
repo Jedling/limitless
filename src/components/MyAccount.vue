@@ -8,7 +8,7 @@
         </div>
         <div class="card-image">
           <figure>
-            <img src="/img/trainers/person.jpg" alt style="width: 200px; margin-top: 40px;" />
+            <img :src="info.Img" alt style="width: 200px; margin-top: 40px;" />
           </figure>
         </div>
         <div class="card-info">{{ welcome }}</div>

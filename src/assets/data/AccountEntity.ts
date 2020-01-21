@@ -15,7 +15,7 @@ const accountData: AccountModel[] = [
       }
     ],
     TrainingDays: 12,
-    Img: '',
+    Img: './img/trainers/person.jpg',
   },
 ];
 const accountType: AccountModel[] = accountData;
