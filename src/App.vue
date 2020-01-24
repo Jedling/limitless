@@ -21,6 +21,10 @@ import Footer from "@/components/Footer.vue";
 export default class App extends Vue {}
 </script>
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/solid"; // fas

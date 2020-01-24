@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card mt-4 mb-2">
+          <div class="card mt-4 mb-4">
             <div class="google-maps">
               <iframe
                 width="600"
@@ -100,12 +100,14 @@ export default class FindUsComponent extends Vue {
   }
   .card-frame {
     // box-shadow: 1px 1px 10px 1px #888888;
+    // padding: 0px 13px;
     background-color: #f2f2f2;
     .card {
+      // padding: 0px 13px;
       background-color: #f2f2f2;
       border: none;
       .card-title {
-        padding: 0 13px;
+        // padding: 0 13px;
       }
       .hr-style {
         background-color: var(--secondary);
