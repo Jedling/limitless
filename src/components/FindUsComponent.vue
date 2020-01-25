@@ -126,6 +126,9 @@ export default class FindUsComponent extends Vue {
             text-decoration: none;
           }
         }
+        .mail {
+          font-size: 10px;
+        }
       }
       .google-maps {
         position: relative;
