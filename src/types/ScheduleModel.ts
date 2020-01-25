@@ -1,31 +1,23 @@
 interface IScheduleModel {
   Id: number;
   Weekday: string;
-  Time: number;
-  Name: string;
-  Trainer: string;
+  Activities: any[];
 }
 
 export class ScheduleModel implements IScheduleModel {
   public Id: number;
   public Weekday: string;
-  public Time: number;
-  public Name: string;
-  public Trainer: string;
+  public Activities: any[];
   /**
    *
    */
   constructor(
     id: number = 0,
     weekday: string = '',
-    time: number = 0,
-    name: string = '',
-    trainer: string = '',
+    activities: any = [],
   ) {
     this.Id = id;
     this.Weekday = weekday;
-    this.Time = time;
-    this.Name = name;
-    this.Trainer = trainer;
+    this.Activities = activities;
   }
 }
