@@ -10,10 +10,8 @@
           </router-link>
         </div>
         <div class="col-md-8 col-12 mb-4 mx-auto">
-         <p class="intro-text">
-            <strong
-              >Lägg till på startmenyn så har du alltid snabb tillgång till schemat!</strong
-            >
+          <p class="intro-text">
+            <strong>Lägg till på startmenyn så har du alltid snabb tillgång till schemat!</strong>
           </p>
         </div>
       </div>
@@ -32,114 +30,15 @@
           <section class="timetable-wrap">
             <div class="timetable-container flex">
               <div class="days-wrap flex">
-                <div class="day flex">
-                  <!-- Veckodag -->
-                  <h4 class="weekday">MÅNDAG</h4>
-                  <div class="class-container flex">
-                    <span class="time">06:30 - 07:15</span>
-                    <span class="name">WAKE UP LIMITLESS</span>
-                  </div>
-                  <div class="class-container flex">
-                    <span class="time">17:00 - 18:15</span>
-                    <span class="name">KICK/THAIBOXNING</span>
-                  </div>
-                  <div class="class-container flex">
-                    <span class="time">18:15 - 19:30</span>
-                    <span class="name">BOXNING</span>
-                  </div>
-                  <div class="class-container flex">
-                    <span class="time">18:45 - 20:00</span>
-                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING (VÅN 2)</span>
-                  </div>
-                </div>
-                <!-- Veckodag -->
-                <div class="day flex">
-                  <h4 class="weekday">TISDAG</h4>
-                  <div class="class-container flex">
-                    <span class="time">12:00 - 12:45</span>
-                    <span class="name">LIMITLESS HIIT FLOW YOGA</span>
-                  </div>
-                  <div class="class-container flex">
-                    <span class="time">18:00 - 19:15</span>
-                    <span class="name">FITNESS MMA</span>
-                  </div>
-                  <div class="class-container flex">
-                    <span class="time">19:15 - 20:30</span>
-                    <span class="name">BOXNING</span>
-                  </div>
-                </div>
-                <!-- Veckodag -->
-                <div class="day flex">
-                  <h4 class="weekday">ONSDAG</h4>
-                  <div class="class-container flex">
-                    <span class="time">06:30 - 07:15</span>
-                    <span class="name">WAKE UP LIMITLESS</span>
-                  </div>
-                   <div class="class-container flex">
-                    <span class="time">17:00 - 18:00</span>
-                    <span class="name">HIKARI DO</span>
-                  </div>
-                   <div class="class-container flex">
-                    <span class="time">18:00 - 19:15</span>
-                    <span class="name">KICK/THAIBOXNING</span>
-                  </div>
-                   <div class="class-container flex">
-                    <span class="time">19:15 - 20:30</span>
-                    <span class="name">LIMITLESS HIIT</span>
-                  </div>
-                   <div class="class-container flex">
-                    <span class="time">19:15 - 20:30</span>
-                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING (VÅN 2)</span>
-                  </div>
-                </div>
-                <!-- Veckodag -->
-                <div class="day flex">
-                  <h4 class="weekday">TORSDAG</h4>
-                  <div class="class-container flex">
-                    <span class="time">12:00 - 12:45</span>
-                    <span class="name">LIMITLESS ENERGY</span>
-                  </div>
-                  <div class="class-container flex">
-                    <span class="time">19:30 - 20:45</span>
-                    <span class="name">BOXNING</span>
-                  </div>
-                  <div class="class-container flex">
-                    <span class="time">19:30 - 20:45</span>
-                    <span class="name">BRASILIANSK JIU JITSU / SUBMISSION WRESTLING (VÅN 2)</span>
-                  </div>
-                </div>
-                <!-- Veckodag -->
-                <div class="day flex">
-                  <h4 class="weekday">FREDAG</h4>
-                  <div class="class-container flex">
-                    <span class="time">17:00 - 18:15</span>
-                    <span class="name">FITNESS MMA</span>
-                  </div>
-                   <div class="class-container flex">
-                    <span class="time">18:15 - 19:30</span>
-                    <span class="name">BOXNING</span>
-                  </div>
-                </div>
-                <div class="day flex">
-                  <h4 class="weekday">LÖRDAG</h4>
-                  <div class="class-container flex">
-                    <span class="time">10:00 - 11:15</span>
-                    <span class="name">KICK/THAIBOXNING</span>
-                  </div>
-                   <div class="class-container flex">
-                    <span class="time">11:15 - 13:00</span>
-                    <span class="name">OPEN MAT</span>
-                  </div>
-                </div>
-                <div class="day flex">
-                  <h4 class="weekday">SÖNDAG</h4>
-                  <div class="class-container flex">
-                    <span class="time">11:00 - 12:00</span>
-                    <span class="name">HIKARI DO</span>
-                  </div>
-                   <div class="class-container flex">
-                    <span class="time">12:15 - 13:30</span>
-                    <span class="name">FITNESS MMA + FYS</span>
+                <div v-for="day in schedule" :key="day.Id">
+                  <div class="day flex">
+                    <h4 class="weekday">{{ day.Weekday }}</h4>
+                    <div v-for="act in day.Activities" :key="act.Id">
+                      <div class="class-container flex">
+                        <span class="time">{{ act.Time }}</span>
+                        <span class="name">{{ act.Name }}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -153,14 +52,18 @@
 
 <script lang='ts'>
 import { Component, Vue } from "vue-property-decorator";
-import ScrollButton from '@/components/ScrollButton.vue';
+import ScrollButton from "@/components/ScrollButton.vue";
+import { ScheduleModel } from "../types/ScheduleModel";
+import scheduleData from "../assets/data/schedule";
 
 @Component({
   components: {
-    ScrollButton,
+    ScrollButton
   }
 })
-export default class ScheduleComponent extends Vue {}
+export default class ScheduleComponent extends Vue {
+  private schedule: ScheduleModel[] = scheduleData;
+}
 </script>
 <style scoped lang="scss">
 .studiecirkel {
@@ -274,9 +177,7 @@ h4 {
   }
 }
 
-
 @media only screen and (min-width: 768px) {
-
   .timetable-container {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
       0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
