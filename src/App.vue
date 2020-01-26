@@ -39,7 +39,10 @@ main {
   --secondary: #ADD8F9;
   --menuText: #fdfdfd;
   --hover: #7d8080;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+
+  // font-family: "Avenir", Helvetica, Arial, sans-serif;
+  // font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto ,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
