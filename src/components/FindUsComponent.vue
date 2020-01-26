@@ -11,24 +11,24 @@
         </div>
       </div>
       <div class="row">
-
-     
         <div class="col-md-10 col-12 mb-4 mx-auto">
           <p class="card-text">
             Nedan finner du adress och kontaktuppgifter för LIMITLESS Malmö. Du kan även kontakta oss på
             <a
               href="https://www.facebook.com/LimitlessMalmo/"
               target="_blank"
+              class="contact"
             >Facebook</a>
             eller
             <a
               href="https://www.instagram.com/limitlessmalmo/?hl=sv"
               target="_blank"
+              class="contact"
             >Instagram</a>
           </p>
         </div>
       </div>
-       <!-- </div> -->
+      <!-- </div> -->
       <div class="row mb-5 card-frame justify-content-center">
         <div class="col-sm-6">
           <div class="card mt-4 mb-2">
@@ -36,13 +36,16 @@
               <h5 class="card-title">KFUM LIMITLESS</h5>
               <hr class="hr-style" />
               <ul class="list-group list-group-flush">
-                <li class="list-group-item ">
+                <li class="list-group-item">
                   <i class="fas fa-phone-square mr-2"></i>
-                  <a href="tel: +46737616916" class="">+46 737 61 69 16</a>
+                  <a href="tel: +46737616916" class="mail">+46 737 61 69 16</a>
                 </li>
                 <li class="list-group-item">
                   <i class="fas fa-envelope mr-2"></i>
-                  <a class="mail" href="mailto: info@meraliv.nu">limitlessmalmo@hotmail.com</a>
+                  <a
+                    class="mail"
+                    href="mailto: limitlessmalmo@hotmail.com"
+                  >limitlessmalmo@hotmail.com</a>
                 </li>
               </ul>
             </div>
@@ -79,8 +82,7 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
-export default class FindUsComponent extends Vue {
-}
+export default class FindUsComponent extends Vue {}
 </script>
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
@@ -99,16 +101,10 @@ export default class FindUsComponent extends Vue {
     }
   }
   .card-frame {
-    // box-shadow: 1px 1px 10px 1px #888888;
-    // padding: 0px 13px;
     background-color: #f2f2f2;
     .card {
-      // padding: 0px 13px;
       background-color: #f2f2f2;
       border: none;
-      .card-title {
-        // padding: 0 13px;
-      }
       .hr-style {
         background-color: var(--secondary);
         margin-top: 0;
@@ -120,14 +116,9 @@ export default class FindUsComponent extends Vue {
         margin-bottom: -1px;
         background-color: #f2f2f2;
         border: none;
-        a {
-          color: black;
-          &:hover {
-            text-decoration: none;
-          }
-        }
+
         .mail {
-          font-size: 10px;
+          font-size: 14px;
         }
       }
       .google-maps {
@@ -149,6 +140,43 @@ export default class FindUsComponent extends Vue {
         }
       }
     }
+  }
+  .contact {
+    color: cornflowerblue;
+    &:hover {
+      text-decoration: none;
+      color: cornflowerblue;
+    }
+  }
+  a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
 </style>

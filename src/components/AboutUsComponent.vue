@@ -65,36 +65,39 @@ export default class AboutUsComponent extends Vue {
       height: 50vh;
     }
   }
-
-  // .hr-style {
-  //   background-color: var(--secondary);
-  // }
-
-  // .name {
-  //   color: var(--primary);
-  // }
-  // .content {
-  //   @media only screen and (max-width: 568px) {
-  //     font-size: 13px;
-  //   }
-  // }
   .text {
     width: 600px;
   }
-  .stadgar {
-    padding: 0;
-    -webkit-transition: 0.2s;
-    display: block;
-    width: 100%;
-    color: var(--primary);
-    background-color: white;
-    border: none;
+
+  a {
+    position: relative;
+    color: #000;
     text-decoration: none;
-    transition: 0.2s;
-    // background-color: #f2f2f2;
-    &:hover {
-      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-    }
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
 </style>
