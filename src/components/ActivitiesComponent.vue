@@ -22,12 +22,14 @@
                 <ul class="scrollable-menu" role="menu">
                   <li class="list-object">
                     <a
+                      @click="goToDiv(item.Url)"
                       class="goto-act"
                       id="nav"
                       data-toggle
                       :href="`#${item.Url}`"
                       aria-controls="nav-home"
                       aria-selected="true"
+                      :name="item.Url"
                     >{{ item.Name }}</a>
                   </li>
                 </ul>
@@ -82,6 +84,18 @@ import ScrollButton from "../components/ScrollButton.vue";
 })
 export default class ActivitiesComponent extends Vue {
   private activities: ActivitiesModel[] = activityData;
+
+//   private goToDiv(e: any) {
+//    let anchorlinks = this.$route.hash;
+//    if (anchorlinks) {
+//      window.scrollTo({
+//      behavior: 'smooth'
+//    console.log(anchorlinks, 'hej')
+//   })
+// }
+   
+//   }
+
 }
 </script>
 <style scoped lang="scss">
@@ -110,6 +124,7 @@ export default class ActivitiesComponent extends Vue {
     max-height: 200px;
     list-style-type: none;
     overflow-x: hidden;
+
     a {
       display: block;
       color: var(--primary);
@@ -117,9 +132,12 @@ export default class ActivitiesComponent extends Vue {
       padding: 12px 16px;
       // width: 100%;
       width: 280px;
+      transition: all 1s ease;
+
       &:hover {
         color: white;
         text-decoration: none;
+        // transition: all 0.5s ease;
       }
     }
     .scrollable-menu {

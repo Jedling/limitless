@@ -29,50 +29,68 @@
         </div>
       </div>
       <!-- </div> -->
-      <div class="row mb-5 card-frame justify-content-center">
-        <div class="col-sm-6">
-          <div class="card mt-4 mb-2">
-            <div class="text-center">
-              <h5 class="card-title">KFUM LIMITLESS</h5>
-              <hr class="hr-style" />
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <i class="fas fa-phone-square mr-2"></i>
-                  <a href="tel: +46737616916" class="mail">+46 737 61 69 16</a>
-                </li>
-                <li class="list-group-item">
-                  <i class="fas fa-envelope mr-2"></i>
-                  <a
-                    class="mail"
-                    href="mailto: limitlessmalmo@hotmail.com"
-                  >limitlessmalmo@hotmail.com</a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body text-center">
-              <h5>Adress</h5>
-              <ul class="list-group text-center list-group-flush">
-                <li class="list-group-item">
-                  <p>Betaniaplan vån 4</p>
-                  <p>211 55 Malmö</p>
-                </li>
-              </ul>
+      <div itemscope itemtype="http://schema.org/Organization">
+        <section class="row mb-5 card-frame justify-content-center">
+          <div class="col-sm-6">
+            <div class="card mt-4 mb-2">
+              <div class="text-center">
+                <span itemprop="name">
+                  <h5 class="card-title">KFUM LIMITLESS</h5>
+                </span>
+                <!-- <h5 class="card-title">KFUM LIMITLESS</h5> -->
+                <hr class="hr-style" />
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <i class="fas fa-phone-square mr-2"></i>
+                    <span itemprop="telephone">
+                      <a href="tel: +46737616916" class="mail">+46 737 61 69 16</a>
+                    </span>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span itemprop="email">
+                      <a
+                        class="mail"
+                        href="mailto: limitlessmalmo@hotmail.com"
+                      >limitlessmalmo@hotmail.com</a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <div class="card-body text-center">
+                  <h5>Adress</h5>
+                  <ul class="list-group text-center list-group-flush">
+                    <li class="list-group-item">
+                      <span itemprop="streetAddress">
+                        <p>Betaniaplan vån 4</p>
+                      </span>
+                      <span itemprop="postalCode">
+                        <p>211 55</p>
+                        <span itemprop="addressLocality">
+                          <p>Malmö</p>
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card mt-4 mb-4">
-            <div class="google-maps">
-              <iframe
-                width="600"
-                height="450"
-                src="https://maps.google.com/maps?q=BETIANIAPLAN%204&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                id="gmap_canvas"
-                class="google"
-              ></iframe>
+          <div class="col-sm-6">
+            <div class="card mt-4 mb-4">
+              <div class="google-maps">
+                <iframe
+                  width="600"
+                  height="450"
+                  src="https://maps.google.com/maps?q=BETIANIAPLAN%204&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  id="gmap_canvas"
+                  class="google"
+                ></iframe>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   </div>
@@ -171,6 +189,12 @@ export default class FindUsComponent extends Vue {}
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+    @media only screen and (max-width: 1024px) {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.1s ease-in-out 0s;
+      transition: all 0.1s ease-in-out 0s;
+    }
   }
 
   a:hover:before {

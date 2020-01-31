@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <button @click="logout" class="btn mt-4 mb-4 logout-btn">Logga ut</button>
+      <button @click="logout" class="btn mt-4 mb-4 logout-btn">LOGGA UT</button>
     </div>
   </div>
 </template>

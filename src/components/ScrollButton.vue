@@ -26,10 +26,16 @@ export default class ScrollButton extends Vue {
       this.showScrollButton = false;
     }
   }
-  // Reset window to top on click
+  // Reset window to top on click with smooth sensation
   private scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(this.scrollToTop);
+      window.scrollTo(0, c - c / 8);
+    }
+    // No smooth sensation
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
   }
   private beforeMount() {
     window.addEventListener("scroll", this.onScroll);

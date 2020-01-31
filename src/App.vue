@@ -51,5 +51,6 @@ main {
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
+  
 }
 </style>

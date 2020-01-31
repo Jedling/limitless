@@ -7,6 +7,7 @@ import FindUs from "../views/FindUs.vue";
 import Activities from "../views/Activities.vue";
 import Login from "../views/Login.vue";
 import Prices from "../views/Prices.vue";
+import NewMember from '../views/NewMember.vue';
 Vue.use(VueRouter);
 
 const routes = [
@@ -44,6 +45,11 @@ const routes = [
     path: "/priser",
     name: "priser",
     component: Prices,
+  },
+  {
+    path: "/ny-deltagare",
+    name: "ny-deltagare",
+    component: NewMember,
   }
   
   // {

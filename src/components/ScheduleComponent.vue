@@ -9,6 +9,8 @@
             </div>
           </router-link>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-8 col-12 mb-4 mx-auto">
           <p class="intro-text">
             <strong>Lägg till på startmenyn så har du alltid snabb tillgång till schemat!</strong>
@@ -30,17 +32,17 @@
           <section class="timetable-wrap">
             <div class="timetable-container flex">
               <div class="days-wrap flex">
-                <div v-for="day in schedule" :key="day.Id">
-                  <div class="day flex">
-                    <h4 class="weekday">{{ day.Weekday }}</h4>
-                    <div v-for="act in day.Activities" :key="act.Id">
-                      <div class="class-container flex">
-                        <span class="time">{{ act.Time }}</span>
-                        <span class="name">{{ act.Name }}</span>
-                      </div>
+                <!-- <div v-for="day in schedule" :key="day.Id"> -->
+                <div v-for="day in schedule" :key="day.Id" class="day flex">
+                  <h4 class="weekday">{{ day.Weekday }}</h4>
+                  <div v-for="act in day.Activities" :key="act.Id">
+                    <div class="class-container flex">
+                      <span class="time">{{ act.Time }}</span>
+                      <span class="name">{{ act.Name }}</span>
                     </div>
                   </div>
                 </div>
+                <!-- </div> -->
               </div>
             </div>
           </section>
@@ -66,153 +68,146 @@ export default class ScheduleComponent extends Vue {
 }
 </script>
 <style scoped lang="scss">
-.studiecirkel {
-  font-size: 3em;
-  color: white;
-  background-color: rgb(132, 76, 147);
-  line-height: 1.2;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
-  @media only screen and (max-width: 568px) {
-    font-size: 2em;
+.schedule-component {
+  .home-btn {
+    font-size: 50px;
+    color: var(--primary);
+    padding: 0px;
   }
-}
-.home-btn {
-  font-size: 50px;
-  color: var(--primary);
-  padding: 0px;
-}
-.home-btn:hover {
-  color: var(--hover);
-}
-.schedule-img {
-  width: 100%;
-  height: 400px;
-  padding: 15px;
-  object-fit: cover;
-  background-color: white;
-  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-  -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-  @media only screen and (max-width: 568px) {
-    height: auto;
-    padding: 5px;
+  .home-btn:hover {
+    color: var(--hover);
   }
-}
-
-h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: inherit;
-  line-height: 1.2;
-  font-size: 1.414em;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex--space-between {
-  justify-content: space-between;
-}
-
-.timetable-container {
-  margin-top: 1em;
-  flex-grow: 1;
-  flex-direction: column;
-  background-color: var(--menuText);
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
-.day {
-  flex-direction: column;
-  h4 {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    background-color: var(--primary);
-    color: var(--menuText);
-  }
-}
-
-.class-container {
-  background-color: #f2f2f2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  .time {
-    font-weight: bold;
-  }
-  .name {
-    font-weight: bold;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .days-wrap {
-    flex-direction: column;
-  }
-  .day {
-    margin-top: 0.5em;
-    h4 {
-      padding-left: 10px;
+  .schedule-img {
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    object-fit: cover;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    @media only screen and (max-width: 568px) {
+      height: auto;
+      padding: 5px;
     }
+  }
+
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: inherit;
+    line-height: 1.2;
+    font-size: 1.414em;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex--space-between {
+    justify-content: space-between;
+  }
+
+  .timetable-container {
+    margin-top: 1em;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: var(--menuText);
     &:first-child {
       margin-top: 0;
     }
   }
+
+  .day {
+    flex-direction: column;
+    h4 {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      background-color: var(--primary);
+      color: var(--menuText);
+    }
+  }
+
   .class-container {
-    flex-direction: row;
-    padding: 1em 2px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     .time {
-      padding-left: 5px;
-      font-size: 13px;
-      flex: 1 0 0;
+      font-weight: bold;
     }
     .name {
-      flex: 2 0 0;
-      font-size: 13px;
-      padding-left: 12px;
-      text-align: left;
-      @media only screen and (min-width: 768px) {
-        text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .days-wrap {
+      flex-direction: column;
+    }
+    .day {
+      margin-top: 0.5em;
+      h4 {
+        padding-left: 10px;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .class-container {
+      flex-direction: row;
+      padding: 1em 2px;
+      .time {
+        padding-left: 5px;
+        font-size: 13px;
+        flex: 1 0 0;
+      }
+      .name {
+        flex: 2 0 0;
+        font-size: 13px;
+        padding-left: 12px;
+        text-align: left;
+        @media only screen and (min-width: 768px) {
+          text-align: center;
+        }
       }
     }
   }
-}
 
-@media only screen and (min-width: 768px) {
-  .timetable-container {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-      0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
-  .days-wrap {
-    border-top: 1px solid rgba(243, 27, 27, 0.12);
-    flex-grow: 1;
-    justify-content: space-between;
-  }
-  .day {
-    width: 100%;
-    border-right: 1px solid rgba(0, 0, 0, 0.12);
-    &:last-child {
-      border-right: none;
+  @media only screen and (min-width: 768px) {
+    .timetable-container {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     }
-    h4 {
-      text-align: center;
+    .days-wrap {
+      border-top: 1px solid rgba(243, 27, 27, 0.12);
+      flex-grow: 1;
+      justify-content: space-between;
     }
-  }
-  .class-container {
-    flex-direction: column;
-    padding-bottom: 1em;
-    .time {
-      text-align: center;
-      padding: 5px 0;
+    .day {
+      width: 100%;
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+      &:last-child {
+        border-right: none;
+      }
+      h4 {
+        text-align: center;
+      }
     }
-    .name {
-      padding: 0 10px;
-      font-weight: 300;
-    }
-    .level {
-      padding: 0 10px;
-    }
-    &:last-child {
-      border-bottom: none;
+    .class-container {
+      flex-direction: column;
+      padding-bottom: 1em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+      .time {
+        text-align: center;
+        padding: 5px 0;
+      }
+      .name {
+        padding: 0 10px;
+        font-weight: 300;
+      }
+      .level {
+        padding: 0 10px;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 }
