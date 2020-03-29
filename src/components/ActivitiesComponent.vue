@@ -29,7 +29,8 @@
                       aria-controls="nav-home"
                       aria-selected="true"
                       :name="item.Url"
-                    >{{ item.Name }}</a>
+                      >{{ item.Name }}</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -49,7 +50,10 @@
         >
           <h5 class="card-title mt-4">{{ act.Name }}</h5>
           <hr class="hr-style" />
-          <p class="content">{{ act.Description }}</p>
+          <p class="content">
+            {{ act.Description }}
+            <a :href="act.Link" target="_blank"> {{ act.Link }}</a>
+          </p>
           <div class="mt-3 mb-3">
             <div class="row">
               <div
@@ -70,7 +74,7 @@
   </div>
 </template>
 
-<script lang='ts'>
+<script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import activityData from "@/assets/data/ActivitiesEntity";
 import { ActivitiesModel } from "../types/ActivitiesModel";
@@ -84,17 +88,16 @@ import ScrollButton from "../components/ScrollButton.vue";
 export default class ActivitiesComponent extends Vue {
   private activities: ActivitiesModel[] = activityData;
 
-//   private goToDiv(e: any) {
-//    let anchorlinks = this.$route.hash;
-//    if (anchorlinks) {
-//      window.scrollTo({
-//      behavior: 'smooth'
-//    console.log(anchorlinks, 'hej')
-//   })
-// }
-   
-//   }
+  //   private goToDiv(e: any) {
+  //    let anchorlinks = this.$route.hash;
+  //    if (anchorlinks) {
+  //      window.scrollTo({
+  //      behavior: 'smooth'
+  //    console.log(anchorlinks, 'hej')
+  //   })
+  // }
 
+  //   }
 }
 </script>
 <style scoped lang="scss">
