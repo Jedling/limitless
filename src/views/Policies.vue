@@ -1,6 +1,6 @@
 <template>
   <div class="about-us mt-4 container mb-4">
-    <h2 class="header text-center">HIKARIDO</h2>
+    <h2 class="header text-center">IT-POLICY / GDPR</h2>
     <ComingSoonComponent />
   </div>
 </template>

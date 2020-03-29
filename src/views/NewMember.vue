@@ -1,6 +1,6 @@
 <template>
   <div class="new-member mt-4 container">
-    <h2 class="header text-center mb-4">NY DELTAGARE / PROVA PÅ </h2>
+    <h2 class="header text-center mb-4">NY DELTAGARE / PROVA PÅ</h2>
     <NewMemberComponent />
   </div>
 </template>
@@ -11,7 +11,7 @@ import NewMemberComponent from '../components/NewMemberComponent.vue';
 
 @Component({
   components: {
-    NewMemberComponent,
+    NewMemberComponent
   },
 })
 export default class NewMember extends Vue {}

@@ -55,7 +55,7 @@
                                 som behövs för att säkerställa det för samtliga
                                 deltagare och instruktörer under träningen. Du
                                 är välkommen att kontakta ansvariga för mer
-                                information om så önskas. BE YOU, BE LIMITLESS!
+                                information om så önskas.
                               </p>
                             </li>
                           </ul>

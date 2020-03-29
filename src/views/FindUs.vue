@@ -1,6 +1,6 @@
 <template>
   <div class="findus mt-4 container">
-    <h2 class="header text-center mb-4">HITTA / KONTAKTA OSS</h2>
+    <h2 class="header text-center mb-4">KONTAKTA OSS</h2>
     <FindUsComponent />
   </div>
 </template>
