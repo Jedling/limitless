@@ -1,63 +1,61 @@
 <template>
-  <transition name="fade">
-    <section class="login">
-      <div class="row mt-4">
-        <div class="col-1">
-          <router-link to="/">
-            <div class="home-btn">
-              <i class="fas fa-arrow-circle-left"></i>
-            </div>
-          </router-link>
-        </div>
+  <section class="login">
+    <div class="row mt-4">
+      <div class="col-1">
+        <router-link to="/">
+          <div class="home-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+          </div>
+        </router-link>
       </div>
+    </div>
 
-      <!-- Show when logged in -->
-      <!-- add <section v-if="loggedIn"> when db is done -->
-      <section v-if="loggedIn">
-        <div class="row">
-          <div class="col">
-            <MyAccount />
-          </div>
-        </div>
-      </section>
-
-      <!-- Else this  <div v-else>-->
-      <div v-else>
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-4 col-12">
-            <form @submit="submit" class="form-wrapper">
-              <div class="form-group text-left">
-                <label for="email">E-post</label>
-                <input
-                  v-model="email"
-                  type="email"
-                  class="form-control input"
-                  placeholder
-                  id="email"
-                />
-
-                <label for="password">Lösenord</label>
-                <input
-                  v-model="password"
-                  type="password"
-                  class="form-control input"
-                  placeholder
-                  id="pwd"
-                />
-              </div>
-              <button disabled type="submit" class="btn btn-primary login-btn">
-                <div
-                  v-if="this.loading"
-                  class="spinner-border spinner-border-sm"
-                />
-                <span v-else>Logga in</span>
-              </button>
-            </form>
-          </div>
+    <!-- Show when logged in -->
+    <!-- add <section v-if="loggedIn"> when db is done -->
+    <section v-if="loggedIn">
+      <div class="row">
+        <div class="col">
+          <MyAccount />
         </div>
       </div>
     </section>
-  </transition>
+
+    <!-- Else this  <div v-else>-->
+    <div v-else>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-4 col-12">
+          <form @submit="submit" class="form-wrapper">
+            <div class="form-group text-left">
+              <label for="email">E-post</label>
+              <input
+                v-model="email"
+                type="email"
+                class="form-control input"
+                placeholder
+                id="email"
+              />
+
+              <label for="password">Lösenord</label>
+              <input
+                v-model="password"
+                type="password"
+                class="form-control input"
+                placeholder
+                id="pwd"
+              />
+            </div>
+            <button disabled type="submit" class="btn btn-primary login-btn">
+              <div
+                v-if="this.loading"
+                class="spinner-border spinner-border-sm"
+              />
+              <span v-else>Logga in</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
