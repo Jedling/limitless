@@ -1,23 +1,27 @@
 <template>
   <div class="schedule-component">
-    <div class="container">
-      <div class="row">
-        <div class="col-1">
-          <router-link to="/">
-            <div class="home-btn">
-              <i class="fas fa-arrow-circle-left"></i>
-            </div>
-          </router-link>
-        </div>
+    <!-- <div class="container"> -->
+    <div class="row">
+      <div class="col-1">
+        <router-link to="/">
+          <div class="home-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+          </div>
+        </router-link>
       </div>
-      <div class="row">
-        <div class="col-md-8 col-12 mb-4 mx-auto">
-          <p class="intro-text">
-            <strong>Lägg till på startmenyn så har du alltid snabb tillgång till schemat!</strong>
-          </p>
-        </div>
+    </div>
+    <div class="row justify-content-center">
+      <OutdoorGuidelines />
+      <div class="col-md-8 col-12 mb-4 mx-auto">
+        <p class="intro-text">
+          <strong
+            >Prova gärna att lägga till sidan på din hemskärm så har du alltid
+            snabb tillgång till schemat!</strong
+          >
+        </p>
       </div>
-      <!-- Probably add picture here
+    </div>
+    <!-- Probably add picture here
       <div class="row">
         <div class="col-12 mb-3">
           <figure>
@@ -26,41 +30,43 @@
         </div>
       </div>
       -->
-      <ScrollButton />
-      <div class="row mb-5">
-        <div class="col-12">
-          <section class="timetable-wrap">
-            <div class="timetable-container flex">
-              <div class="days-wrap flex">
-                <!-- <div v-for="day in schedule" :key="day.Id"> -->
-                <div v-for="day in schedule" :key="day.Id" class="day flex">
-                  <h4 class="weekday">{{ day.Weekday }}</h4>
-                  <div v-for="act in day.Activities" :key="act.Id">
-                    <div class="class-container flex">
-                      <span class="time">{{ act.Time }}</span>
-                      <span class="name">{{ act.Name }}</span>
-                    </div>
+    <ScrollButton />
+    <div class="row mb-5">
+      <div class="col-12">
+        <section class="timetable-wrap">
+          <div class="timetable-container flex">
+            <div class="days-wrap flex">
+              <!-- <div v-for="day in schedule" :key="day.Id"> -->
+              <div v-for="day in schedule" :key="day.Id" class="day flex">
+                <h4 class="weekday">{{ day.Weekday }}</h4>
+                <div v-for="act in day.Activities" :key="act.Id">
+                  <div class="class-container flex">
+                    <span class="time">{{ act.Time }}</span>
+                    <span class="name">{{ act.Name }}</span>
                   </div>
                 </div>
-                <!-- </div> -->
               </div>
+              <!-- </div> -->
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
+  <!-- </div> -->
 </template>
 
-<script lang='ts'>
+<script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import ScrollButton from "@/components/ScrollButton.vue";
 import { ScheduleModel } from "../types/ScheduleModel";
 import scheduleData from "../assets/data/schedule";
+import OutdoorGuidelines from "@/components/OutdoorGuidelines.vue";
 
 @Component({
   components: {
-    ScrollButton
+    ScrollButton,
+    OutdoorGuidelines
   }
 })
 export default class ScheduleComponent extends Vue {

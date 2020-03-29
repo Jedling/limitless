@@ -4,6 +4,7 @@
     <Main>
     <router-view />
     </Main>
+    <TempPopUpModal />
     <Footer />
   </div>
 </template>
@@ -11,11 +12,13 @@
 import { Vue, Component } from "vue-property-decorator";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import TempPopUpModal from '@/components/TempPopUpModal.vue'
 
 @Component({
   components: {
     Header,
-    Footer
+    Footer,
+        TempPopUpModal
   }
 })
 export default class App extends Vue {}

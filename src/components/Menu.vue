@@ -5,10 +5,15 @@
         <div v-for="menu in MenuContent" :key="menu.Id" class="col-4 p-0 col-md-4 mt-2">
           <nav class="navigation">
             <router-link class="glyphicon glyphicon-list" :to="menu.Path">
-              <button
+              <!-- <button
                 type="button"
                 class="btn background btn-circle btn-xl"
               >{{ loggedIn ? menu.LoggedInName : menu.Name }}</button>
+            </router-link> -->
+                          <button
+                type="button"
+                class="btn background btn-circle btn-xl"
+              >{{menu.Name}}</button>
             </router-link>
           </nav>
         </div>
@@ -28,12 +33,12 @@ export default class Menu extends Vue {
   private loggOut: string = "Logga ut";
   private logged: string = "";
 
-  async beforeMount() {
-    await this.$store.dispatch("checkIfLoggedIn");
-  }
-  get loggedIn() {
-    return this.$store.state.loggedIn;
-  }
+  // async beforeMount() {
+  //   await this.$store.dispatch("checkIfLoggedIn");
+  // }
+  // get loggedIn() {
+  //   return this.$store.state.loggedIn;
+  // }
 }
 </script>
 

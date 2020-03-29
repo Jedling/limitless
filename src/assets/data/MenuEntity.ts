@@ -16,7 +16,7 @@ const menuData: MenuModel[] = [
   },
   {
     Id: 3,
-    Name: 'HITTA -OCH KONTAKTA OSS',
+    Name: 'KONTAKTA OSS',
     LoggedInName: 'HITTA -OCH KONTAKTA OSS',
     Path: 'hitta-oss',
   },

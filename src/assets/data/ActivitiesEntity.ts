@@ -9,14 +9,14 @@ const activityData: ActivitiesModel[] = [
     Url: 'brasiliansk-jiu-jitsu',
     Trainers: [
       {
-        Name: 'Bobby Andersson',
-        Img: './img/trainers/person.jpg',
+        Name: 'Bobby',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
       {
-        Name: 'Tomasz Rajca',
-        Img: './img/trainers/person2.jpg',
+        Name: 'Tomasz',
+        Img: './img/trainers/male.png',
         Id: 2,
         Alt:'',
       }
@@ -25,18 +25,18 @@ const activityData: ActivitiesModel[] = [
   {
     Id: 2,
     Description: "En träningsform som är lik Brasiliansk Jiu-Jitsu men utan den traditionella dräkten eller Kimonon på japanska. En högaktiv träningsform där man konstant befinner sig i rörelse både mjukt och utmanande. Man använder sig mycket av balans och koordination för att kunna använda kroppen som redskap i utförandet av de olika rörelserna och greppen. En träningsform som utmanar dig mentalt och ökar din kroppskännedom. Passar alla kön och åldrar.",
-    Name: 'Submission Wrestling',
+    Name: 'Submission Wrestling/No-Gi',
     Url: 'submission-wrestling',
     Trainers: [
       {
-        Name: 'Bobby Andersson',
-        Img: './img/trainers/person2.jpg',
+        Name: 'Bobby',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
       {
-        Name: 'Tomasz Rajca',
-        Img: './img/trainers/person.jpg',
+        Name: 'Tomasz',
+        Img: './img/trainers/male.png',
         Id: 2,
         Alt: '',
       }
@@ -49,8 +49,8 @@ const activityData: ActivitiesModel[] = [
     Url: 'fitness-mma',
     Trainers: [
       {
-        Name: 'Erik Svensson',
-        Img: './img/trainers/person.jpg',
+        Name: 'Erik',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
@@ -63,14 +63,14 @@ const activityData: ActivitiesModel[] = [
     Url: 'kick-thaiboxning',
     Trainers: [
       {
-        Name: 'Eric Svensson',
-        Img: './img/trainers/person.jpg',
+        Name: 'Eric',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
       {
-        Name: 'Calle Larsson',
-        Img: './img/trainers/person2.jpg',
+        Name: 'Calle',
+        Img: './img/trainers/male.png',
         Id: 2,
         Alt: '',
       }
@@ -83,8 +83,8 @@ const activityData: ActivitiesModel[] = [
     Url: 'boxning',
     Trainers: [
       {
-        Name: 'Ismael Mehdawe',
-        Img: './img/trainers/person.jpg',
+        Name: 'Ismael',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
@@ -97,8 +97,8 @@ const activityData: ActivitiesModel[] = [
     Url: 'limitless-hiit',
     Trainers: [
       {
-        Name: 'Eric Svensson',
-        Img: './img/trainers/person2.jpg',
+        Name: 'Eric',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
@@ -111,8 +111,8 @@ const activityData: ActivitiesModel[] = [
     Url: 'hikari-do',
     Trainers: [
       {
-        Name: 'Eric Svensson',
-        Img: './img/trainers/person.jpg',
+        Name: 'Eric',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
@@ -121,12 +121,12 @@ const activityData: ActivitiesModel[] = [
   {
     Id: 8,
     Description: "En utmanande helkroppsklass för alla nivåer, nybörjare som elit. Fokus på uthållighet, styrka och rörlighet. HIIT Yoga-sekvenser med hög intensitet varvas med mjuk dynamisk Vinyasa yoga som genomförs i ett jämt flöde för att mjuka upp och stärka kroppen. Perfekt för cirkulationen där du även finner ett fokus och lugn samtidigt som du utmanas både mentalt och fysiskt. Med en fantastisk instruktör som guidar dig genom varje övning från början till slut för att du ska få ut så mycket som möjligt av varje rörelse.",
-    Name: 'Limitless HIIT Yoga Flow',
+    Name: 'Limitless HIIT flow yoga',
     Url: 'limitless-hiit-yoga-flow',
     Trainers: [
       {
-        Name: 'Ros-Marie Molin',
-        Img: './img/trainers/person.jpg',
+        Name: 'Rosmarie',
+        Img: './img/trainers/female.png',
         Id: 1,
         Alt: '',
       },
@@ -139,14 +139,14 @@ const activityData: ActivitiesModel[] = [
     Url: 'wake-up-limitless',
     Trainers: [
       {
-        Name: 'Ulf Littorin',
-        Img: './img/trainers/person2.jpg',
+        Name: 'Ulf',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
       {
-        Name: 'Nina Tran',
-        Img: './img/trainers/person.jpg',
+        Name: 'Eric',
+        Img: './img/trainers/male.png',
         Id: 2,
         Alt: '',
       }
@@ -159,14 +159,14 @@ const activityData: ActivitiesModel[] = [
     Url: 'limitless-energy',
     Trainers: [
       {
-        Name: 'Ulf Littorin',
-        Img: './img/trainers/person2.jpg',
+        Name: 'Ulf',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },
       {
-        Name: 'Nina Tran',
-        Img: './img/trainers/person.jpg',
+        Name: 'Eric',
+        Img: './img/trainers/male.png',
         Id: 2,
         Alt: '',
       }
@@ -175,12 +175,12 @@ const activityData: ActivitiesModel[] = [
   {
     Id: 11,
     Description: "Våra populära utomhuspass pågår under sommarperioden juni-augusti. De tar plats runtomkring i Malmös fantastiska naturområden såsom Pildammsparken och Kungsparken för att nämna några. Vi varvar kondition med styrka under intensiva övningar som genomförs både individuellt och i par. Tillsammans peppar ni varandra genom roliga utmaningar som är bra för både kropp och själ samtidigt som vi njuter av utomhusmiljön och frisk luft. Kamratskap och glädje genomsyrar passen. Med en motiverande instruktör som pushar dig för att nå dina mål.",
-    Name: 'Limitless Outdoors/In the Park',
+    Name: 'Limitless HIIT IN THE PARK',
     Url: 'limitless-outdoors',
     Trainers: [
       {
-        Name: 'Eric Svensson',
-        Img: './img/trainers/person.jpg',
+        Name: 'Eric',
+        Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',
       },

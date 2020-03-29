@@ -8,6 +8,11 @@ import Activities from "../views/Activities.vue";
 import Login from "../views/Login.vue";
 import Prices from "../views/Prices.vue";
 import NewMember from '../views/NewMember.vue';
+import HikariDo from '../views/HikariDo.vue';
+import Projects from '../views/Projects.vue';
+import Partners from '../views/Partners.vue';
+import Policies from '../views/Policies.vue'
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -50,8 +55,27 @@ const routes = [
     path: "/ny-deltagare",
     name: "ny-deltagare",
     component: NewMember,
+  },
+  {
+    path: "/hikari-do",
+    name: "hikarido",
+    component: HikariDo
+  },
+  {
+    path: "/projekt",
+    name: "projekt",
+    component: Projects
+  },
+  {
+    path: "/partners",
+    name: "partners",
+    component: Partners
+  },
+  {
+    path: "/it-policies",
+    name: "policy",
+    component: Policies
   }
-  
   // {
   //   path: "/about",
   //   name: "about",

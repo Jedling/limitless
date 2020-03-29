@@ -11,11 +11,7 @@ export class ScheduleModel implements IScheduleModel {
   /**
    *
    */
-  constructor(
-    id: number = 0,
-    weekday: string = '',
-    activities: any = [],
-  ) {
+  constructor(id: number = 0, weekday: string = "", activities: any = []) {
     this.Id = id;
     this.Weekday = weekday;
     this.Activities = activities;

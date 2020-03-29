@@ -13,18 +13,21 @@
       <div class="row">
         <div class="col-md-10 col-12 mb-4 mx-auto">
           <p class="card-text">
-            Nedan finner du adress och kontaktuppgifter för LIMITLESS Malmö. Du kan även kontakta oss på
+            Nedan finner du adress och kontaktuppgifter för LIMITLESS Malmö. Du
+            kan även kontakta oss på
             <a
               href="https://www.facebook.com/LimitlessMalmo/"
               target="_blank"
               class="contact"
-            >Facebook</a>
+              >Facebook</a
+            >
             eller
             <a
               href="https://www.instagram.com/limitlessmalmo/?hl=sv"
               target="_blank"
               class="contact"
-            >Instagram</a>
+              >Instagram</a
+            >
           </p>
         </div>
       </div>
@@ -43,21 +46,26 @@
                   <li class="list-group-item">
                     <i class="fas fa-phone-square mr-2"></i>
                     <span itemprop="telephone">
-                      <a href="tel: +46737616916" class="mail">+46 737 61 69 16</a>
+                      <a href="tel: +46737616916" class="mail"
+                        >+46 737 61 69 16</a
+                      >
                     </span>
                   </li>
                   <li class="list-group-item">
                     <i class="fas fa-envelope mr-2"></i>
                     <span itemprop="email">
-                      <a
-                        class="mail"
-                        href="mailto: limitlessmalmo@hotmail.com"
-                      >limitlessmalmo@hotmail.com</a>
+                      <a class="mail" href="mailto: limitlessmalmo@hotmail.com"
+                        >limitlessmalmo@hotmail.com</a
+                      >
                     </span>
                   </li>
                 </ul>
               </div>
-              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <div
+                itemprop="address"
+                itemscope
+                itemtype="http://schema.org/PostalAddress"
+              >
                 <div class="card-body text-center">
                   <h5>Adress</h5>
                   <ul class="list-group text-center list-group-flush">
@@ -83,7 +91,7 @@
                 <iframe
                   width="600"
                   height="450"
-                  src="https://maps.google.com/maps?q=BETIANIAPLAN%204&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.1599206032897!2d13.00884861610492!3d55.599230380512616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a158dbb7fdcd%3A0xf27365eaffdc2802!2sBetaniaplan%204%2C%20211%2055%20Malm%C3%B6!5e0!3m2!1ssv!2sse!4v1585486833722!5m2!1ssv!2sse"
                   id="gmap_canvas"
                   class="google"
                 ></iframe>
@@ -104,7 +112,7 @@ export default class FindUsComponent extends Vue {}
 </script>
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
-<style scoped lang='scss'>
+<style scoped lang="scss">
 .hitta-oss {
   .home-btn {
     color: var(--primary);
@@ -118,6 +126,12 @@ export default class FindUsComponent extends Vue {}
       margin-top: 1rem !important;
     }
   }
+  .card-text {
+    font-size: 20px;
+    @media only screen and (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
   .card-frame {
     background-color: #f2f2f2;
     .card {
@@ -127,6 +141,7 @@ export default class FindUsComponent extends Vue {}
         background-color: var(--secondary);
         margin-top: 0;
       }
+
       .list-group-item {
         position: relative;
         display: block;

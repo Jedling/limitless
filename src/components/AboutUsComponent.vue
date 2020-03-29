@@ -28,7 +28,7 @@
   </section>
 </template>
 
-<script lang='ts'>
+<script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { AboutUsModel } from "../types/AboutUsModel";
 import aboutUsData from "../assets/data/AboutUsEntity";
@@ -64,9 +64,23 @@ export default class AboutUsComponent extends Vue {
     @media only screen and (min-width: 1024px) {
       height: 50vh;
     }
+    @media only screen and (min-width: 1440px) {
+      height: 35vh;
+    }
   }
   .text {
     width: 600px;
+    font-size: 20px;
+    @media only screen and (min-width: 768px) {
+      font-size: 15px;
+    }
+        @media only screen and (min-width: 1440px) {
+      font-size: 20px;
+      width: 800px;
+    }
+  }
+  .stadgar {
+    font-size: 20px;
   }
 
   a {

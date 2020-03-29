@@ -22,7 +22,6 @@
                 <ul class="scrollable-menu" role="menu">
                   <li class="list-object">
                     <a
-                      @click="goToDiv(item.Url)"
                       class="goto-act"
                       id="nav"
                       data-toggle
@@ -59,7 +58,7 @@
                 :class="act.Trainers.length < 2 ? 'col-6 mx-auto' : 'col-6'"
               >
                 <figure>
-                  <img v-bind:src="trainer.Img" class="card-img" :alt="trainer.Alt" />
+                  <img :src="trainer.Img" class="card-img" :alt="trainer.Alt" />
                 </figure>
                 <h5 class="name">{{ trainer.Name }}</h5>
               </div>
@@ -171,9 +170,13 @@ export default class ActivitiesComponent extends Vue {
     .hr-style {
       background-color: var(--secondary);
     }
+    .card-title {
+      text-transform: uppercase;
+    }
 
     .name {
       color: var(--primary);
+      font-weight: 700;
     }
     .content {
       @media only screen and (max-width: 568px) {
