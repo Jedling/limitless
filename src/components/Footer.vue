@@ -32,12 +32,9 @@
         </div>
         <p class="text-center footer-contact">
           © COPYRIGHT 2019 KFUM LIMITLESS - Hosted by
-          <a
-            target="_blank"
-            href=""
-            style="text-decoration:none;color:#fff;"
-          >NeJo</a>
-        </p>
+          <span style="text-decoration:none;color:#fff;"
+          >NeJo
+        </span>
         <p class="text-center footer-gdpr" style="color:#fff;margin-top:.8em;">
           Betaniaplan 4, 211 55 Malmö
         </p>
