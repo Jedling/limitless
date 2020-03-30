@@ -32,7 +32,7 @@
               <hr class="hr-style" />
               <li
                 class="li-item"
-              >Våra instruktörer kommer ta hand om dig och har du frågor så ställ gärna dom, man kan aldrig fråga för lite! Du är välkommen att prova på vilka schemalagda träningspass du vill, avgiften är 150kr som omvandlas till den obligatoriska medlemsavgiften om du väljer att fortsätta hos oss. Medlemsavgiften öppnar ditt medlemskap i föreningen samt gäller för din försäkring när du deltar under passen. Du erhåller 3 st prova på-tillfällen av valfria pass på schemat.</li>
+              >Våra instruktörer kommer ta hand om dig och har du frågor så ställ gärna dom, man kan aldrig fråga för lite! Du är välkommen att prova på vilka schemalagda träningspass du vill, avgiften är 100kr som omvandlas till den obligatoriska medlemsavgiften om du väljer att fortsätta hos oss. Medlemsavgiften öppnar ditt medlemskap i föreningen samt gäller för din försäkring när du deltar under passen. Du erhåller 3 st prova på-tillfällen av valfria pass på schemat.</li>
               <hr class="hr-style" />
               <li class="li-item">
                 Nedan hittar du information samt en bilaga för GDPR-samtycke som behöver vara ifylld (våran policy hittar du under knappen
