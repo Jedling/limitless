@@ -39,7 +39,8 @@
               </table>
             </div>
           </div>
-          <h5 class="card-title">Varmt välkomna! BE YOU, BE LIMITLESS</h5>
+          <h5 class="card-title">Varmt välkomna!</h5>
+          <h5 class="card-title">BE YOU, BE LIMITLESS</h5>
         </div>
       </section>
     </div>

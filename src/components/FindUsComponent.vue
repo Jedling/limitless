@@ -13,8 +13,8 @@
       <div class="row">
         <div class="col-md-10 col-12 mb-4 mx-auto">
           <p class="card-text">
-            Nedan finner du adress och kontaktuppgifter för LIMITLESS Malmö. Du
-            kan även kontakta oss på
+            Texten nedan finner du adress och kontaktuppgifter TILL LIMITLESS
+            MALMÖ. Du kan även kontakta oss på
             <a
               href="https://www.facebook.com/LimitlessMalmo/"
               target="_blank"

@@ -53,7 +53,7 @@
         </section>
       </div>
     </div>
-    <h4 class="mt-3 mb-4 sthlm-header">ORDNIARIE SCHEMA</h4>
+    <h4 class="mt-3 mb-4 sthlm-header">ORDINARIE SCHEMA</h4>
     <div class="row mb-5">
       <div class="col-12">
         <section class="timetable-wrap">

@@ -61,7 +61,8 @@
                           </ul>
                         </div>
                       </div>
-                      <h5>Varmt välkomna! BE YOU, BE LIMITLESS</h5>
+                      <h5>Varmt välkomna!</h5>
+                      <h5 style="font-weight: bolder;">BE YOU, BE LIMITLESS</h5>
                     </div>
                   </section>
                 </div>
