@@ -71,7 +71,7 @@
                   class="close-button"
                   data-dismiss="modal"
                 >
-                  Close
+                  STÄNG
                 </button>
               </div>
               <!-- </div> -->

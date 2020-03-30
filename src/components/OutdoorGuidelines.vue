@@ -9,16 +9,37 @@
           </h5>
           <hr class="hr-style" />
           <!-- <p class="content"></p> -->
-          <div class="row">
+          <div class="row mb-4">
             <div class="col-12">
-              <ul class="unordered">
+              <!-- <ul class="unordered">
                 <li v-for="item in array" :key="item.id" class="li-item mb-2">
-                  <strong> {{ item.number }} .</strong>
+                  <strong>{{ item.number }} .</strong>
                   {{ item.rule }}
+                  <a
+                    v-if="item.url"
+                    :href="item.url"
+                    class="contact"
+                    target="_blank"
+                  >Läs mer här!</a>
                 </li>
-              </ul>
+              </ul>-->
+              <table>
+                <tr v-for="item in array" :key="item.id" class="unordered">
+                  <td class="li-num">{{item.number}}</td>
+                  <td class="li-item">
+                    {{item.rule}}
+                    <a
+                      v-if="item.url"
+                      :href="item.url"
+                      class="contact"
+                      target="_blank"
+                    >Läs mer här!</a>
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
+
           <h5>Varmt välkomna! BE YOU, BE LIMITLESS</h5>
         </div>
       </section>
@@ -58,7 +79,9 @@ export default class OutdoorGuidelines extends Vue {
       id: 5,
       number: "5",
       rule:
-        "Har du någon i din omgivning eller själv varit sjuk, vänligen stanna hemma enligt Folkhälsomyndighetens rekommendationer."
+        "Har du någon i din omgivning eller själv varit sjuk, vänligen stanna hemma enligt Folkhälsomyndighetens rekommendationer.",
+      url:
+        "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/information-till-idrotts--och-traningsanlaggningar/"
     },
     {
       id: 6,
@@ -75,65 +98,6 @@ export default class OutdoorGuidelines extends Vue {
 </script>
 <style scoped lang="scss">
 .outdoor-guidelines {
-  .mt-5 {
-    @media only screen and (max-width: 568px) {
-      margin-top: 1rem !important;
-    }
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    left: 50%;
-    margin-left: -140px !important;
-    // min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    height: auto;
-    text-align: left;
-    max-height: 200px;
-    list-style-type: none;
-    overflow-x: hidden;
-
-    a {
-      display: block;
-      color: var(--primary);
-      list-style-type: none;
-      padding: 12px 16px;
-      // width: 100%;
-      width: 280px;
-      transition: all 1s ease;
-
-      &:hover {
-        color: white;
-        text-decoration: none;
-        // transition: all 0.5s ease;
-      }
-    }
-    .scrollable-menu {
-      padding: 0;
-      &:hover {
-        background-color: var(--primary);
-        color: white;
-      }
-    }
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .home-btn {
-    color: var(--primary);
-    font-size: 50px;
-  }
-  .home-btn:hover {
-    color: var(--hover);
-  }
   .card-block {
     padding: 0px 13px;
     -webkit-transition: 0.2s;
@@ -147,13 +111,63 @@ export default class OutdoorGuidelines extends Vue {
     .hr-style {
       background-color: var(--secondary);
     }
+    .contact {
+      color: cornflowerblue;
+      &:hover {
+        text-decoration: none;
+        color: cornflowerblue;
+      }
+    }
+    a {
+      position: relative;
+      color: #000;
+      text-decoration: none;
+    }
 
+    a:hover {
+      color: #000;
+    }
+
+    a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--secondary);
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+      @media only screen and (max-width: 1024px) {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.1s ease-in-out 0s;
+        transition: all 0.1s ease-in-out 0s;
+      }
+    }
+
+    a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
     .name {
       color: var(--primary);
     }
     .unordered {
       text-align: left;
-
+      .li-num {
+        padding: 0 15px 0 5px;
+        vertical-align: initial;
+        font-weight: bolder;
+        font-size: 20px;
+        @media only screen and (max-width: 768px) {
+          font-size: 15px;
+        }
+      }
       .li-item {
         text-decoration: none;
         list-style: none;
@@ -169,9 +183,5 @@ export default class OutdoorGuidelines extends Vue {
       }
     }
   }
-
-  // .card-block:hover {
-  //   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-  // }
 }
 </style>

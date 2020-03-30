@@ -18,7 +18,7 @@
             >Prova gärna att lägga till sidan på din hemskärm så har du alltid
             snabb tillgång till schemat!</strong
           >
-        </p> -->
+        </p>-->
       </div>
     </div>
     <!-- Probably add picture here
@@ -29,8 +29,31 @@
           </figure>
         </div>
       </div>
-      -->
+    -->
     <ScrollButton />
+    <h4 class="mt-3 mb-4 sthlm-header">TILLFÄLLIGT SCHEMA</h4>
+    <div class="row mb-5">
+      <div class="col-12">
+        <section class="timetable-wrap">
+          <div class="timetable-container flex">
+            <div class="days-wrap flex">
+              <!-- <div v-for="day in schedule" :key="day.Id"> -->
+              <div v-for="day in tempSchedule" :key="day.Id" class="day flex">
+                <h4 class="weekday">{{ day.Weekday }}</h4>
+                <div v-for="act in day.Activities" :key="act.Id">
+                  <div class="class-container flex">
+                    <span class="time">{{ act.Time }}</span>
+                    <span class="name">{{ act.Name }}</span>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <h4 class="mt-3 mb-4 sthlm-header">ORDNIARIE SCHEMA</h4>
     <div class="row mb-5">
       <div class="col-12">
         <section class="timetable-wrap">
@@ -61,6 +84,7 @@ import { Component, Vue } from "vue-property-decorator";
 import ScrollButton from "@/components/ScrollButton.vue";
 import { ScheduleModel } from "../types/ScheduleModel";
 import scheduleData from "../assets/data/schedule";
+import tempScheduleData from "../assets/data/TempSchedule";
 import OutdoorGuidelines from "@/components/OutdoorGuidelines.vue";
 
 @Component({
@@ -71,6 +95,7 @@ import OutdoorGuidelines from "@/components/OutdoorGuidelines.vue";
 })
 export default class ScheduleComponent extends Vue {
   private schedule: ScheduleModel[] = scheduleData;
+  private tempSchedule: ScheduleModel[] = tempScheduleData;
 }
 </script>
 <style scoped lang="scss">
@@ -82,6 +107,23 @@ export default class ScheduleComponent extends Vue {
   }
   .home-btn:hover {
     color: var(--hover);
+  }
+  .sthlm-header {
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+    padding: 30px;
+    line-height: 1.2;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 320px) {
+      width: 100%;
+      font-size: 20px;
+    }
   }
   .schedule-img {
     width: 100%;

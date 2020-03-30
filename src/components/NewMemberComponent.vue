@@ -43,16 +43,11 @@
         </div>
       </div>
     </section>
-    <section class="row">
-      <div class="col-6 mt-2 mb-5">
-        <a href class="stadgar" target="_blank">
-          Över 18
-          <i class="fas fa-external-link-alt ml-2"></i>
-        </a>
-      </div>
-      <div class="col-6 mt-2 mb-5">
-        <a href class="stadgar" target="_blank">
-          Under 18
+    <h4 class="mt-3 mb-4 sthlm-header">SAMTYCKESBLANKETTER</h4>
+    <section class="row justify-content-center">
+      <div v-for="item in newMemberType" :key="item.Id" class="col-6 col-sm-4 mt-2 mb-5">
+        <a :href="item.Pdf" class="stadgar" target="_blank">
+          {{ item.Name }}
           <i class="fas fa-external-link-alt ml-2"></i>
         </a>
       </div>
@@ -61,11 +56,15 @@
 </template>
 
 <script lang="ts">
+import { AboutUsModel } from "../types/AboutUsModel";
+import newMemberData from "../assets/data/NewMember";
 import { Component, Vue } from "vue-property-decorator";
 @Component({
   components: {}
 })
-export default class NewMemberComponent extends Vue {}
+export default class NewMemberComponent extends Vue {
+  private newMemberType: AboutUsModel[] = newMemberData;
+}
 </script>
 <style scoped lang="scss">
 .new-member {
@@ -116,6 +115,20 @@ export default class NewMemberComponent extends Vue {}
       @media only screen and (max-width: 568px) {
         font-size: 13px;
       }
+    }
+  }
+  .sthlm-header {
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1.2;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    @media only screen and (max-width: 768px) {
+      width: 100%;
     }
   }
   .stadgar {
