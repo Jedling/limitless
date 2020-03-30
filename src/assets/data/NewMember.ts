@@ -8,7 +8,7 @@ const newMemberData: AboutUsModel[] = [
   },
   {
     Id: 2,
-    Pdf: 'https://drive.google.com/file/d/1gEYgaLa1o7ghAfOtlHlw6nL5L2jClzXw/preview?usp=sharing',
+    Pdf: 'https://drive.google.com/file/d/1nwD8PUZODTlLNx9qNb2289qMPhF7elEN/view?usp=sharing',
     Name: 'VUXEN'
   },
 ];
