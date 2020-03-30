@@ -13,12 +13,12 @@
     <div class="row justify-content-center">
       <OutdoorGuidelines />
       <div class="col-md-8 col-12 mb-4 mx-auto">
-        <!-- <p class="intro-text">
+        <p class="intro-text">
           <strong
             >Prova gärna att lägga till sidan på din hemskärm så har du alltid
             snabb tillgång till schemat!</strong
           >
-        </p>-->
+        </p>
       </div>
     </div>
     <!-- Probably add picture here

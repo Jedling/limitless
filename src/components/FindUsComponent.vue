@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-md-10 col-12 mb-4 mx-auto">
           <p class="card-text">
-            Texten nedan finner du adress och kontaktuppgifter TILL LIMITLESS
+            Texten nedan finner du adress och kontaktuppgifter till LIMITLESS
             MALMÖ. Du kan även kontakta oss på
             <a
               href="https://www.facebook.com/LimitlessMalmo/"

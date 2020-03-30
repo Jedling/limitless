@@ -25,7 +25,7 @@ const activityData: ActivitiesModel[] = [
   },
   {
     Id: 2,
-    Description: "En träningsform som är lik Brasiliansk Jiu-Jitsu men utan den traditionella dräkten eller Kimonon på japanska. En högaktiv träningsform där man är i ständig rörelse. Här utmanar du din balans och koordination för att kunna använda kroppen som redskap i utförandet av de olika rörelserna och greppen. En träningsform som utvecklar dig mentalt och ökar din kroppskännedom. Passar alla i alla åldrar.",
+    Description: "En träningsform som är lik Brasiliansk Jiu-Jitsu men utan den traditionella dräkten eller Kimonon på japanska. En högaktiv träningsform där man är i ständig rörelse. Här utmanar du din balans och koordination för att kunna använda kroppen som redskap i utförandet av de olika rörelserna och greppen. En träningsform som utvecklar dig mentalt och ökar din kroppskännedom. Bra träning för alla.",
     Name: 'Submission Wrestling/No-Gi',
     Link: '',
     Url: 'submission-wrestling',
@@ -52,7 +52,7 @@ const activityData: ActivitiesModel[] = [
     Url: 'fitness-mma',
     Trainers: [
       {
-        Name: 'Erik',
+        Name: 'Eric',
         Img: './img/trainers/male.png',
         Id: 1,
         Alt: '',

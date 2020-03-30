@@ -39,7 +39,7 @@
           >NeJo</a>
         </p>
         <p class="text-center footer-gdpr" style="color:#fff;margin-top:.8em;">
-          <a onclick="Loadgdpr()">GDPR - Dataskyddsförordningen</a>
+          Betaniaplan 4, 211 55 Malmö
         </p>
       </div>
     </div>
