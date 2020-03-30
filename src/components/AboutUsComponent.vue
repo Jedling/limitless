@@ -40,7 +40,7 @@ export default class AboutUsComponent extends Vue {
   private aboutUs: AboutUsModel[] = aboutUsData;
   private img: string = "/img/aboutUs/regler.jpg";
   private intro: string =
-    "KFUM Limitless Malmö är en förening för alla där vi erbjuder allt ifrån funktionell träning till kampsportsträning. I nedanstående länkar kan ni läsa om vad vi står för och hur vi arbetar.";
+    "KFUM Limitless Malmö är en förening för alla där vi erbjuder allt från funktionell träning till kampsportsträning. I nedanstående länkar kan ni läsa om vad vi står för och hur vi arbetar.";
 }
 </script>
 <style scoped lang="scss">
