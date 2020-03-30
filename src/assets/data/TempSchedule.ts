@@ -29,7 +29,7 @@ const tempScheduleData: ScheduleModel[] = [
     Activities: [
       {
         Id: 1,
-        Name: "AMFITEATERN, PILDAMMSPARKEN",
+        Name: "PILDAMMSTEATERN",
         Time: "10:30 - 11:30"
       }
     ]
@@ -40,7 +40,7 @@ const tempScheduleData: ScheduleModel[] = [
     Activities: [
       {
         Id: 1,
-        Name: "AMFITEATERN, PILDAMMSPARKEN",
+        Name: "PILDAMMSTEATERN",
         Time: "12:00 - 13:00"
       }
     ]

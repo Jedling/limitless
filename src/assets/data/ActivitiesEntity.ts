@@ -199,7 +199,7 @@ const activityData: ActivitiesModel[] = [
   },
   {
     Id: 12,
-    Description: "Ta med en träningskamrat eller bjud in dina nära och kära till ett skönt träningspass där ni själva bestämmer övningar. Kanske vill ni slipa på era tekniker, köra ett intensivt konditionspass tillsammans eller bara komma och slå av er lite på säckarna. Ett perfekt tillfälle att introducera den svårflörtade på. Fri träning under uppsyn av instruktör vid frågor eller annat. Varmt välkomna.",
+    Description: "Ta med en träningskamrat eller bjud in dina nära och kära till ett skönt träningspass där ni själva bestämmer övningar. Kanske vill ni slipa på era tekniker, köra ett intensivt konditionspass tillsammans eller bara komma och slå av er lite på säckarna. Ett perfekt tillfälle att introducera den svårflörtade på. Fri träning under uppsyn av instruktör vid frågor eller annat.",
     Name: 'Open Mat',
     Link: '',
     Url: 'open-mat',

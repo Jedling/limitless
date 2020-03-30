@@ -21,7 +21,7 @@
               class="contact"
               >Facebook</a
             >
-            eller
+            och
             <a
               href="https://www.instagram.com/limitlessmalmo/?hl=sv"
               target="_blank"
