@@ -3,10 +3,10 @@
     <div class="outdoor-guidelines">
       <section class="row justify-content-center">
         <div class="col-10 col-lg-10 card-block">
-          <h5 class="card-title mt-4">
+          <h4 class="card-title mt-4">
             Vänligen följ anvisningarna nedan för din och andras trivsel och
             hälsa!
-          </h5>
+          </h4>
           <hr class="hr-style" />
           <!-- <p class="content"></p> -->
           <div class="row mb-4">
@@ -39,8 +39,7 @@
               </table>
             </div>
           </div>
-
-          <h5>Varmt välkomna! BE YOU, BE LIMITLESS</h5>
+          <h5 class="card-title">Varmt välkomna! BE YOU, BE LIMITLESS</h5>
         </div>
       </section>
     </div>
@@ -98,6 +97,9 @@ export default class OutdoorGuidelines extends Vue {
 </script>
 <style scoped lang="scss">
 .outdoor-guidelines {
+  .card-title {
+    font-weight: bolder;
+  }
   .card-block {
     padding: 0px 13px;
     -webkit-transition: 0.2s;
