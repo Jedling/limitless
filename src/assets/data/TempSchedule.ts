@@ -7,7 +7,8 @@ const tempScheduleData: ScheduleModel[] = [
     Activities: [
       {
         Id: 1,
-        Name: "TALLRIKEN, PILDAMMSPARKEN",
+        Name: "LIMITLESS HIIT IN THE PARK",
+        Location: "TALLRIKEN, PILDAMMSPARKEN",
         Time: "17:30 - 18:30"
       }
     ]
@@ -18,7 +19,8 @@ const tempScheduleData: ScheduleModel[] = [
     Activities: [
       {
         Id: 1,
-        Name: "TALLRIKEN, PILDAMMSPARKEN",
+        Name: "LIMITLESS HIIT IN THE PARK",
+        Location: "TALLRIKEN, PILDAMMSPARKEN",
         Time: "17:30 - 18:30"
       }
     ]
@@ -29,7 +31,8 @@ const tempScheduleData: ScheduleModel[] = [
     Activities: [
       {
         Id: 1,
-        Name: "PILDAMMSTEATERN",
+        Name: "LIMITLESS HIIT IN THE PARK",
+        Location: "PILDAMMSTEATERN",
         Time: "10:30 - 11:30"
       }
     ]
@@ -40,7 +43,8 @@ const tempScheduleData: ScheduleModel[] = [
     Activities: [
       {
         Id: 1,
-        Name: "PILDAMMSTEATERN",
+        Name: "LIMITLESS HIIT IN THE PARK",
+        Location: "PILDAMMSTEATERN",
         Time: "12:00 - 13:00"
       }
     ]

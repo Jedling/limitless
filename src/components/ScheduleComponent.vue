@@ -14,10 +14,10 @@
       <OutdoorGuidelines />
       <div class="col-md-8 col-12 mb-4 mx-auto">
         <p class="intro-text">
-          <strong
-            >Prova gärna att lägga till sidan på din hemskärm så har du alltid
-            snabb tillgång till schemat!</strong
-          >
+          <strong>
+            Prova gärna att lägga till sidan på din hemskärm så har du alltid
+            snabb tillgång till schemat!
+          </strong>
         </p>
       </div>
     </div>
@@ -43,7 +43,10 @@
                 <div v-for="act in day.Activities" :key="act.Id">
                   <div class="class-container flex">
                     <span class="time">{{ act.Time }}</span>
-                    <span class="name">{{ act.Name }}</span>
+                    <span class="name">{{ act.Name }} <br> <span style="font-weight: 100;">{{ act.Location }}</span> </span>
+                      
+
+                    <!-- <p> {{ act.Location }} </p> -->
                   </div>
                 </div>
               </div>
@@ -124,6 +127,12 @@ export default class ScheduleComponent extends Vue {
       width: 100%;
       font-size: 20px;
     }
+  }
+  .name {
+    font-weight: bolder;
+  }
+  p span {
+    display: block;
   }
   .schedule-img {
     width: 100%;
