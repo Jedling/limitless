@@ -42,9 +42,12 @@
                 <h4 class="weekday">{{ day.Weekday }}</h4>
                 <div v-for="act in day.Activities" :key="act.Id">
                   <div class="class-container flex">
-                    <span class="time">{{ act.Time }}</span>
-                    <span class="temp-name">{{ act.Name }} <br> <span style="font-weight: 100;">{{ act.Location }}</span> </span>
-                      
+                    <span class="temp-time">{{ act.Time }}</span>
+                    <span class="temp-name">
+                      {{ act.Name }}
+                      <br />
+                      <span style="font-weight: 100;">{{ act.Location }}</span>
+                    </span>
 
                     <!-- <p> {{ act.Location }} </p> -->
                   </div>
@@ -111,7 +114,8 @@ export default class ScheduleComponent extends Vue {
   .home-btn:hover {
     color: var(--hover);
   }
-  .temp-name {
+  .temp-name,
+  .temp-time {
     font-weight: bold;
   }
   .sthlm-header {
@@ -268,6 +272,21 @@ export default class ScheduleComponent extends Vue {
       &:last-child {
         border-bottom: none;
       }
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .temp-name {
+      flex: 2 0 0;
+      font-size: 13px;
+      padding-left: 12px;
+      text-align: left;
+    }
+    .temp-time {
+      padding-left: 5px;
+      font-size: 13px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+      flex: 1 0 0;
     }
   }
 }
