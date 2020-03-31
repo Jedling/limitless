@@ -163,7 +163,7 @@ export default class OutdoorGuidelines extends Vue {
     .unordered {
       text-align: left;
       .li-num {
-        padding: 0 15px 0 5px;
+        padding: 10px 15px 0 5px;
         vertical-align: initial;
         font-weight: bolder;
         font-size: 20px;
@@ -175,6 +175,7 @@ export default class OutdoorGuidelines extends Vue {
         text-decoration: none;
         list-style: none;
         font-size: 20px;
+        padding: 10px;
         @media only screen and (max-width: 768px) {
           font-size: 15px;
         }

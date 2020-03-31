@@ -43,7 +43,7 @@
                 <div v-for="act in day.Activities" :key="act.Id">
                   <div class="class-container flex">
                     <span class="time">{{ act.Time }}</span>
-                    <span class="name">{{ act.Name }} <br> <span style="font-weight: 100;">{{ act.Location }}</span> </span>
+                    <span class="temp-name">{{ act.Name }} <br> <span style="font-weight: 100;">{{ act.Location }}</span> </span>
                       
 
                     <!-- <p> {{ act.Location }} </p> -->
@@ -110,6 +110,9 @@ export default class ScheduleComponent extends Vue {
   }
   .home-btn:hover {
     color: var(--hover);
+  }
+  .temp-name {
+    font-weight: bold;
   }
   .sthlm-header {
     text-align: center;
