@@ -3,7 +3,7 @@ import { ScheduleModel } from "@/types/ScheduleModel";
 const tempScheduleData: ScheduleModel[] = [
   {
     Id: 1,
-    Weekday: "TISDAGAR",
+    Weekday: "TISDAG",
     Activities: [
       {
         Id: 1,
@@ -15,7 +15,7 @@ const tempScheduleData: ScheduleModel[] = [
   },
   {
     Id: 2,
-    Weekday: "TORSDAGAR",
+    Weekday: "TORSDAG",
     Activities: [
       {
         Id: 1,
@@ -27,7 +27,7 @@ const tempScheduleData: ScheduleModel[] = [
   },
   {
     Id: 3,
-    Weekday: "LÖRDAGAR",
+    Weekday: "LÖRDAG",
     Activities: [
       {
         Id: 1,
@@ -39,7 +39,7 @@ const tempScheduleData: ScheduleModel[] = [
   },
   {
     Id: 4,
-    Weekday: "SÖNDAGAR",
+    Weekday: "SÖNDAG",
     Activities: [
       {
         Id: 1,

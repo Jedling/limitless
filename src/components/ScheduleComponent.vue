@@ -274,7 +274,7 @@ export default class ScheduleComponent extends Vue {
       }
     }
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 568px) {
     .temp-name {
       flex: 2 0 0;
       font-size: 13px;
