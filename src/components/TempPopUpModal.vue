@@ -20,14 +20,17 @@
                 </div> -->
               <div class="modal-body">
                 <div class="outdoor-guidelines">
-                  <section class="row justify-content-center">
-                    <div class="col-10 col-lg-10 card-block">
-                      <h5 class="card-title mt-4">
-                        VIKTIG INFORMATION KRING COVID-19 VIRUSET!
-                      </h5>
+                  <!-- <section class="row justify-content-center"> -->
+                    <div class="card-block">
+                      <h4 class="card-title mt-4">
+                        {{ title }}
+                      </h4>
                       <hr class="hr-style" />
                       <!-- <p class="content"></p> -->
-                      <div class="row">
+                      <figure>
+                        <img style="width: 100%;" :src="summerDeal" alt="" />
+                      </figure>
+                      <!-- <div class="row">
                         <div class="col-12">
                           <ul class="unordered">
                             <li
@@ -60,11 +63,11 @@
                             </li>
                           </ul>
                         </div>
-                      </div>
+                      </div> -->
                       <h5>Varmt välkomna!</h5>
                       <h5 style="font-weight: bolder;">BE YOU, BE LIMITLESS</h5>
                     </div>
-                  </section>
+                  <!-- </section> -->
                 </div>
                 <button
                   @click="closeModal"
@@ -89,44 +92,15 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class TempPopUpModal extends Vue {
-  private modalShowDescription: boolean = false;
+  private modalShowDescription: boolean = true;
+  private title: string = "Sommarerbjudande!";
+  private summerDeal: string = "/img/introPopUp/sommardeal.JPG";
   private array: any = [
-    {
-      id: 1,
-      number: "1",
-      rule:
-        "Hej och varmt välkommen till LIMITLESS MALMÖ! Med hänsyn till rådande smittorisk av Covid-19 även känt som Corona-viruset, upplyser vi dig om att LIMITLESS MALMÖ har anpassat all sin verksamhet och följer de riktlinjer, krav samt hygienanvisningar som gäller för våra aktiviteter. Samtliga av våra pass hålls därför utomhus tillsvidare och är anpassade enligt Folkhälsomyndigheten samt andra myndigheters rekommendationer för att minska smittspridningen. Vi följer utvecklingen kontinuerligt för att kunna vidta de åtgärder som behövs för att säkerställa det för samtliga deltagare och instruktörer under träningen. Du är välkommen att kontakta ansvariga för mer information om så önskas. BE YOU, BE LIMITLESS!"
-    }
     // {
-    //   id: 2,
-    //   number: "2",
-    //   rule: "Distans på 2 meter till varandra är att föredra."
-    // },
-    // {
-    //   id: 3,
-    //   number: "3",
-    //   rule: "Egen vattenflaska medhavas, dela inte!"
-    // },
-    // {
-    //   id: 4,
-    //   number: "4",
-    //   rule: "Vid minsta upplevda symptom vänligen avbryt och lämna."
-    // },
-    // {
-    //   id: 5,
-    //   number: "5",
+    //   id: 1,
+    //   number: "1",
     //   rule:
-    //     "Har du någon i din omgivning eller själv varit sjuk, vänligen stanna hemma enligt Folkhälsomyndighetens rekommendationer."
-    // },
-    // {
-    //   id: 6,
-    //   number: "6",
-    //   rule: "Ta på varma/extra kläder såsom mössa, halsduk mm."
-    // },
-    // {
-    //   id: 7,
-    //   number: "7",
-    //   rule: "Eget ansvar gäller vid deltagande!"
+    //     "Hej och varmt välkommen till LIMITLESS MALMÖ! Med hänsyn till rådande smittorisk av Covid-19 även känt som Corona-viruset, upplyser vi dig om att LIMITLESS MALMÖ har anpassat all sin verksamhet och följer de riktlinjer, krav samt hygienanvisningar som gäller för våra aktiviteter. Samtliga av våra pass hålls därför utomhus tillsvidare och är anpassade enligt Folkhälsomyndigheten samt andra myndigheters rekommendationer för att minska smittspridningen. Vi följer utvecklingen kontinuerligt för att kunna vidta de åtgärder som behövs för att säkerställa det för samtliga deltagare och instruktörer under träningen. Du är välkommen att kontakta ansvariga för mer information om så önskas. BE YOU, BE LIMITLESS!"
     // }
   ];
 
@@ -149,11 +123,22 @@ export default class TempPopUpModal extends Vue {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+.modal-body {
+  padding-left: 0;
+  padding-right: 0;
+}
 .card-block {
   -webkit-transition: 0.2s;
   // max-width: 720px;
   //   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   @media only screen and (max-width: 568px) {
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    @media only screen and (min-width: 768) {
+      font-size: 1.75rem;
+    }
   }
   .hr-style {
     background-color: var(--secondary);
@@ -210,7 +195,7 @@ export default class TempPopUpModal extends Vue {
     border: 1px solid dimgray;
     color: white;
     @media only screen and (max-width: 768px) {
-       margin-top: 10px;
+      margin-top: 10px;
     }
   }
   .modal-header {
@@ -247,7 +232,7 @@ export default class TempPopUpModal extends Vue {
 }
 .scrollbar {
   float: left;
-  height: 70%;
+  height: 85%;
   background: #f5f5f5;
   overflow-y: scroll;
   margin-bottom: 25px;
