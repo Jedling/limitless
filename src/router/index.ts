@@ -12,6 +12,7 @@ import HikariDo from '../views/HikariDo.vue';
 import Projects from '../views/Projects.vue';
 import Partners from '../views/Partners.vue';
 import Policies from '../views/Policies.vue'
+import Covid from "../views/Covid.vue";
 
 Vue.use(VueRouter);
 
@@ -75,6 +76,11 @@ const routes = [
     path: "/it-policies",
     name: "policy",
     component: Policies
+  },
+  {
+    path: "/covid-19",
+    name: "covid-19",
+    component: Covid
   }
   // {
   //   path: "/about",
