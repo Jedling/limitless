@@ -2,7 +2,11 @@
   <div class="main mb-3">
     <div class="container-fluid">
       <div class="row justify-content-center mx-auto" style="max-width: 900px;">
-        <div v-for="menu in MenuContent" :key="menu.Id" class="col-4 p-0 col-md-4 mt-2">
+        <div
+          v-for="menu in MenuContent"
+          :key="menu.Id"
+          class="col-4 p-0 col-md-4 mt-2"
+        >
           <nav class="navigation">
             <router-link class="glyphicon glyphicon-list" :to="menu.Path">
               <!-- <button
@@ -10,10 +14,9 @@
                 class="btn background btn-circle btn-xl"
               >{{ loggedIn ? menu.LoggedInName : menu.Name }}</button>
             </router-link> -->
-                          <button
-                type="button"
-                class="btn background btn-circle btn-xl"
-              >{{menu.Name}}</button>
+              <button type="button" class="btn background btn-circle btn-xl">
+                {{ menu.Name }}
+              </button>
             </router-link>
           </nav>
         </div>
@@ -53,6 +56,7 @@ export default class Menu extends Vue {
     }
     .background {
       background-color: var(--primary);
+      // background: radial-gradient(at top left, #55585f, #55585f, grey);
     }
 
     .btn-circle:hover {
