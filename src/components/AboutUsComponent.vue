@@ -74,7 +74,7 @@ export default class AboutUsComponent extends Vue {
     @media only screen and (min-width: 768px) {
       font-size: 15px;
     }
-        @media only screen and (min-width: 1440px) {
+    @media only screen and (min-width: 1440px) {
       font-size: 20px;
       width: 800px;
     }
