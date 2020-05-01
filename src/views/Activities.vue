@@ -2,16 +2,20 @@
   <div class="activities mt-4 container mb-4">
     <h2 class="header text-center">TRÄNINGSPASS</h2>
     <ActivitiesComponent />
+    <hr style="hr-style">
+    <KfumLogo />
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
 import ActivitiesComponent from '@/components/ActivitiesComponent.vue';
+import KfumLogo from "@/components/KfumLogo.vue";
 
 @Component({
   components: {
     ActivitiesComponent,
+    KfumLogo
   },
 })
 export default class Activities extends Vue {}

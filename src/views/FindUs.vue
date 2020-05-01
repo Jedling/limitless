@@ -2,16 +2,20 @@
   <div class="findus mt-4 container">
     <h2 class="header text-center mb-4">KONTAKTA OSS</h2>
     <FindUsComponent />
+    <hr style="hr-style">
+    <KfumLogo />
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
 import FindUsComponent from '@/components/FindUsComponent.vue';
+import KfumLogo from "@/components/KfumLogo.vue";
 
 @Component({
   components: {
     FindUsComponent,
+    KfumLogo  
   },
 })
 export default class FindUs extends Vue {}

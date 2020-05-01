@@ -2,16 +2,20 @@
   <div class="about-us mt-4 container mb-4">
     <h2 class="header text-center">PROJEKT</h2>
     <ComingSoonComponent />
+    <hr style="hr-style" />
+    <KfumLogo />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import ComingSoonComponent from "@/components/ComingSoonComponent.vue";
+import KfumLogo from "@/components/KfumLogo.vue";
 
 @Component({
   components: {
-    ComingSoonComponent
+    ComingSoonComponent,
+    KfumLogo
   }
 })
 export default class Projects extends Vue {}

@@ -1,19 +1,22 @@
 <template>
   <div class="schedule mt-4 container">
-      <h2 class="header text-center mb-4">SCHEMA</h2>
+    <h2 class="header text-center mb-4">SCHEMA</h2>
     <ScheduleComponent />
+    <hr style="hr-style" />
+    <KfumLogo />
   </div>
 </template>
 
-<script lang='ts'>
-import { Component, Vue } from 'vue-property-decorator';
-import ScheduleComponent from '@/components/ScheduleComponent.vue';
-
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import ScheduleComponent from "@/components/ScheduleComponent.vue";
+import KfumLogo from "@/components/KfumLogo.vue";
 
 @Component({
   components: {
     ScheduleComponent,
-  },
+    KfumLogo
+  }
 })
 export default class Schedule extends Vue {}
 </script>

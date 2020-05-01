@@ -2,16 +2,20 @@
   <div class="about-us mt-4 container mb-4">
     <h2 class="header text-center">OM FÖRENINGEN</h2>
     <AboutUsComponent />
+    <hr style="hr-style">
+    <KfumLogo />
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
 import AboutUsComponent from '@/components/AboutUsComponent.vue';
+import KfumLogo from "@/components/KfumLogo.vue";
 
 @Component({
   components: {
     AboutUsComponent,
+    KfumLogo
   },
 })
 export default class AboutUs extends Vue {}

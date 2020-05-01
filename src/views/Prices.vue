@@ -2,17 +2,21 @@
   <div class="prices mt-4 container">
     <h2 class="header text-center mb-4">PRISER</h2>
     <PriceComponent />
+    <hr style="hr-style" />
+    <KfumLogo />
   </div>
 </template>
 
-<script lang='ts'>
-import { Component, Vue } from 'vue-property-decorator';
-import PriceComponent from '@/components/PriceComponent.vue';
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import PriceComponent from "@/components/PriceComponent.vue";
+import KfumLogo from "@/components/KfumLogo.vue";
 
 @Component({
   components: {
     PriceComponent,
-  },
+    KfumLogo
+  }
 })
 export default class Prices extends Vue {}
 </script>
