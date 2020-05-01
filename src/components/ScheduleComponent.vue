@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <OutdoorGuidelines />
+      <!-- <OutdoorGuidelines /> -->
       <div class="col-md-8 col-12 mb-4 mx-auto">
         <p class="intro-text">
           <strong>
@@ -46,7 +46,7 @@
                     <span class="temp-name">
                       {{ act.Name }}
                       <br />
-                      <span style="font-weight: 100;">{{ act.Location }}</span>
+                      <span style="font-weight: 100; padding: 2px">{{ act.Location }}</span>
                     </span>
 
                     <!-- <p> {{ act.Location }} </p> -->
