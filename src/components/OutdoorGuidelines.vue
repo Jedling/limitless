@@ -25,15 +25,16 @@
               </ul>-->
               <table>
                 <tr v-for="item in array" :key="item.id" class="unordered">
-                  <td class="li-num">{{item.number}}</td>
+                  <td class="li-num">{{ item.number }}</td>
                   <td class="li-item">
-                    {{item.rule}}
+                    {{ item.rule }}
                     <a
                       v-if="item.url"
                       :href="item.url"
                       class="contact"
                       target="_blank"
-                    >Läs mer här!</a>
+                      >Läs mer här!</a
+                    >
                   </td>
                 </tr>
               </table>
@@ -58,7 +59,7 @@ export default class OutdoorGuidelines extends Vue {
       id: 1,
       number: "1",
       rule:
-        "Ha gärna handskar/vantar på er, alternativt alkogel (finns på plats) före, under och efter passet."
+        "Ha gärna handskar/vantar på er, alkogel (finns på plats) före, under och efter passet."
     },
     {
       id: 2,
@@ -68,12 +69,13 @@ export default class OutdoorGuidelines extends Vue {
     {
       id: 3,
       number: "3",
-      rule: "Egen vattenflaska medhavas, dela inte!"
+      rule: "Egen vattenflaska medhaves, dela inte!"
     },
     {
       id: 4,
       number: "4",
-      rule: "Vid minsta upplevda symptom vänligen avbryt och lämna."
+      rule:
+        "Vid minsta upplevda symptom vänligen avbryt och lämna för din egna och andras hälsa."
     },
     {
       id: 5,
@@ -86,7 +88,8 @@ export default class OutdoorGuidelines extends Vue {
     {
       id: 6,
       number: "6",
-      rule: "Ta på varma/extra kläder såsom mössa, halsduk mm."
+      rule:
+        "Ta på kläder efter väder och behov, egen Yoga/träningsmatta tas med om detta behövs/önskas."
     },
     {
       id: 7,
@@ -107,8 +110,8 @@ export default class OutdoorGuidelines extends Vue {
     margin: 13px;
     // max-width: 720px;
     transition: 0.2s;
-    background-color: #f2f2f2;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    // background-color: #f2f2f2;
+    // box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     @media only screen and (max-width: 568px) {
     }
     .hr-style {
