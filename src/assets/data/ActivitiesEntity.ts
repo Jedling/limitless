@@ -11,13 +11,13 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Bobby",
-        Img: "./img/trainers/male.png",
+        Img: "./img/trainers/bobby.jpg",
         Id: 1,
         Alt: ""
       },
       {
         Name: "Tomasz",
-        Img: "./img/trainers/male.png",
+        Img: "./img/trainers/tomasz.jpg",
         Id: 2,
         Alt: ""
       }
@@ -33,13 +33,13 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Bobby",
-        Img: "./img/trainers/male.png",
+        Img: "./img/trainers/bobby.jpg",
         Id: 1,
         Alt: ""
       },
       {
         Name: "Tomasz",
-        Img: "./img/trainers/male.png",
+        Img: "./img/trainers/tomasz.jpg",
         Id: 2,
         Alt: ""
       }
@@ -77,7 +77,7 @@ const activityData: ActivitiesModel[] = [
       },
       {
         Name: "Calle",
-        Img: "./img/trainers/male.png",
+        Img: "./img/trainers/calle.jpg",
         Id: 2,
         Alt: ""
       }
@@ -141,7 +141,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Rosmarie",
-        Img: "./img/trainers/female.png",
+        Img: "./img/trainers/rosmarie.jpg",
         Id: 1,
         Alt: ""
       }
@@ -157,7 +157,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Ulf",
-        Img: "./img/trainers/male.png",
+        Img: "./img/trainers/ulf.jpg",
         Id: 1,
         Alt: ""
       },
@@ -179,7 +179,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Ulf",
-        Img: "./img/trainers/male.png",
+        Img: "./img/trainers/ulf.jpg",
         Id: 1,
         Alt: ""
       },

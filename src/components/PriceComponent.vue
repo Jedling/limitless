@@ -130,7 +130,7 @@ export default class PriceComponent extends Vue {
       background-color: var(--secondary);
     }
     .content {
-      margin: 5px;
+      margin: 30px;
       padding: 5px;
       border-radius: 1px;
       box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
