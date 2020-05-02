@@ -200,8 +200,26 @@ const activityData: ActivitiesModel[] = [
     Url: "limitless-outdoors",
     Trainers: [
       {
-        Name: "Eric",
-        Img: "./img/trainers/male.png",
+        Name: "Bobby",
+        Img: "./img/trainers/bobby.jpg",
+        Id: 1,
+        Alt: ""
+      },
+      {
+        Name: "Rosmarie",
+        Img: "./img/trainers/rosmarie.jpg",
+        Id: 1,
+        Alt: ""
+      },
+      {
+        Name: "Calle",
+        Img: "./img/trainers/calle.jpg",
+        Id: 1,
+        Alt: ""
+      },
+      {
+        Name: "Ulf",
+        Img: "./img/trainers/ulf.jpg",
         Id: 1,
         Alt: ""
       }

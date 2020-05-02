@@ -29,8 +29,7 @@
                       aria-controls="nav-home"
                       aria-selected="true"
                       :name="item.Url"
-                      >{{ item.Name }}</a
-                    >
+                    >{{ item.Name }}</a>
                   </li>
                 </ul>
               </div>
@@ -52,19 +51,21 @@
           <hr class="hr-style" />
           <p class="content">
             {{ act.Description }}
-            <a :href="act.Link" target="_blank"> {{ act.Link }}</a>
+            <a :href="act.Link" target="_blank">{{ act.Link }}</a>
           </p>
           <div class="mt-3 mb-3">
             <div class="row">
               <div
                 v-for="trainer in act.Trainers"
                 :key="trainer.id"
-                :class="act.Trainers.length < 2 ? 'col-6 mx-auto' : 'col-6'"
+                :class="act.Trainers.length < 3 ? 'col-6 mx-auto' : 'col-3 mx-auto'"
               >
                 <figure>
                   <img :src="trainer.Img" class="card-img" :alt="trainer.Alt" />
                 </figure>
-                <h5 class="name">{{ trainer.Name }}</h5>
+                <h5 :class="act.Trainers.length < 3 ? 'name' : 'test'">
+                  {{ trainer.Name }}
+                </h5>
               </div>
             </div>
           </div>
@@ -169,6 +170,10 @@ export default class ActivitiesComponent extends Vue {
     transition: 0.2s;
     background-color: #f2f2f2;
     @media only screen and (max-width: 568px) {
+    }
+    .test {
+          font-size: 12px;
+    
     }
     .hr-style {
       background-color: var(--secondary);

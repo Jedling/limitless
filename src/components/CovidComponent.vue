@@ -12,7 +12,7 @@
     <section class="row justify-content-center">
       <div class="col-10 col-lg-10 card-block">
         <h4 class="card-title mt-4">
-          VIKTIG INFORMATION KRING COVID-19 VIRUSET!
+          VIKTIG INFORMATION ANGÅENDE COVID-19 VIRUSET!
         </h4>
         <hr class="hr-style" />
         <!-- <p class="content"></p> -->

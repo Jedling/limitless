@@ -87,7 +87,7 @@ const tempScheduleData: ScheduleModel[] = [
         Id: 2,
         Name: "URBAN HIIT FLOW YOGA",
         Location: "PILDAMMSTEATERN",
-        Time: "11.30-12.30,"
+        Time: "11.30-12.30"
       }
     ]
   },

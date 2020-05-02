@@ -11,16 +11,14 @@
         </div>
       </div>
       <div class="row">
-        <div
-          class="col-md-10 col-12 mb-4 justify-content-center mx-auto wrapper"
-        >
+        <div class="col-md-10 col-12 mb-4 justify-content-center mx-auto wrapper">
           <h5 class="title mt-4">{{ title }}</h5>
           <hr class="hr-style" />
           <p class="card-text">{{ itenary }}</p>
           <div class="row justify-content-center">
-            <div v-for="item in content" :key="item.id">
+            <div v-for="item in content" :key="item.id" class="col-12 col-md-6">
               <div class="content">
-                <section class="col-12" style="">
+                <section class="" style>
                   <div class="inner-content">
                     <h5 class="header">{{ item.association }}</h5>
                     <hr class="hr-style" />
@@ -28,7 +26,7 @@
                     <div class="dropdown">
                       <i class="fas fa-info-circle info"></i>
                       <span class="swish">SWISH: {{ item.swish }}</span>
-
+                      <p style="width: 75%; text-align: left; margin: 0 auto;">{{ item.obs }}</p>
                       <div class="dropdown-content">
                         <p class="swish-hover">
                           Vid SWISH-betalning ange fullständiga personnr
@@ -47,7 +45,8 @@
             <p class="half-year">HALVÅRSKORT: 2 800 kr</p>
             <p class="ten-card">10-KORT: 900 kr</p>
             <p class="summer-offer">
-              SOMMARERBJUDANDE <span style="color: red">*</span> (1/5-31/8): 999
+              SOMMARERBJUDANDE
+              <span style="color: red">*</span> (1/5-31/8): 999
               KR
             </p>
           </div>
@@ -56,8 +55,8 @@
               På samtliga avgifter ovan tillkommer en
               <strong>
                 obligatorisk medlemsavgift på 50 kr till KFUM Malmö samt 100 kr
-                till KFUM Limitless </strong
-              >, dessa avser medlemskap i föreningen KFUM Malmö samt KFUM
+                till KFUM Limitless
+              </strong>, dessa avser medlemskap i föreningen KFUM Malmö samt KFUM
               Limitless och är giltigt endast under det kalenderår som
               inbetalning görs. Vid SWISH-betalning ange fullständigt personnr
               (2000-06-12-XXXX) samt för vad inbetalningen avser t ex
@@ -98,16 +97,20 @@ export default class PriceComponent extends Vue {
   private itenary: string = "INBETALNINGSUPPGIFTER";
   private content: any = [
     {
-      id: 1,
-      association: "KFUM LIMTLESS",
-      bankinfo: "BANKGIRO: 5239-6561",
-      swish: "123 166 6446"
-    },
-    {
       id: 2,
       association: "KFUM MALMÖ",
       bankinfo: "BANKGIRO: 272-1934",
-      swish: "123 189 8980"
+      swish: "123 189 8980",
+      obs:
+        "OBS! Medlemsavgiften på 50kr samt vald träningsavgift betalas in till KFUM Malmö endast medlemsavgiften på 100kr betalas in till KFUM Limitless"
+    },
+    {
+      id: 1,
+      association: "KFUM LIMTLESS",
+      bankinfo: "BANKGIRO: 5239-6561",
+      swish: "123 166 6446",
+      obs:
+        "OBS! Medlemsavgiften på 50kr samt vald träningsavgift betalas in till KFUM Malmö endast medlemsavgiften på 100kr betalas in till KFUM Limitless"
     }
   ];
 }
@@ -158,6 +161,7 @@ export default class PriceComponent extends Vue {
       position: absolute;
       background-color: #f9f9f9;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      top: 30px;
       left: 50%;
       margin-left: -140px !important;
       z-index: 1;
