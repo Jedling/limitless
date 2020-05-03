@@ -108,7 +108,7 @@ export default class PriceComponent extends Vue {
       id: 1,
       association: "KFUM LIMTLESS",
       bankinfo: "BANKGIRO: 5239-6561",
-      swish: "123 166 6446",
+      swish: "123 165 6446",
       obs:
         "OBS! Medlemsavgiften på 50kr samt vald träningsavgift betalas in till KFUM Malmö endast medlemsavgiften på 100kr betalas in till KFUM Limitless"
     }
