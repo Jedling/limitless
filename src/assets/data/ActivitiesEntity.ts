@@ -11,13 +11,13 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Bobby",
-        Img: "./img/trainers/bobby.jpg",
+        Img: "./img/trainers/bobby1.jpg",
         Id: 1,
         Alt: ""
       },
       {
         Name: "Tomasz",
-        Img: "./img/trainers/tomasz.jpg",
+        Img: "./img/trainers/tomasz1.jpg",
         Id: 2,
         Alt: ""
       }
@@ -33,13 +33,13 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Bobby",
-        Img: "./img/trainers/bobby.jpg",
+        Img: "./img/trainers/bobby1.jpg",
         Id: 1,
         Alt: ""
       },
       {
         Name: "Tomasz",
-        Img: "./img/trainers/tomasz.jpg",
+        Img: "./img/trainers/tomasz1.jpg",
         Id: 2,
         Alt: ""
       }
@@ -77,7 +77,7 @@ const activityData: ActivitiesModel[] = [
       },
       {
         Name: "Calle",
-        Img: "./img/trainers/calle.jpg",
+        Img: "./img/trainers/calle1.jpg",
         Id: 2,
         Alt: ""
       }
@@ -141,7 +141,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Rosmarie",
-        Img: "./img/trainers/rosmarie.jpg",
+        Img: "./img/trainers/rosmarie1.jpg",
         Id: 1,
         Alt: ""
       }
@@ -157,7 +157,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Ulf",
-        Img: "./img/trainers/ulf.jpg",
+        Img: "./img/trainers/uffe.jpg",
         Id: 1,
         Alt: ""
       },
@@ -179,7 +179,7 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Ulf",
-        Img: "./img/trainers/ulf.jpg",
+        Img: "./img/trainers/uffe.jpg",
         Id: 1,
         Alt: ""
       },
@@ -201,25 +201,25 @@ const activityData: ActivitiesModel[] = [
     Trainers: [
       {
         Name: "Bobby",
-        Img: "./img/trainers/bobby.jpg",
+        Img: "./img/trainers/bobby1.jpg",
         Id: 1,
         Alt: ""
       },
       {
         Name: "Rosmarie",
-        Img: "./img/trainers/rosmarie.jpg",
+        Img: "./img/trainers/rosmarie1.jpg",
         Id: 1,
         Alt: ""
       },
       {
         Name: "Calle",
-        Img: "./img/trainers/calle.jpg",
+        Img: "./img/trainers/calle1.jpg",
         Id: 1,
         Alt: ""
       },
       {
         Name: "Ulf",
-        Img: "./img/trainers/ulf.jpg",
+        Img: "./img/trainers/uffe.jpg",
         Id: 1,
         Alt: ""
       }
