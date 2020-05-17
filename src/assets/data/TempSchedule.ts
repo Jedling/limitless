@@ -1,18 +1,18 @@
 import { ScheduleModel } from "@/types/ScheduleModel";
 
 const tempScheduleData: ScheduleModel[] = [
-  // {
-  //   Id: 1,
-  //   Weekday: "MÅNDAG",
-  //   Activities: [
-  //     {
-  //       Id: 1,
-  //       Name: "BOXNING",
-  //       Location: "TALLRIKEN, PILDAMMSPARKEN",
-  //       Time: "17:30 - 18:30"
-  //     }
-  //   ]
-  // },
+  {
+    Id: 1,
+    Weekday: "MÅNDAG",
+    Activities: [
+      {
+        Id: 1,
+        Name: "BOXNING",
+        Location: "TALLRIKEN, PILDAMMSPARKEN",
+        Time: "17:30 - 18:30"
+      }
+    ]
+  },
   {
     Id: 2,
     Weekday: "TISDAG",
@@ -95,12 +95,12 @@ const tempScheduleData: ScheduleModel[] = [
     Id: 7,
     Weekday: "SÖNDAG",
     Activities: [
-      // {
-      //   Id: 1,
-      //   Name: "HIKARI DO",
-      //   Location: "PILDAMMSTEATERN",
-      //   Time: "11:0 - 12:00"
-      // },
+      {
+        Id: 1,
+        Name: "HIKARI DO",
+        Location: "PILDAMMSTEATERN",
+        Time: "11:0 - 12:00"
+      },
       {
         Id: 2,
         Name: "LIMITLESS HIIT IN THE PARK",

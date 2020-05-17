@@ -17,7 +17,7 @@
         <p class="text">{{ intro }}</p>
       </div>
       <section class="row">
-        <div v-for="item in aboutUs" :key="item.Id" class="col-4 mt-2 mb-5">
+        <div v-for="item in aboutUs" :key="item.Id" class="col-6 col-sm-3 mt-2 mb-5">
           <a :href="item.Pdf" class="stadgar" target="_blank">
             {{ item.Name }}
             <i class="fas fa-external-link-alt ml-2"></i>

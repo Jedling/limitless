@@ -16,6 +16,11 @@ const aboutUsData: AboutUsModel[] = [
     Id: 3,
     Pdf: 'https://drive.google.com/file/d/1gEYgaLa1o7ghAfOtlHlw6nL5L2jClzXw/view?usp=sharing',
     Name: 'RUTINER'
+  },
+  {
+    Id: 4,
+    Pdf: 'https://drive.google.com/file/d/14KcQneSLbx4ZIuyVkyC6tkgdEdhaB-B-/view?usp=sharing',
+    Name: 'ALLMÄNNA VILLKOR'
   }
 ];
 const aboutUsType: AboutUsModel[] = aboutUsData;
