@@ -9,7 +9,7 @@ const tempScheduleData: ScheduleModel[] = [
         Id: 1,
         Name: "BOXNING",
         Location: "TALLRIKEN, PILDAMMSPARKEN",
-        Time: "17:30 - 18:30"
+        Time: "18:00 - 19:00"
       }
     ]
   },
@@ -99,7 +99,7 @@ const tempScheduleData: ScheduleModel[] = [
         Id: 1,
         Name: "HIKARI DO",
         Location: "PILDAMMSTEATERN",
-        Time: "11:0 - 12:00"
+        Time: "11:00 - 12:00"
       },
       {
         Id: 2,
