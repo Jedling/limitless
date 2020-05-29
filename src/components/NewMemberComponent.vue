@@ -61,14 +61,35 @@
                 Nedan hittar du information samt en bilaga för GDPR-samtycke som
                 behöver vara ifylld (våran policy hittar du under knappen
                 <router-link to="/om-limitless" style="color: cornflowerblue;"
-                  >"FÖRENINGEN”</router-link
-                >, skriv gärna ut denna, signera och ta med till LIMITLESS MALMÖ
-                där du lämnar in bilagan ifylld. Har du inte möjlighet att
-                skriva ut så finns blanketten även i receptionen.
+                  >”OM FÖRENINGEN”</router-link
+                >, skriv gärna ut GDPR-samtyckesblanketten, signera och ta med
+                till LIMITLESS MALMÖ där du lämnar in bilagan ifylld. Har du
+                inte möjlighet att skriva ut så finns blanketten även i
+                receptionen eller hos instruktören.
+              </li>
+              <li class="li-item">
+                Vänligen klicka på länken där du kommer till
+                <strong>”Medlemsregistreringen”</strong>, denna skall fyllas i
+                korrekt oavsett vid ”prova på-pass” eller vid tecknande av
+                träningskort. Är det första gången du provar på något av våra
+                pass, välj ”Prova på – medlemsavgift” i ”Medlemstyp”.
               </li>
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+    <h4 class="mt-3 mb-4 sthlm-header">Medlemsregistreringen</h4>
+    <section class="row justify-content-center">
+      <div
+        v-for="item in regMember"
+        :key="item.Id"
+        class="col-8 col-sm-4 mt-2 mb-5"
+      >
+        <a :href="item.href" class="stadgar" target="_blank">
+          {{ item.name }}
+          <i class="fas fa-external-link-alt ml-2"></i>
+        </a>
       </div>
     </section>
     <h4 class="mt-3 mb-4 sthlm-header">SAMTYCKESBLANKETTER</h4>
@@ -96,6 +117,13 @@ import { Component, Vue } from "vue-property-decorator";
 })
 export default class NewMemberComponent extends Vue {
   private newMemberType: AboutUsModel[] = newMemberData;
+  private regMember: any = [
+    {
+      id: 1,
+      name: "REGISTRERA DIG HÄR",
+      href: "https://member.myclub.se/pub/forms/6918/totxVl2Wlz/"
+    }
+  ];
 }
 </script>
 <style scoped lang="scss">
@@ -165,6 +193,7 @@ export default class NewMemberComponent extends Vue {
     margin: 0 auto;
     width: 50%;
     font-size: 20px;
+    text-transform: uppercase;
     padding: 20px;
     line-height: 1.2;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
