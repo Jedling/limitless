@@ -5,6 +5,7 @@
       <router-view />
     </Main>
     <TempPopUpModal />
+    <ScrollButton />
     <Footer />
   </div>
 </template>
@@ -13,12 +14,14 @@ import { Vue, Component } from "vue-property-decorator";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import TempPopUpModal from "@/components/TempPopUpModal.vue";
+import ScrollButton from "@/components/ScrollButton.vue";
 
 @Component({
   components: {
     Header,
     Footer,
-    TempPopUpModal
+    TempPopUpModal,
+    ScrollButton
   }
 })
 export default class App extends Vue {}

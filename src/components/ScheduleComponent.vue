@@ -31,7 +31,10 @@
       </div>
     -->
     <ScrollButton />
-    <h4 class="mt-3 mb-4 sthlm-header">TILLFÄLLIGT SCHEMA</h4>
+    <h4 class="mt-3 mb-4 sthlm-header">
+      TILLFÄLLIGT SCHEMA <br />
+      <span style="font-size: 18px;">(1 juni och tillsvidare)</span>
+    </h4>
     <div class="row mb-5">
       <div class="col-12">
         <section class="timetable-wrap">
@@ -44,9 +47,11 @@
                   <div class="class-container flex">
                     <span class="temp-time">{{ act.Time }}</span>
                     <span class="temp-name">
-                      {{ act.Name }}
-                      <br />
-                      <span style="font-weight: 100; padding: 2px">{{ act.Location }}</span>
+                      <p class="mb-1">{{ act.Name }}</p>
+                      <!-- <br /> -->
+                      <span style="font-weight: 100; padding: 2px">{{
+                        act.Location
+                      }}</span>
                     </span>
 
                     <!-- <p> {{ act.Location }} </p> -->
@@ -138,6 +143,11 @@ export default class ScheduleComponent extends Vue {
   .name {
     font-weight: bolder;
   }
+  @media screen and (min-width: 1024px) {
+    .temp-name {
+      margin-bottom: 5px;
+    }
+  }
   p span {
     display: block;
   }
@@ -183,6 +193,7 @@ export default class ScheduleComponent extends Vue {
 
   .day {
     flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
     h4 {
       border-bottom: 1px solid rgba(0, 0, 0, 0.12);
       background-color: var(--primary);

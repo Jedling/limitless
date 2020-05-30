@@ -24,8 +24,8 @@
                 rådande smittorisk av Covid-19 även känt som Corona-viruset,
                 upplyser vi dig om att LIMITLESS MALMÖ har anpassat all sin
                 verksamhet och följer de riktlinjer, krav samt hygienanvisningar
-                som gäller för våran typ av aktiviteter. Samtliga pass hålls
-                därför utomhus tillsvidare och är anpassade enligt
+                som gäller för våran typ av aktiviteter. Majoriteten av våra
+                pass hålls därför utomhus tillsvidare och är anpassade enligt
                 Folkhälsomyndighetens samt andra myndigheters rekommendationer
                 för att minska smittspridningen.
               </li>
@@ -44,6 +44,19 @@
         </div>
       </div>
     </section>
+    <h4 class="mt-3 mb-4 sthlm-header">Medlemsregistreringen</h4>
+    <section class="row justify-content-center">
+      <div
+        v-for="item in regMember"
+        :key="item.Id"
+        class="col-12 col-sm-4 mt-2 mb-5"
+      >
+        <a :href="item.href" class="stadgar" target="_blank">
+          {{ item.name }}
+          <i class="fas fa-external-link-alt ml-2"></i>
+        </a>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -56,7 +69,22 @@ import OutdoorGuidelines from "@/components/OutdoorGuidelines.vue";
     OutdoorGuidelines
   }
 })
-export default class CovidComponent extends Vue {}
+export default class CovidComponent extends Vue {
+  private regMember: any = [
+    {
+      id: 1,
+      name: "Hygien- och städrutiner",
+      href:
+        "https://drive.google.com/file/d/1U8jaxNNmsYARiitol4v2e2ZE4MSDryhG/view?usp=sharing"
+    },
+    {
+      id: 2,
+      name: "Rekommendationer angående",
+      href:
+        "https://drive.google.com/file/d/1RQNXG7OqfVQXC62jlqag78t_M-9Luegz/view?usp=sharing"
+    }
+  ];
+}
 </script>
 <style scoped lang="scss">
 .new-member {

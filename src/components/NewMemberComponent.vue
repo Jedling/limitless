@@ -67,6 +67,7 @@
                 inte möjlighet att skriva ut så finns blanketten även i
                 receptionen eller hos instruktören.
               </li>
+              <br />
               <li class="li-item">
                 Vänligen klicka på länken där du kommer till
                 <strong>”Medlemsregistreringen”</strong>, denna skall fyllas i
