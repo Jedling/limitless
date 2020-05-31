@@ -15,15 +15,15 @@ const activityData: ActivitiesModel[] = [
         Name: "Bobby",
         Img: "./img/trainers/bobby1.jpg",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Tomasz",
         Img: "./img/trainers/tomasz1.jpg",
         Id: 2,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 2,
@@ -39,15 +39,15 @@ const activityData: ActivitiesModel[] = [
         Name: "Bobby",
         Img: "./img/trainers/bobby1.jpg",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Tomasz",
         Img: "./img/trainers/tomasz1.jpg",
         Id: 2,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 3,
@@ -63,9 +63,9 @@ const activityData: ActivitiesModel[] = [
         Name: "Eric",
         Img: "./img/trainers/male.png",
         Id: 1,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 4,
@@ -81,15 +81,15 @@ const activityData: ActivitiesModel[] = [
         Name: "Eric",
         Img: "./img/trainers/male.png",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Calle",
         Img: "./img/trainers/calle1.jpg",
         Id: 2,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 5,
@@ -105,9 +105,9 @@ const activityData: ActivitiesModel[] = [
         Name: "Ismael",
         Img: "./img/trainers/male.png",
         Id: 1,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 6,
@@ -123,9 +123,9 @@ const activityData: ActivitiesModel[] = [
         Name: "Eric",
         Img: "./img/trainers/male.png",
         Id: 1,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 7,
@@ -141,15 +141,16 @@ const activityData: ActivitiesModel[] = [
         Name: "Eric",
         Img: "./img/trainers/male.png",
         Id: 1,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 8,
     Description:
       "En utmanande helkroppsklass för alla nivåer nybörjare som elit, med fokus på uthållighet, styrka och rörlighet. HIIT Yoga-sekvenser med hög intensitet som varvas med mjuk dynamisk Vinyasa yoga som genomförs i ett jämt flöde för att mjuka upp och stärka kroppen. Perfekt för cirkulationen i kroppen där du även finner ett fokus och lugn samtidigt som du utmanar dig mentalt. Med en fantastisk instruktör som guidar dig genom varje övning från början till slut för att du ska få ut så mycket som möjligt av varje rörelse.",
-    TempDescription: "Detta passet innehåller ingen fysisk kontakt alls och kommer därför att fortsätta som vanligt.",
+    TempDescription:
+      "Detta passet innehåller ingen fysisk kontakt alls och kommer därför att fortsätta som vanligt.",
     Name: "Limitless HIIT flow yoga",
     Link: "",
     Url: "limitless-hiit-yoga-flow",
@@ -158,9 +159,9 @@ const activityData: ActivitiesModel[] = [
         Name: "Rosmarie",
         Img: "./img/trainers/rosmarie1.jpg",
         Id: 1,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 9,
@@ -176,15 +177,15 @@ const activityData: ActivitiesModel[] = [
         Name: "Ulf",
         Img: "./img/trainers/uffe.jpg",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Eric",
         Img: "./img/trainers/male.png",
         Id: 2,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 10,
@@ -200,15 +201,15 @@ const activityData: ActivitiesModel[] = [
         Name: "Ulf",
         Img: "./img/trainers/uffe.jpg",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Eric",
         Img: "./img/trainers/male.png",
         Id: 2,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 11,
@@ -224,27 +225,27 @@ const activityData: ActivitiesModel[] = [
         Name: "Bobby",
         Img: "./img/trainers/bobby1.jpg",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Rosmarie",
         Img: "./img/trainers/rosmarie1.jpg",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Calle",
         Img: "./img/trainers/calle1.jpg",
         Id: 1,
-        Alt: ""
+        Alt: "",
       },
       {
         Name: "Ulf",
         Img: "./img/trainers/uffe.jpg",
         Id: 1,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 12,
@@ -260,9 +261,9 @@ const activityData: ActivitiesModel[] = [
         Name: "",
         Img: "",
         Id: 1,
-        Alt: ""
-      }
-    ]
+        Alt: "",
+      },
+    ],
   },
   {
     Id: 13,
@@ -278,10 +279,10 @@ const activityData: ActivitiesModel[] = [
         Name: "Rosmarie",
         Img: "./img/trainers/rosmarie1.jpg",
         Id: 1,
-        Alt: ""
-      }
-    ]
-  }
+        Alt: "",
+      },
+    ],
+  },
 ];
 const activityType: ActivitiesModel[] = activityData;
 
