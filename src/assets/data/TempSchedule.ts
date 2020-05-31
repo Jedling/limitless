@@ -7,21 +7,21 @@ const tempScheduleData: ScheduleModel[] = [
     Activities: [
       {
         Id: 1,
-        Name: "BOXNING",
+        Name: "KICK/THAIBOXNING",
         Location: "TALLRIKEN, PILDAMMSPARKEN",
-        Time: "18:00 - 19:00"
-      },
-      {
-        Id: 2,
-        Name: "BRASILIANSK JIU-JITSU/SUBMISSION WRESTLING",
-        Location: "KFUM-HUSET, VÅN 1",
-        Time: "18:00 - 19:00"
+        Time: "17:30 - 18:30"
       },
       {
         Id: 3,
         Name: "BOXNING",
         Location: "TALLRIKEN, PILDAMMSPARKEN",
         Time: "18:30 - 19:30"
+      },
+      {
+        Id: 2,
+        Name: "BRASILIANSK JIU-JITSU/SUBMISSION WRESTLING",
+        Location: "KFUM-HUSET, VÅN 1",
+        Time: "18:00 - 19:00"
       }
     ]
   },
@@ -32,7 +32,7 @@ const tempScheduleData: ScheduleModel[] = [
       {
         Id: 1,
         Name: "LIMITLESS HIIT FLOW YOGA",
-        Location: "GRÄSMATTAN BREDVID KFUM-HUSET",
+        Location: "GRÄSMATTAN INTILL KFUM-HUSET",
         Time: "12:00 - 13:00"
       },
       {
@@ -51,19 +51,19 @@ const tempScheduleData: ScheduleModel[] = [
   },
   {
     Id: 3,
-    Weekday: "ONSDAGAR",
+    Weekday: "ONSDAG",
     Activities: [
       {
         Id: 1,
-        Name: "KICK/THAIBOXNING",
-        Location: "TALLRIKEN, PILDAMMSPARKEN",
-        Time: "18:00 - 19:00"
-      },
-      {
-        Id: 2,
         Name: "HIKARI DO",
         Location: "TALLRIKEN, PILDAMMSPARKEN",
         Time: "17.00-18.00,"
+      },
+      {
+        Id: 2,
+        Name: "KICK/THAIBOXNING",
+        Location: "TALLRIKEN, PILDAMMSPARKEN",
+        Time: "18:00 - 19:00"
       },
       {
         Id: 3,
@@ -95,7 +95,7 @@ const tempScheduleData: ScheduleModel[] = [
         Location: "TALLRIKEN, PILDAMMSPARKEN",
         Time: "17:30 - 18:30"
       },
-         {
+      {
         Id: 4,
         Name: "BOXNING",
         Location: "TALLRIKEN, PILDAMMSPARKEN",
@@ -103,18 +103,18 @@ const tempScheduleData: ScheduleModel[] = [
       }
     ]
   },
-  {
-    Id: 5,
-    Weekday: "FREDAG",
-    Activities: [
-      {
-        Id: 1,
-        Name: "KICK/THAIBOXNING samt BOXNING",
-        Location: "TALLRIKEN, PILDAMMSPARKEN",
-        Time: "17:30 - 18:30"
-      }
-    ]
-  },
+  // {
+  //   Id: 5,
+  //   Weekday: "FREDAG",
+  //   Activities: [
+  //     {
+  //       Id: 1,
+  //       Name: "KICK/THAIBOXNING samt BOXNING",
+  //       Location: "TALLRIKEN, PILDAMMSPARKEN",
+  //       Time: "17:30 - 18:30"
+  //     }
+  //   ]
+  // },
   {
     Id: 6,
     Weekday: "LÖRDAG",
@@ -148,7 +148,7 @@ const tempScheduleData: ScheduleModel[] = [
         Name: "LIMITLESS HIIT IN THE PARK",
         Location: "PILDAMMSTEATERN",
         Time: "12:00 - 13:00"
-      },
+      }
     ]
   }
 ];

@@ -149,7 +149,7 @@ const activityData: ActivitiesModel[] = [
     Id: 8,
     Description:
       "En utmanande helkroppsklass för alla nivåer nybörjare som elit, med fokus på uthållighet, styrka och rörlighet. HIIT Yoga-sekvenser med hög intensitet som varvas med mjuk dynamisk Vinyasa yoga som genomförs i ett jämt flöde för att mjuka upp och stärka kroppen. Perfekt för cirkulationen i kroppen där du även finner ett fokus och lugn samtidigt som du utmanar dig mentalt. Med en fantastisk instruktör som guidar dig genom varje övning från början till slut för att du ska få ut så mycket som möjligt av varje rörelse.",
-    TempDescription: "",
+    TempDescription: "Detta passet innehåller ingen fysisk kontakt alls och kommer därför att fortsätta som vanligt.",
     Name: "Limitless HIIT flow yoga",
     Link: "",
     Url: "limitless-hiit-yoga-flow",
@@ -269,14 +269,14 @@ const activityData: ActivitiesModel[] = [
     Description:
       "60 minuters non stopp högintensiv helkroppsträning. Enkla övningar med inspiration från både yoga och kampsportens värld. Träningen utförs med korta intervallsekvenser med fokus på core, rygg, ben, höfter och bak. Ena delen av passet jobbar vi med uthållighet och styrka, andra delen höjer vi pulsen. En utmanande klass som passar alla genom varje övning från början till slut för att du ska få ut så mycket som möjligt av varje rörelse.",
     TempDescription:
-      "Detta passet innehåller ingen fysisk kontakt alls och kommer därför att som vanligt.",
+      "Detta passet innehåller ingen fysisk kontakt alls och kommer därför att fortsätta som vanligt.",
     Name: "Mad fit inferno",
     Link: "",
     Url: "mad-fit-inferno",
     Trainers: [
       {
-        Name: "Eric",
-        Img: "./img/trainers/male.png",
+        Name: "Rosmarie",
+        Img: "./img/trainers/rosmarie1.jpg",
         Id: 1,
         Alt: ""
       }

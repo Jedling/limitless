@@ -44,7 +44,7 @@
         </div>
       </div>
     </section>
-    <h4 class="mt-3 mb-4 sthlm-header">Medlemsregistreringen</h4>
+    <h4 class="mt-3 mb-4 sthlm-header">REKOMMENDATIONER OCH HYGIENBILAGOR</h4>
     <section class="row justify-content-center">
       <div
         v-for="item in regMember"
@@ -79,7 +79,7 @@ export default class CovidComponent extends Vue {
     },
     {
       id: 2,
-      name: "Rekommendationer angående",
+      name: "Rekommendationer",
       href:
         "https://drive.google.com/file/d/1RQNXG7OqfVQXC62jlqag78t_M-9Luegz/view?usp=sharing"
     }
