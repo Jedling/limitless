@@ -146,6 +146,7 @@ export default class ScheduleComponent extends Vue {
   @media screen and (min-width: 1024px) {
     .temp-name {
       margin-bottom: 5px;
+      padding: 1px;
     }
   }
   p span {

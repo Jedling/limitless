@@ -106,10 +106,12 @@ export default class TempPopUpModal extends Vue {
 
   private created() {
     this.modalShowDescription = true;
+    document.documentElement.style.overflow = "hidden";
   }
 
   private closeModal() {
     this.modalShowDescription = false;
+    document.documentElement.style.overflow = "scroll";
   }
 }
 </script>

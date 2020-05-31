@@ -53,12 +53,12 @@ const tempScheduleData: ScheduleModel[] = [
     Id: 3,
     Weekday: "ONSDAG",
     Activities: [
-      {
-        Id: 1,
-        Name: "HIKARI DO",
-        Location: "TALLRIKEN, PILDAMMSPARKEN",
-        Time: "17.00-18.00,"
-      },
+      // {
+      //   Id: 1,
+      //   Name: "HIKARI DO",
+      //   Location: "TALLRIKEN, PILDAMMSPARKEN",
+      //   Time: "17.00-18.00,"
+      // },
       {
         Id: 2,
         Name: "KICK/THAIBOXNING",
@@ -103,18 +103,18 @@ const tempScheduleData: ScheduleModel[] = [
       }
     ]
   },
-  // {
-  //   Id: 5,
-  //   Weekday: "FREDAG",
-  //   Activities: [
-  //     {
-  //       Id: 1,
-  //       Name: "KICK/THAIBOXNING samt BOXNING",
-  //       Location: "TALLRIKEN, PILDAMMSPARKEN",
-  //       Time: "17:30 - 18:30"
-  //     }
-  //   ]
-  // },
+  {
+    Id: 5,
+    Weekday: "FREDAG",
+    Activities: [
+      // {
+      //   Id: 1,
+      //   Name: "KICK/THAIBOXNING samt BOXNING",
+      //   Location: "TALLRIKEN, PILDAMMSPARKEN",
+      //   Time: "17:30 - 18:30"
+      // }
+    ]
+  },
   {
     Id: 6,
     Weekday: "LÖRDAG",
