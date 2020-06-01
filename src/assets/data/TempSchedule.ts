@@ -8,7 +8,7 @@ const tempScheduleData: ScheduleModel[] = [
       {
         Id: 1,
         Name: "KICK/THAIBOXNING",
-        Location: "TALLRIKEN, PILDAMMSPARKEN",
+        Location: "PILDAMMSTEATERN",
         Time: "17:30 - 18:30"
       },
       {
